@@ -9,8 +9,8 @@ function animation() {
   //   duration: 2,
   //   border: "3px solid green",
   // });
-  tl.set(".shamwow", { x: 700, y: 100 });
-  tl.to(".shamwow", {
+  tl.set(".h2", { x: 700, y: 100 });
+  tl.to(".h2", {
    
     x: 700,
     scale: 1.6,
