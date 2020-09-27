@@ -37,7 +37,7 @@
   background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
   color: #44ff00;
   background-size: cover;
-  background-attachment: fixex;
+  background-attachment: fixed;
 }
 
 .container .section:nth-child(3) {
@@ -48,8 +48,23 @@
 }
 
 .container .section:nth-child(4) {
-  background: #306b34 center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
-  color: yellow;
+  padding-top: 0.5em;
+  background: whitesmoke center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
+  color: #cfcfea;
   background-size: contain;
   background-attachment: fixed;
+}
+
+.h2 {
+  width: 30%;
+  font-size: 2em;
+}
+
+.hellyeah {
+  width: 1%;
+}
+
+.container .section h2, p {
+  width: 80%;
+  margin: 0 auto;
 }

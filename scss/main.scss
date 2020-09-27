@@ -17,7 +17,7 @@ $harlequin: hsla(104, 100%, 50%, 1);
 
 /* SCSS RGB */
  $black: rgba(0, 0, 0, 1);
-$dartmouth-green: rgba(48, 107, 52, 1);
+$dartmouth-green: rgb(60, 201, 70);
 $maximum-blue-purple: rgba(151, 146, 227, 1);
 $light-periwinkle: rgba(207, 207, 234, 1);
 $harlequin: rgba(68, 255, 0, 1); 
@@ -39,6 +39,7 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
     font-family: 'Inconsolata', monospace;
     box-sizing: border-box;
 }
+
 
 .container {
     position: relative;
@@ -67,7 +68,7 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
     background: $maximum-blue-purple url(/assets/black-clover-pub-bigbang-drummer.jpg);
     color: $harlequin;
     background-size: cover;
-    background-attachment: fixex;
+    background-attachment: fixed;
 }
 
 .container .section:nth-child(3) {
@@ -78,8 +79,23 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
 }
 
 .container .section:nth-child(4) {
-    background: $dartmouth-green  center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
-    color: yellow;
+    padding-top: 0.5em;
+    background: whitesmoke  center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
+    color: $light-periwinkle;
     background-size: contain;
     background-attachment: fixed;
+}
+
+.h2 {
+    width: 30%;
+    font-size: 2em;
+}
+
+.hellyeah {
+    width: 1%;
+}
+
+.container .section h2, p {
+    width: 80%;
+    margin: 0 auto;
 }
