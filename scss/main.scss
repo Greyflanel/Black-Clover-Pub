@@ -97,10 +97,24 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
     width: 50%;
 }
 
-.clover {
+.clover1 {
     width: 35%;
-    position: relative;
-   
+    position: absolute;
+}
+
+.clover2 {
+    width: 35%;
+    position: absolute;
+}
+
+.clover3 {
+    width: 35%;
+    position: absolute;
+}
+
+.clover4 {
+    width: 35%;
+    position: absolute;
 }
 
 .container .section h1, p {
