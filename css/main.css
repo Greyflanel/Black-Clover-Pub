@@ -49,7 +49,7 @@
 
 .container .section:nth-child(4) {
   padding-top: 0.5em;
-  background: whitesmoke center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
+  background: yellow center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
   color: #cfcfea;
   background-size: contain;
   background-attachment: fixed;
