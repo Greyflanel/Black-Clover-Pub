@@ -27,8 +27,8 @@
 }
 
 .container .section:nth-child(1) {
-  background: #44ff00 url(/assets/unsplash.jpg);
-  color: yellow;
+  background: white url(/assets/brickwall.svg);
+  color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -36,6 +36,7 @@
 .container .section:nth-child(2) {
   background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
   color: #44ff00;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -49,22 +50,31 @@
 
 .container .section:nth-child(4) {
   padding-top: 0.5em;
-  background: yellow center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
+  background: #44ff00 center no-repeat url(/assets/unsplash.jpg);
   color: #cfcfea;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 
-.h2 {
+.h1 {
   width: 30%;
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
-.hellyeah {
-  width: 1%;
+.logo {
+  width: 50%;
 }
 
-.container .section h2, p {
-  width: 80%;
+.clover {
+  width: 35%;
+  position: relative;
+}
+
+.container .section h1, p {
+  width: 50%;
   margin: 0 auto;
+}
+
+#four {
+  height: 20vh;
 }

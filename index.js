@@ -4,14 +4,14 @@ function animation() {
   
   
   
-  tl2.to(".hellyeah", {
-    x: 50,
-    y: 100,
-    rotation: -25,
-    width: "40%",
-    duration: 1,
-    delay: 1,
-  });
-  
+  tl.set(".logo", { x: "10%", y: "50%",  transform: "rotate(-25deg)" });
+  tl2.set(".clover", { x: "222%", y: "-92%", width: "16%", transform: "rotate(-26deg)", filter: "blur(0.11em)" });
+
+  tl2.to(".clover", {
+    x: "168%", y: "-50%", width: "35%", duration: 2, delay: 2, filter: "blur(0)"
+  })
+
 }
+
+
 animation();

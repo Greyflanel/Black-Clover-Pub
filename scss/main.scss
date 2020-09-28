@@ -55,11 +55,12 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
     height: 100%;
     background-blend-mode: multiply;
     background-attachment: fixed;
+    
 }
 
 .container .section:nth-child(1) {
-    background: $harlequin url(/assets/unsplash.jpg);
-    color: yellow;
+    background: rgb(255, 255, 255) url(/assets/brickwall.svg);
+    color: $harlequin;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -67,6 +68,7 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
 .container .section:nth-child(2) {
     background: $maximum-blue-purple url(/assets/black-clover-pub-bigbang-drummer.jpg);
     color: $harlequin;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -80,22 +82,32 @@ $gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #4
 
 .container .section:nth-child(4) {
     padding-top: 0.5em;
-    background: yellow center no-repeat url(/assets/black-clover-pub-logo-svg.svg);
+    background: $harlequin center no-repeat url(/assets/unsplash.jpg);
     color: $light-periwinkle;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
-.h2 {
+.h1 {
     width: 30%;
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
-.hellyeah {
-    width: 1%;
+.logo {  
+    width: 50%;
 }
 
-.container .section h2, p {
-    width: 80%;
+.clover {
+    width: 35%;
+    position: relative;
+   
+}
+
+.container .section h1, p {
+    width: 50%;
     margin: 0 auto;
+}
+
+#four {
+    height: 20vh;
 }
