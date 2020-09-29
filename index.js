@@ -45,9 +45,9 @@ function animation() {
   tl1.to(".clover1", {
     delay: 2,
     display: "inline",
-    x: "380%",
+    x: "340%",
     y: "-100%",
-    width: "18%",
+    width: "20%",
     rotation: 360,
     filter: "blur(0)",
   });
@@ -55,9 +55,9 @@ function animation() {
   tl2.to(".clover2", {
     delay: 2,
     display: "inline",
-    x: "15%",
+    x: "10%",
     y: "-110%",
-    width: "18%",
+    width: "20%",
     rotation: 370,
     filter: "blur(0)",
   });
@@ -65,9 +65,9 @@ function animation() {
   tl3.to(".clover3", {
     delay: 2,
     display: "inline",
-    x: "420%",
-    y: "28%",
-    width: "18%",
+    x: "380%",
+    y: "10%",
+    width: "20%",
     rotation: 380,
     filter: "blur(0)",
   });
@@ -76,8 +76,8 @@ function animation() {
     delay: 2,
     display: "inline",
     x: "250%",
-    y: "32%",
-    width: "18%",
+    y: "18%",
+    width: "20%",
     rotation: 400,
     filter: "blur(0)",
   });
