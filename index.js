@@ -12,7 +12,7 @@ function animation() {
     y: "-93%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.11em)",
+    filter: "blur(0.14em)",
   });
 
   tl2.set(".clover2", {
@@ -21,7 +21,7 @@ function animation() {
     y: "-93%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.11em)",
+    filter: "blur(0.14em)",
   });
 
   tl3.set(".clover3", {
@@ -30,7 +30,7 @@ function animation() {
     y: "-93%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.11em)",
+    filter: "blur(0.14em)",
   });
 
   tl4.set(".clover4", {
@@ -39,42 +39,46 @@ function animation() {
     y: "-93%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.11em)",
+    filter: "blur(0.14em)",
   });
 
   tl1.to(".clover1", {
-    delay: 1.2,
+    delay: 5,
     display: "inline",
     x: "380%",
     y: "-100%",
     width: "18%",
+    rotation: 360,
     filter: "blur(0)",
   });
   
   tl2.to(".clover2", {
-    delay: 1.2,
+    delay: 5,
     display: "inline",
     x: "20%",
     y: "-110%",
     width: "18%",
+    rotation: 360,
     filter: "blur(0)",
   });
 
   tl3.to(".clover3", {
-    delay: 1.2,
+    delay: 5,
     display: "inline",
     x: "400%",
     y: "28%",
     width: "18%",
+    rotation: 360,
     filter: "blur(0)",
   });
 
   tl4.to(".clover4", {
-    delay: 1.2,
+    delay: 5,
     display: "inline",
     x: "250%",
     y: "32%",
     width: "18%",
+    rotation: 360,
     filter: "blur(0)",
   });
 }
