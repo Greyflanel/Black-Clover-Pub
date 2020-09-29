@@ -43,7 +43,7 @@ function animation() {
   });
 
   tl1.to(".clover1", {
-    delay: 5,
+    delay: 2,
     display: "inline",
     x: "380%",
     y: "-100%",
@@ -53,32 +53,32 @@ function animation() {
   });
   
   tl2.to(".clover2", {
-    delay: 5,
+    delay: 2,
     display: "inline",
-    x: "20%",
+    x: "15%",
     y: "-110%",
     width: "18%",
-    rotation: 360,
+    rotation: 370,
     filter: "blur(0)",
   });
 
   tl3.to(".clover3", {
-    delay: 5,
+    delay: 2,
     display: "inline",
-    x: "400%",
+    x: "420%",
     y: "28%",
     width: "18%",
-    rotation: 360,
+    rotation: 380,
     filter: "blur(0)",
   });
 
   tl4.to(".clover4", {
-    delay: 5,
+    delay: 2,
     display: "inline",
     x: "250%",
     y: "32%",
     width: "18%",
-    rotation: 360,
+    rotation: 390,
     filter: "blur(0)",
   });
 }
