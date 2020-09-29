@@ -78,7 +78,7 @@ function animation() {
     x: "250%",
     y: "32%",
     width: "18%",
-    rotation: 390,
+    rotation: 400,
     filter: "blur(0)",
   });
 }
