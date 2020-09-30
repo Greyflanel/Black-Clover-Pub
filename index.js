@@ -1,15 +1,27 @@
 function animation() {
   let tl = gsap.timeline({ repeat: 0 });
+  let tlContent = gsap.timeline({ repeat: 0 })
   let tl1 = gsap.timeline({ repeat: 0 });
   let tl2 = gsap.timeline({ repeat: 0 });
   let tl3 = gsap.timeline({ repeat: 0 });
   let tl4 = gsap.timeline({ repeat: 0 });
+  let tl5 = gsap.timeline({ repeat: 0 });
+  let tl6 = gsap.timeline({ repeat: 0 });
+  let tl7 = gsap.timeline({ repeat: 0 });
+  let tl8 = gsap.timeline({ repeat: 0 });
 
-  tl.set(".logo", { x: "25%", y: "50%", transform: "rotate(-25deg)" });
+  // Sets Initial Values
+
+  tlContent.set("#clovers", { display: "block" });
+
+  tl.set(".logo", { x: "25%", y: "52%", transform: "rotate(-25deg)" });
+
+// Clovers
+
   tl1.set(".clover1", {
     display: "inline",
     x: "271%",
-    y: "-93%",
+    y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
     filter: "blur(0.14em)",
@@ -18,7 +30,7 @@ function animation() {
   tl2.set(".clover2", {
     display: "inline",
     x: "271%",
-    y: "-93%",
+    y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
     filter: "blur(0.14em)",
@@ -27,7 +39,7 @@ function animation() {
   tl3.set(".clover3", {
     display: "inline",
     x: "271%",
-    y: "-93%",
+    y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
     filter: "blur(0.14em)",
@@ -36,11 +48,37 @@ function animation() {
   tl4.set(".clover4", {
     display: "inline",
     x: "271%",
-    y: "-93%",
+    y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
     filter: "blur(0.14em)",
   });
+
+// Text
+
+  tl5.set(".clover1-text", {
+    display: "none",
+    opacity: 0
+  });
+
+  tl6.set(".clover2-text", {
+    display: "none",
+    opacity: 0
+  });
+
+
+  tl7.set(".clover3-text", {
+    display: "none",
+    opacity: 0
+  });
+
+  tl8.set(".clover4-text", {
+    display: "none",
+    opacity: 0
+  });
+  
+  
+// Transitions
 
   tl1.to(".clover1", {
     delay: 2,
@@ -56,7 +94,7 @@ function animation() {
     delay: 2,
     display: "inline",
     x: "10%",
-    y: "-110%",
+    y: "-108%",
     width: "20%",
     rotation: 370,
     filter: "blur(0)",
@@ -78,9 +116,14 @@ function animation() {
     x: "250%",
     y: "18%",
     width: "20%",
-    rotation: 400,
+    rotation: 375,
     filter: "blur(0)",
   });
+
+  tl5.to(".clover1-text", { delay: 2.7, display: "inline", opacity: 1 });
+  tl6.to(".clover2-text", { delay: 2.7, display: "inline", opacity: 1 });
+  tl7.to(".clover3-text", { delay: 2.7, display: "inline", opacity: 1 });
+  tl8.to(".clover4-text", { delay: 2.7, display: "inline", opacity: 1 });
 }
 
 animation();

@@ -1,127 +1,166 @@
 /* Coolors Exported Palette - https://coolors.co/000000-306b34-9792e3-cfcfea-44ff00 */
-
-
 /* SCSS HEX */
- $black: #000000ff;
-$dartmouth-green: #306b34ff;
-$maximum-blue-purple: #9792e3ff;
-$light-periwinkle: #cfcfeaff;
-$harlequin: #44ff00ff; 
-
 /* SCSS HSL */
- $black: hsla(0, 0%, 0%, 1);
-$dartmouth-green: hsla(124, 38%, 30%, 1);
-$maximum-blue-purple: hsla(244, 59%, 73%, 1);
-$light-periwinkle: hsla(240, 39%, 86%, 1);
-$harlequin: hsla(104, 100%, 50%, 1); 
-
 /* SCSS RGB */
- $black: rgba(0, 0, 0, 1);
-$dartmouth-green: rgb(60, 201, 70);
-$maximum-blue-purple: rgba(151, 146, 227, 1);
-$light-periwinkle: rgba(207, 207, 234, 1);
-$harlequin: rgba(68, 255, 0, 1); 
-
-
-$gradient-top: linear-gradient(0deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-right: linear-gradient(90deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-bottom: linear-gradient(180deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-left: linear-gradient(270deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-top-right: linear-gradient(45deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-bottom-right: linear-gradient(135deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-top-left: linear-gradient(225deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-bottom-left: linear-gradient(315deg, #000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-$gradient-radial: radial-gradient(#000000ff, #306b34ff, #9792e3ff, #cfcfeaff, #44ff00ff);
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inconsolata', monospace;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
 .container .section {
-    position: relative;
-    padding-top: 2em;
-    width: 100%;
-    height: 100%;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    
+  position: relative;
+  padding-top: 2em;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 
 .container .section:nth-child(1) {
-    background: rgb(255, 255, 255) url(/assets/brickwall.svg);
-    color: $harlequin;
-    background-size: cover;
-    background-attachment: fixed;
+  background: white url(/assets/brickwall.svg);
+  color: #44ff00;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container .section:nth-child(2) {
-    background: $maximum-blue-purple url(/assets/black-clover-pub-bigbang-drummer.jpg);
-    color: $harlequin;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
+  background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
+  color: #44ff00;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container .section:nth-child(3) {
-    background: $light-periwinkle url(/assets/black-clover-pub-live-band.jpg);
-    color: rgb(0, 195, 255);
-    background-size: cover;
-    background-attachment: fixed;
+  background: #cfcfea url(/assets/black-clover-pub-live-band.jpg);
+  color: #00c3ff;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container .section:nth-child(4) {
-    padding-top: 0.5em;
-    background: $harlequin center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
-    color: $light-periwinkle;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.h1 {
-    width: 30%;
-    font-size: 2.3em;
-}
-
-.logo {  
-    width: 50%;
-}
-
-.clover1 {
-    width: 35%;
-    position: absolute;
-}
-
-.clover2 {
-    width: 35%;
-    position: absolute;
-}
-
-.clover3 {
-    width: 35%;
-    position: absolute;
-}
-
-.clover4 {
-    width: 35%;
-    position: absolute;
+  padding-top: 0.5em;
+  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
+  color: #cfcfea;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container .section h1, p {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 50%;
+}
+
+#clovers {
+  display: none;
+}
+
+.clover1 {
+  width: 35%;
+  position: absolute;
+}
+
+.clover2 {
+  width: 35%;
+  position: absolute;
+}
+
+.clover3 {
+  width: 35%;
+  position: absolute;
+}
+
+.clover4 {
+  width: 35%;
+  position: absolute;
 }
 
 #four {
-    height: 20vh;
+  height: 20vh;
 }
+
+span {
+  font-size: 1.5em;
+  line-height: 0.5em;
+  color: white;
+}
+
+.clover1-text {
+  position: absolute;
+ width: 80%;
+  margin-left: -73%;
+  margin-top: 28%;
+  z-index: 10;
+
+  .weekly {
+   font-size: 200%;
+   margin-left: -17%;
+  }
+}
+
+
+.clover2-text {
+  position: absolute;
+  width: 80%;
+  margin-left: -73%;
+  margin-top: 30%;
+  z-index: 10;
+
+  .karaoke {
+    font-size: 200%;
+  }
+  .and {
+    margin-left: 16%;
+  }
+}
+
+.clover3-text {
+  position: absolute;
+  width: 80%;
+  margin-left: -85%;
+  margin-top: 34%;
+  z-index: 10;
+  
+  .tvs {
+    font-size: 200%;
+  }
+  .play {
+    margin-right: 10%;
+  }
+}
+
+.clover4-text {
+  position: absolute;
+  width: 80%;
+  margin-left: -73%;
+  margin-top: 30%;
+  z-index: 10;
+
+.music {
+  margin-left: -7%;
+  font-size: 200%;
+}
+
+  .evenings {
+  margin: 8%;
+}
+
+.friday, .saturday {
+  margin-left: -20%;
+}
+}
+
