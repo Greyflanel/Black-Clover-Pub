@@ -24,7 +24,7 @@ function animation() {
     y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.14em)",
+    filter: "blur(0.1em)",
   });
 
   tl2.set(".clover2", {
@@ -33,7 +33,7 @@ function animation() {
     y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.14em)",
+    filter: "blur(0.1em)",
   });
 
   tl3.set(".clover3", {
@@ -42,7 +42,7 @@ function animation() {
     y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.14em)",
+    filter: "blur(0.1em)",
   });
 
   tl4.set(".clover4", {
@@ -51,7 +51,7 @@ function animation() {
     y: "-89%",
     width: "16%",
     transform: "rotate(-26deg)",
-    filter: "blur(0.14em)",
+    filter: "blur(0.1em)",
   });
 
 // Text
