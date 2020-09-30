@@ -1,3 +1,39 @@
+// let mqls = [
+//   window.matchMedia("(min-width: 1200px)"),
+//   window.matchMedia("(min-width: 1000px)"),
+//   window.matchMedia("(min-width: 800px)"),
+//   window.matchMedia("(min-width: 600px)"),
+//   window.matchMedia("(min-width: 400px)"),
+//   window.matchMedia("(min-width: 280px)"),
+//   window.matchMedia("(min-width: 200px)"),
+// ];
+
+// function mediaqueryresponse() {
+
+// }
+
+// if (mqls[0].matches) {
+    
+//   } else if (mqls[1].matches) {
+    
+//   } else if (mqls[2].matches) {
+    
+//   } else if (mqls[3].matches) {
+//     t
+//   } else if (mqls[4].matches) {
+    
+//   } else if (mqls[5].matches) {
+    
+//   } else if (mqls[6].matches) {
+    
+//   }
+
+// for (let i = 0; i < mqls.length; i++) {
+//   mediaqueryresponse(mqls[i]);
+//   mqls[i].addEventListener(mediaqueryresponse);
+// }
+
+
 function animation() {
   let tl = gsap.timeline({ repeat: 0 });
   let tlContent = gsap.timeline({ repeat: 0 })
