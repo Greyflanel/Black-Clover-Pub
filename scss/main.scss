@@ -7,6 +7,7 @@
   padding: 0;
   font-family: 'Inconsolata', monospace;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -69,9 +70,9 @@ color: white;
 }
 
 .container .section:nth-child(2) {
-  background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
-  color: #44ff00;
-  width: 100%;
+  padding-top: 0.5em;
+  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
+  color: #cfcfea;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -84,16 +85,16 @@ color: white;
 }
 
 .container .section:nth-child(4) {
-  padding-top: 0.5em;
-  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
-  color: #cfcfea;
+  background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
+  color: #44ff00;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .container .section:nth-child(5) {
   padding-top: 0.5em;
-  background: white center no-repeat url(/assets/brickwall.svg);
+  background: hsl(0, 0%, 80%) center no-repeat;
   color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
@@ -139,7 +140,7 @@ color: white;
   position: absolute;
 }
 
-#four {
+#footer {
   height: 25vh;
 }
 
@@ -219,6 +220,10 @@ span {
   margin-left: -20%;
 }
 
-
+.bottom-logo {
+  width: 25%;
+  height: auto;
+  margin-left: 2%;
+}
 
 /*# sourceMappingURL=main.css.map */

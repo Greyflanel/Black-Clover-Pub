@@ -8,6 +8,7 @@
   font-family: 'Inconsolata', monospace;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -77,9 +78,9 @@ a:hover {
 }
 
 .container .section:nth-child(2) {
-  background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
-  color: #44ff00;
-  width: 100%;
+  padding-top: 0.5em;
+  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
+  color: #cfcfea;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -92,16 +93,16 @@ a:hover {
 }
 
 .container .section:nth-child(4) {
-  padding-top: 0.5em;
-  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
-  color: #cfcfea;
+  background: #9792e3 url(/assets/black-clover-pub-bigbang-drummer.jpg);
+  color: #44ff00;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .container .section:nth-child(5) {
   padding-top: 0.5em;
-  background: white center no-repeat url(/assets/brickwall.svg);
+  background: #cccccc center no-repeat;
   color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
@@ -146,7 +147,7 @@ a:hover {
   position: absolute;
 }
 
-#four {
+#footer {
   height: 25vh;
 }
 
@@ -224,4 +225,10 @@ span {
 
 .clover4-text .friday, .clover4-text .saturday {
   margin-left: -20%;
+}
+
+.bottom-logo {
+  width: 25%;
+  height: auto;
+  margin-left: 2%;
 }

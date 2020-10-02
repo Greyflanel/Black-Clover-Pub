@@ -11,7 +11,7 @@ let mqls = [
  
 
 function mediaqueryresponse(mql) {
-  let tlScroll = gsap.timeline({ repeat: 0 })
+  let tlScroll = gsap.timeline({});
   let tl = gsap.timeline({ repeat: 0 });
   let tlContent = gsap.timeline({ repeat: 0 });
   let tl1 = gsap.timeline({ repeat: 0 });
@@ -33,7 +33,7 @@ function mediaqueryresponse(mql) {
   let tlMediaQueryClover4 = gsap.timeline({ repeat: 0 });
 
   // Sets Initial Values
-
+  tlScroll.set(window, {x: 0, y: 0})
   tlContent.set("#clovers", { display: "block" });
   tl.set(".logo", { x: "25%", y: "52%", transform: "rotate(-25deg)" });
   tlScroll.to(".container", {
