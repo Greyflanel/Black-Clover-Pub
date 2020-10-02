@@ -11,6 +11,7 @@ let mqls = [
  
 
 function mediaqueryresponse(mql) {
+  let tlScroll = gsap.timeline({ repeat: 0 })
   let tl = gsap.timeline({ repeat: 0 });
   let tlContent = gsap.timeline({ repeat: 0 });
   let tl1 = gsap.timeline({ repeat: 0 });
@@ -35,7 +36,11 @@ function mediaqueryresponse(mql) {
 
   tlContent.set("#clovers", { display: "block" });
   tl.set(".logo", { x: "25%", y: "52%", transform: "rotate(-25deg)" });
-
+  tlScroll.to(".container", {
+    scrollTrigger: {
+      trigger: ".container",
+    },
+  });
   // Clovers
 
   tl1.set(".clover1", {
@@ -169,11 +174,20 @@ if (mqls[0].matches) {
 
 } else if (mqls[1].matches) {
   tlMediaQuery.set("#clovers", {
-    backgroundColor: "blue",
-    fontSize: "0.8em",
-    scale: "1",
-    paddingTop: "3%"
+    fontSize: "1em",
+    scale: "0.9",
+    paddingTop: "5%"
   });
+  tlMediaQueryClover1.to(".clover1", {
+    x: "360%",
+    y: "-110%",
+    delay: 2
+  });
+  tlMediaQueryClover2.to(".clover2", {
+    x: "-15%",
+    y: "-100%",
+    delay: 2
+  })
 
     } else if (mqls[2].matches) {
 tlMediaQuery.set("#clovers", {

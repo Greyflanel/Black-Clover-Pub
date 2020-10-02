@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -26,34 +27,46 @@
 
 .header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: tranparent;
   width: 100%;
   z-index: 20;
-  list-style-type: none;
   text-align: center;
-  margin-top: 3%;
-  
+  margin-top: 2%;
 }
 
 .nav {
-  font-size: clamp(1em, 1.5em, 2em);
-  
+  font-size: clamp(1em, 1.7em, 2em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
 }
 
-.nav li:nth-child(2) {
-  margin-left: 4%;
+.nav li {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.nav li:nth-child(3) {
-  margin-left: 4%;
+a {
+  color: #44ff00;
+  text-decoration: none;
 }
 
-.nav li:nth-child(4) {
-  margin-left: 4%;
+a:active {
+  color: white;
 }
 
-li {
-  display: inline;
+a:hover {
+  color: white;
+  border-radius: 2px;
 }
 
 .container .section:nth-child(1) {
@@ -82,6 +95,14 @@ li {
   padding-top: 0.5em;
   background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
   color: #cfcfea;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container .section:nth-child(5) {
+  padding-top: 0.5em;
+  background: white center no-repeat url(/assets/brickwall.svg);
+  color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -126,7 +147,7 @@ li {
 }
 
 #four {
-  height: 20vh;
+  height: 25vh;
 }
 
 span {
@@ -204,7 +225,3 @@ span {
 .clover4-text .friday, .clover4-text .saturday {
   margin-left: -20%;
 }
-
-
-
-/*# sourceMappingURL=main.css.map */

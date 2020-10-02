@@ -6,8 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -24,6 +23,43 @@
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
+
+.header {
+  position: fixed;
+  display: flex;
+  background-color: tranparent;
+  width: 100%;
+  z-index: 20;
+  text-align: center;
+  margin-top: 2%
+}
+
+.nav {
+  font-size: clamp(1em, 1.7em, 2em);
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.nav li {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #44ff00;
+  text-decoration: none;
+  &:active {
+color: white;
+}
+&:hover {
+  color: white;
+  border-radius: 2px;
+}
+}
+
+
 
 .container .section:nth-child(1) {
   background: white url(/assets/brickwall.svg);
@@ -54,6 +90,15 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.container .section:nth-child(5) {
+  padding-top: 0.5em;
+  background: white center no-repeat url(/assets/brickwall.svg);
+  color: #44ff00;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 
 .container .section h1, p {
   width: 50%;
@@ -95,7 +140,7 @@
 }
 
 #four {
-  height: 20vh;
+  height: 25vh;
 }
 
 span {
@@ -106,18 +151,17 @@ span {
 
 .clover1-text {
   position: absolute;
- width: 80%;
+  width: 80%;
   margin-left: -73%;
   margin-top: 28%;
   z-index: 10;
-
-  .weekly {
-   font-size: 200%;
-   color: rgb(238, 255, 0);
-   margin-left: -17%;
-  }
 }
 
+.clover1-text .weekly {
+  font-size: 200%;
+  color: #eeff00;
+  margin-left: -17%;
+}
 
 .clover2-text {
   position: absolute;
@@ -125,14 +169,15 @@ span {
   margin-left: -73%;
   margin-top: 30%;
   z-index: 10;
+}
 
-  .karaoke {
-    font-size: 200%;
-    color: rgb(238, 255, 0);
-  }
-  .and {
-    margin-left: 16%;
-  }
+.clover2-text .karaoke {
+  font-size: 200%;
+  color: #eeff00;
+}
+
+.clover2-text .and {
+  margin-left: 16%;
 }
 
 .clover3-text {
@@ -141,14 +186,15 @@ span {
   margin-left: -85%;
   margin-top: 34%;
   z-index: 10;
-  
-  .tvs {
-    font-size: 200%;
-    color: rgb(238, 255, 0);
-  }
-  .play {
-    margin-right: 10%;
-  }
+}
+
+.clover3-text .tvs {
+  font-size: 200%;
+  color: #eeff00;
+}
+
+.clover3-text .play {
+  margin-right: 10%;
 }
 
 .clover4-text {
@@ -157,20 +203,22 @@ span {
   margin-left: -73%;
   margin-top: 30%;
   z-index: 10;
-
-.music {
-  margin-left: -7%;
-  font-size: 200%;
-  color:rgb(238, 255, 0);
 }
 
-  .evenings {
+.clover4-text .music {
+  margin-left: -7%;
+  font-size: 200%;
+  color: #eeff00;
+}
+
+.clover4-text .evenings {
   margin: 8%;
 }
 
-.friday, .saturday {
+.clover4-text .friday, .clover4-text .saturday {
   margin-left: -20%;
 }
-}
 
 
+
+/*# sourceMappingURL=main.css.map */
