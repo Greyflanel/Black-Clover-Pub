@@ -187,6 +187,10 @@ if (mqls[0].matches) {
     x: "-15%",
     y: "-100%",
     delay: 2
+  });
+  tlMediaQueryClover3.to(".clover3", {
+    x: "400%",
+    delay: 2
   })
 
     } else if (mqls[2].matches) {
