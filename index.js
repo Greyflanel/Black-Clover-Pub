@@ -251,7 +251,7 @@ function mediaqueryresponse(mql) {
       }
     );
   }
-}
+};
 
 for (let i = 0; i < mqls.length; i++) {
   mediaqueryresponse(mqls[i]);
