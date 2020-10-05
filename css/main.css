@@ -61,17 +61,13 @@ a {
   text-decoration: none;
 }
 
-a:active {
-  color: white;
-}
-
 a:hover {
   color: white;
   border-radius: 2px;
 }
 
 .container .section:nth-child(1) {
-  background: white url(/assets/brickwall.svg);
+  background: url(/assets/brickwall.svg);
   color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
@@ -102,7 +98,7 @@ a:hover {
 
 .container .section:nth-child(5) {
   padding-top: 0.5em;
-  background: #cccccc center no-repeat;
+  background: white center no-repeat;
   color: #44ff00;
   background-size: cover;
   background-attachment: fixed;

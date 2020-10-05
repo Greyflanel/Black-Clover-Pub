@@ -257,3 +257,4 @@ for (let i = 0; i < mqls.length; i++) {
   mediaqueryresponse(mqls[i]);
   mqls[i].addEventListener(mediaqueryresponse, {});
 }
+
