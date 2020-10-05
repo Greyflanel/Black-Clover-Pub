@@ -48,15 +48,12 @@ function scrollAnimation() {
     },
   });
   gsap.from(".bottom-clover", {
-    x: "1%",
     rotate: "25deg",
     scrollTrigger: {
        trigger: "#footer",
        scroller: ".container",
        scrub: true,
        ease: "none",
-       
-       
        //events: onEnter onLeave onEnterBack onLeaveBack
        toggleActions: "play reverse none reset",
        //options: play, pause, resume, reset, restart, complete, reverse,none
@@ -66,7 +63,6 @@ function scrollAnimation() {
   gsap.to(".bottom-clover", {
     x: "160vw",
     scale: 0.4,
-    
     scrollTrigger: {
       trigger: "#footer",
       scroller: ".container",
