@@ -5,6 +5,7 @@ let timeline = gsap.timeline({
 
 
 function scrollAnimation() {
+  
    gsap.to(".nav", {
      color: "yellow",
      filter: "brightness(500%)",
