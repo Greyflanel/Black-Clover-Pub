@@ -13,7 +13,7 @@ function scrollAnimation() {
        scroller: ".container",
        scrub: true,
        ease: "power1-in",
-       start: "top center", //when top of herman passes the bottom viewport height
+       start: "top center", //when top  passes the bottom viewport height
        end: "bottom 75%", //when bottom of herman passes the bottom viewport height
 
        //events: onEnter onLeave onEnterBack onLeaveBack
@@ -47,39 +47,50 @@ function scrollAnimation() {
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.from(".bottom-clover", {
-    rotate: "25deg",
-    scrollTrigger: {
-       trigger: "#footer",
-       scroller: ".container",
-       scrub: true,
-       ease: "none",
-       //events: onEnter onLeave onEnterBack onLeaveBack
-       toggleActions: "play reverse none reset",
-       //options: play, pause, resume, reset, restart, complete, reverse,none
-     }
-     
+  
+  gsap.set(".contact-clover", {
+    x: "40vw",
+    y: "40vh",
   });
-  gsap.to(".bottom-clover", {
-    x: "160vw",
-    scale: 0.4,
+  gsap.to(".contact-clover", {
+    x: "50vw",
+    scale: 3,
     scrollTrigger: {
-      trigger: "#footer",
+      trigger: "#contact",
       scroller: ".container",
-      scrub: true,
-      ease: "none",
-      
-      //events: onEnter onLeave onEnterBack onLeaveBack
-      toggleActions: "play reverse none reset",
-      //options: play, pause, resume, reset, restart, complete, reverse,none
+      scrub: 3.5,
+      ease: "power2",
+      start: "top center",
+      end: "top 85%",
+      toggleActions: "restart complete none reset",
     },
   });
-  // gsap.to(".bottom-clover", {
-  //   rotation: 96,
-  //   duration: 10,
-  //   repeat: 10
-  // })
-}
+  gsap.set(".bottom-logo", {
+    x: "-8vw",
+    y: "10vh"
+  })
+  gsap.set(".bottom-clover", {
+    x: "60vw",
+    y: "10vh"
+  })
+  gsap.set("footer", {
+    y: "160vh",
+    scale: 0.8
+  })
+};
+gsap.to("footer", {
+  y: "-11vh",
+  scrollTrigger: {
+    trigger: "#contact",
+    scroller: ".container",
+    scale: 1,
+    scrub: 8,
+    ease: "power2-in",
+    start: "top 25%",
+    end: "bottom bottom",
+    toggleActions: "restart complete reverse reset"
+  },
+});
 
 
 ScrollTrigger.addEventListener("scrollEnd", () =>
