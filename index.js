@@ -21,6 +21,7 @@ function mediaqueryresponse(mql) {
   let tl7 = gsap.timeline({ repeat: 0 });
   let tl8 = gsap.timeline({ repeat: 0 });
 
+  let tlMediaQueryNav = gsap.timeline({ repeat: 0});
   let tlMediaQuery = gsap.timeline({ repeat: 0 });
   let tlMediaQueryText = gsap.timeline({ repeat: 0 });
   let tlMediaQueryClovers = gsap.timeline({ repeat: 0 });
@@ -46,7 +47,7 @@ function mediaqueryresponse(mql) {
     filter: "blur(0.1em)",
   });
 
-  // Text
+  // Setting Clover-Text
 
   tl5.set(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
     display: "none",
@@ -54,7 +55,7 @@ function mediaqueryresponse(mql) {
   });
 
 
-  // Transitions
+  // Clover Transitions
 
   tl1.to(".clover1", {
     delay: 2,
@@ -104,28 +105,41 @@ function mediaqueryresponse(mql) {
     opacity: 1
   });
   
+// Media Queries
 
   if (mqls[0].matches) {
-    tlMediaQuery.set("#clovers", {
-      
+    tlMediaQuery.set(".logo", {
+      paddingTop: "2.5%",
+      paddingLeft: "1.8%",
+      paddingBottom: "3%"
     });
     tlMediaQueryClover1.to(".clover1", {
-      x: "350%",
+      x: "150%",
+      y: "-48%",
       delay: 2,
     });
     tlMediaQueryClover2.to(".clover2", {
-      x: "-3%",
-      y: "-120%",
+      x: "-200%",
+      y: "-50%",
       delay: 2,
     });
     tlMediaQueryClover3.to(".clover3", {
-      x: "410%",
+      x: "200%",
       delay: 2,
     });
     tlMediaQueryClover4.to(".clover4", {
-      x: "270%",
+      x: "70%",
+      y: "72%",
       delay: 2,
     });
+    tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
+      fontSize: "1.4em",
+      marginTop: "32%"
+    });
+    tlMediaQueryNav.set("a", {
+      fontSize: "1.5em",
+      fontWeight: "100"
+    })
   // } else if (mqls[1].matches) {
   //   tlMediaQuery.set("#clovers", {
   //     fontSize: "1em",
