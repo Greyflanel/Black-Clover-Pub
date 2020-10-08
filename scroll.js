@@ -7,7 +7,7 @@ let timeline = gsap.timeline({
 function scrollAnimation() {
   
    gsap.to(".nav", {
-     color: "yellow",
+     color: "blue",
      filter: "brightness(500%)",
      scrollTrigger: {
        trigger: "#live-music",
@@ -23,7 +23,7 @@ function scrollAnimation() {
      },
    }); 
   gsap.to(".nav", {
-    color: "white",
+    color: "blue",
     filter: "brightness(500%)",
     ease: "power1-in",
     scrollTrigger: {
@@ -36,7 +36,7 @@ function scrollAnimation() {
     },
   });
   gsap.to(".nav", {
-    color: "white",
+    color: "blue",
     filter: "brightness(500%)",
     ease: "power1-in",
     scrollTrigger: {

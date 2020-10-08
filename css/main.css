@@ -161,26 +161,26 @@ span {
   position: absolute;
   width: 80%;
   margin-left: -73%;
-  margin-top: 28%;
+  margin-top: 26%;
   z-index: 10;
 }
 
 .clover1-text .weekly {
   font-size: 200%;
   color: #eeff00;
-  margin-left: -17%;
+  margin-left: -18%;
 }
 
 .clover2-text {
   position: absolute;
   width: 80%;
   margin-left: -73%;
-  margin-top: 30%;
+  margin-top: 34.5%;
   z-index: 10;
 }
 
 .clover2-text .karaoke {
-  font-size: 200%;
+  font-size: 213%;
   color: #eeff00;
 }
 
@@ -190,49 +190,47 @@ span {
 
 .clover3-text {
   position: absolute;
-  width: 80%;
-  margin-left: -85%;
-  margin-top: 34%;
+  width: 85%;
+  margin-left: -84%;
+  margin-top: 32%;
   z-index: 10;
 }
 
 .clover3-text .tvs {
+  margin-left: -7%;
   font-size: 190%;
   color: #eeff00;
 }
 
-.clover3-text .play {
-  margin-right: 10%;
+.play .sports {
+  margin-right: 20%;
 }
 
 .clover4-text {
   position: absolute;
   width: 80%;
   margin-left: -73%;
-  margin-top: 30%;
+  margin-top: 28%;
   z-index: 10;
 }
 
 .clover4-text .music {
-  margin-left: -7%;
+  margin-left: -9%;
   font-size: 200%;
   color: #eeff00;
 }
 
 .clover4-text .evenings {
-  margin: 8%;
+  margin: 7%;
+  font-size: 150%;
 }
 
 .clover4-text .friday, .clover4-text .saturday {
-  margin-left: -20%;
+  margin-left: -15%;
 }
 
 .bottom-logo {
   padding: 1%;
-}
-
-#live-music {
-  padding: 5% 7%;
 }
 
 .calendar {

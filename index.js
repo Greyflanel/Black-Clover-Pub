@@ -69,8 +69,8 @@ function mediaqueryresponse(mql) {
   tl2.to(".clover2", {
     delay: 2,
     display: "inline",
-    x: "-195%",
-    y: "-40%",
+    x: "-185%",
+    y: "-45%",
     width: "19%",
     rotation: 365,
     filter: "blur(0)",
