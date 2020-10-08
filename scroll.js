@@ -85,7 +85,7 @@ gsap.to("footer", {
     trigger: "#contact",
     scroller: ".container",
     scale: 1,
-    scrub: 8,
+    scrub: 7,
     ease: "power2-in",
     start: "top 25%",
     end: "bottom bottom",

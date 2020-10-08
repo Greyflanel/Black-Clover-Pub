@@ -202,8 +202,16 @@ span {
   color: #eeff00;
 }
 
-.play .sports {
-  margin-right: 20%;
+.play {
+  margin-left: 22%;
+}
+
+.tv-your {
+  margin-left: 30%;
+}
+
+.sports {
+  margin-right: 23%;
 }
 
 .clover4-text {
@@ -229,12 +237,26 @@ span {
   margin-left: -15%;
 }
 
+.happy-hour {
+  margin-left: 3.5%;
+}
+
+.happy-hour-everyday {
+  margin-left: 8%;
+}
+
+.karaoke-days {
+  margin-left: 2%;
+}
+
 .bottom-logo {
   padding: 1%;
 }
 
 .calendar {
-  width: 55vw;
+  width: 70vw;
   height: 90vh;
   border-radius: 5px;
+  margin-top: 4%;
+  margin-left: 10%;
 }
