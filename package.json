@@ -1,0 +1,32 @@
+{
+  "name": "black-clover-pub",
+  "version": "1.0.0",
+  "description": "Black Clover Pub San Antonio, TX website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greyflanel/Black-Clover-Pub.git"
+  },
+  "author": "Richard Lovelace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Greyflanel/Black-Clover-Pub/issues"
+  },
+  "homepage": "https://github.com/Greyflanel/Black-Clover-Pub#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2020": "^1.0.2",
+    "cli": "^1.0.1",
+    "core-js": "^3.6.5",
+    "webpack": "^5.1.0"
+  },
+  "dependencies": {
+    
+  }
+}
