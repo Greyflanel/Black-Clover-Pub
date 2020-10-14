@@ -6,8 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -28,12 +27,8 @@
 
 .header {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: tranparent;
   width: 100%;
   z-index: 20;
@@ -42,14 +37,9 @@
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0.8;
-      -ms-flex-positive: 0.8;
-          flex-grow: 0.8;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-grow: 0.8;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -164,23 +154,27 @@ span {
 
 .clover1-text {
   position: absolute;
-  width: 80%;
-  margin-left: -73%;
-  margin-top: -3%;
+  top: -6.5%;
+  left: -62%;
   z-index: 10;
 }
 
 .clover1-text .weekly {
   font-size: 200%;
   color: #eeff00;
-  margin-left: -11%;
+  margin-left: -25px;
+}
+
+.clover1-text .specials {
+  font-size: 200%;
+  color: #eeff00;
+  margin-left: -5px;
 }
 
 .clover2-text {
   position: absolute;
-  width: 80%;
-  margin-left: -71%;
-  margin-top: 4%;
+  top: 4%;
+  left: -60%;
   z-index: 10;
 }
 
@@ -190,35 +184,31 @@ span {
 }
 
 .clover2-text .and {
-  margin-left: 14%;
+  margin-left: 28px;
 }
 
 .clover3-text {
   position: absolute;
-  margin-left: 50%;
-  margin-top: 8%;
-  z-index: 10;
+  z-index: 100;
+  top: 5%;
+  left: -70%;
 }
 
 .clover3-text .tvs {
-  margin-left: -12%;
+  margin-left: -12px;
   font-size: 190%;
   color: #eeff00;
 }
 
 .play {
-  margin-left: 2%;
-}
-
-.sports {
-  margin-left: -5%;
+  margin-left: 9px;
 }
 
 .clover4-text {
   position: absolute;
-  width: 100%;
-  margin-top: -2%;
   z-index: 10;
+  left: -65%;
+  bottom: 6%;
 }
 
 .clover4-text .music {
@@ -228,24 +218,24 @@ span {
 }
 
 .clover4-text .evenings {
-  margin: 6%;
+  margin: 12px;
   font-size: 150%;
 }
 
 .clover4-text .friday, .clover4-text .saturday {
-  margin-left: -10%;
+  margin-left: -15px;
 }
 
 .happy-hour {
-  margin-left: 3.5%;
+  margin-left: 3.5px;
 }
 
 .happy-hour-everyday {
-  margin-left: 8%;
+  margin-left: 8px;
 }
 
 .karaoke-days {
-  margin-left: 2%;
+  margin-left: 2px;
 }
 
 .bottom-logo {
@@ -260,3 +250,4 @@ span {
   margin-top: 4%;
   margin-left: 10%;
 }
+/*# sourceMappingURL=main.css.map */

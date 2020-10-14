@@ -1,6 +1,6 @@
 let mqls = [
   window.matchMedia("(min-width: 300px)"),
-  window.matchMedia("(min-width: 450px)"),
+  window.matchMedia("(min-width: 380px)"),
   window.matchMedia("(min-width: 650px)"),
   window.matchMedia("(min-width: 800px)"),
   window.matchMedia("(min-width: 850px)"),
@@ -124,7 +124,7 @@ function mediaqueryresponse(mql) {
     });
     tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
       scale: 1.8,
-      x: "158%",
+      x: "155%",
       y: "-55%",
       
     })
@@ -148,13 +148,12 @@ function mediaqueryresponse(mql) {
     });
     tlMediaQueryClover4.to(".clover4", {
       x: "-85%",
-      y: "295%",
+      y: "288%",
       delay: 2,
       scale: 2
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
-      fontSize: "0.7em",
-      marginLeft: "-163%",
+      fontSize: "0.6em",
       width: "300%"
     });
     
