@@ -1,11 +1,11 @@
 let mqls = [
-  window.matchMedia("(min-width: 1281px)"),
-  window.matchMedia("(min-width: 1000px)"),
-  window.matchMedia("(min-width: 850px)"),
-  window.matchMedia("(min-width: 650px)"),
-  window.matchMedia("(min-width: 450px)"),
   window.matchMedia("(min-width: 300px)"),
-  window.matchMedia("(min-width: 200px)"),
+  window.matchMedia("(min-width: 450px)"),
+  window.matchMedia("(min-width: 650px)"),
+  window.matchMedia("(min-width: 800px)"),
+  window.matchMedia("(min-width: 850px)"),
+  window.matchMedia("(min-width: 1000px)"),
+  window.matchMedia("(min-width: 12810px)"),
 ];
 
 function mediaqueryresponse(mql) {
@@ -44,7 +44,7 @@ function mediaqueryresponse(mql) {
     y: "-25%",
     width: "16vw",
     transform: "rotate(-28deg)",
-    filter: "blur(0.1em)",
+    filter: "blur(0.06em)",
   });
 
   // Setting Clover-Text
@@ -52,9 +52,11 @@ function mediaqueryresponse(mql) {
   tl5.set(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
     display: "none",
     opacity: 0,
+    scale: 0.43,
+    
   });
 
-
+  
   // Clover Transitions
 
   tl1.to(".clover1", {
@@ -108,38 +110,54 @@ function mediaqueryresponse(mql) {
 // Media Queries
 
   if (mqls[0].matches) {
+    tlMediaQueryNav.set(".nav", {
+      scale: 1.8,
+      flexDirection: "column",
+      paddingTop: "5%"
+    })
     tlMediaQuery.set(".logo", {
+      scale: 1.8,
       paddingTop: "2.5%",
       paddingLeft: "1.8%",
-      paddingBottom: "3%"
+      paddingBottom: "3%",
+      x: "0.1%"
     });
+    tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
+      scale: 1.8,
+      x: "158%",
+      y: "-55%",
+      
+    })
     tlMediaQueryClover1.to(".clover1", {
       x: "150%",
-      y: "-48%",
+      y: "-260%",
       delay: 2,
+      scale: 2
     });
     tlMediaQueryClover2.to(".clover2", {
-      x: "-200%",
-      y: "-50%",
+      x: "-130%",
+      y: "-180%",
       delay: 2,
+      scale: 2
     });
     tlMediaQueryClover3.to(".clover3", {
-      x: "200%",
+      x: "150%",
+      y: "250%",
       delay: 2,
+      scale: 2
     });
     tlMediaQueryClover4.to(".clover4", {
-      x: "70%",
-      y: "72%",
+      x: "-85%",
+      y: "295%",
       delay: 2,
+      scale: 2
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
-      fontSize: "1.4em",
-      marginTop: "32%"
+      fontSize: "0.7em",
+      marginLeft: "-163%",
+      width: "300%"
     });
-    tlMediaQueryNav.set("a", {
-      fontSize: "1.5em",
-      fontWeight: "100"
-    })
+    
   // } else if (mqls[1].matches) {
   //   tlMediaQuery.set("#clovers", {
   //     fontSize: "1em",
