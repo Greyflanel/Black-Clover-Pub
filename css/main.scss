@@ -65,7 +65,7 @@ a {
 }
 
 .container .section:nth-child(1) {
-  background: url(/assets/brickwall.svg);
+  background: center no-repeat url(/assets/brickwall.svg);
   color: #44ff00;
   background-size: cover;
   background-attachment: fixed;
@@ -73,7 +73,7 @@ a {
 
 .container .section:nth-child(2) {
   padding-top: 0.5em;
-  background: #cfcfea url(/assets/black-clover-pub-live-band.jpg);
+  background: #cfcfea center no-repeat url(/assets/black-clover-pub-live-band.jpg);
   color: #cfcfea;
   background-size: cover;
   background-attachment: fixed;
@@ -87,7 +87,7 @@ a {
 }
 
 .container .section:nth-child(4) {
-  background: #44ff00 url(/assets/bar-full-of-liquor-bottles.jpg);
+  background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
   color: #44ff00;
   width: 100%;
   background-size: cover;

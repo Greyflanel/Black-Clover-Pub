@@ -153,18 +153,19 @@ function mediaqueryresponse(mql) {
       scale: 2
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
-      fontSize: "0.7em",
+      fontSize: "0.73em",
       width: "300%"
     });
     
   } else if (mqls[1].matches) {
-    tlMediaQueryText.to(
-      ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
+    tlMediaQuery.set(
+      ".clover2",
       {
-        backgroundColor: "red"
+       scale: 8
        
       }
     );
+  }
   //   tlMediaQueryClover1.to(".clover1", {
   //     x: "360%",
   //     y: "-110%",
@@ -246,7 +247,6 @@ function mediaqueryresponse(mql) {
   //       fontSize: "0.0001em",
   //     }
   //   );
-  }
 };
 
 for (let i = 0; i < mqls.length; i++) {
