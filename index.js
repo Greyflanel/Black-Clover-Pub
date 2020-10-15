@@ -152,7 +152,7 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
       fontSize: "0.73em",
       width: "200%",
-     x: 19
+     x: 22
     });
     
   } else if (mqls[1].matches) {
