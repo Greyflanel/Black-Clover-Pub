@@ -3,6 +3,7 @@
 /* SCSS HSL */
 /* SCSS RGB */
 * {
+  border: 1px solid red !important;
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
