@@ -1,5 +1,5 @@
 let mqls = [
-  window.matchMedia("(min-width: 300px)"),
+  window.matchMedia("(min-width: 360px)"),
   window.matchMedia("(min-width: 380px)"),
   window.matchMedia("(min-width: 650px)"),
   window.matchMedia("(min-width: 800px)"),
@@ -153,16 +153,18 @@ function mediaqueryresponse(mql) {
       scale: 2
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
-      fontSize: "0.6em",
+      fontSize: "0.7em",
       width: "300%"
     });
     
-  // } else if (mqls[1].matches) {
-  //   tlMediaQuery.set("#clovers", {
-  //     fontSize: "1em",
-  //     scale: "0.9",
-  //     paddingTop: "5%",
-  //   });
+  } else if (mqls[1].matches) {
+    tlMediaQueryText.to(
+      ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
+      {
+        backgroundColor: "red"
+       
+      }
+    );
   //   tlMediaQueryClover1.to(".clover1", {
   //     x: "360%",
   //     y: "-110%",
