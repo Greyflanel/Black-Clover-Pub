@@ -2,9 +2,8 @@
   "name": "black-clover-pub",
   "version": "1.0.0",
   "description": "Black Clover Pub San Antonio, TX website",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "build": "babel src -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
