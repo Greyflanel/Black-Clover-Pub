@@ -151,7 +151,7 @@ function mediaqueryresponse(mql) {
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
       fontSize: "0.73em",
-      width: "200%",
+      width: "250%",
      x: 22
     });
     
@@ -164,6 +164,7 @@ function mediaqueryresponse(mql) {
       }
     );
   }
+    
   //   tlMediaQueryClover1.to(".clover1", {
   //     x: "360%",
   //     y: "-110%",
