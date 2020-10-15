@@ -116,7 +116,7 @@ function mediaqueryresponse(mql) {
       paddingTop: "5%"
     })
     tlMediaQuery.set(".logo", {
-      scale: 1.7,
+      scale: 1.8,
       x: "0.1%"
     });
     tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
@@ -151,7 +151,8 @@ function mediaqueryresponse(mql) {
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
       fontSize: "0.73em",
-     
+      width: "200%",
+     x: 19
     });
     
   } else if (mqls[1].matches) {
