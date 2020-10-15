@@ -116,10 +116,7 @@ function mediaqueryresponse(mql) {
       paddingTop: "5%"
     })
     tlMediaQuery.set(".logo", {
-      scale: 1.8,
-      paddingTop: "2.5%",
-      paddingLeft: "1.8%",
-      paddingBottom: "3%",
+      scale: 1.7,
       x: "0.1%"
     });
     tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
