@@ -5,7 +5,7 @@ let mqls = [
   window.matchMedia("(min-width: 800px)"),
   window.matchMedia("(min-width: 850px)"),
   window.matchMedia("(min-width: 1000px)"),
-  window.matchMedia("(min-width: 12810px)"),
+  window.matchMedia("(min-width: 1280px)"),
 ];
 
 function mediaqueryresponse(mql) {
@@ -159,7 +159,7 @@ function mediaqueryresponse(mql) {
     tlMediaQuery.set(
       ".clover2",
       {
-       scale: 8
+       
        
       }
     );
