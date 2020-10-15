@@ -150,9 +150,9 @@ function mediaqueryresponse(mql) {
       scale: 2
     });
     tlMediaQueryText.to(".clover1-text, .clover2-text, .clover3-text, .clover4-text", {
-      fontSize: "0.73em",
+      fontSize: "0.74em",
       width: "200%",
-     x: 21
+     x: 22
     });
     
   } else if (mqls[1].matches) {
