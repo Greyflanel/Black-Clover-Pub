@@ -1,3 +1,5 @@
+// TODO: lazy loading images
+
 let mqls = [
   window.matchMedia("(min-width: 1280px)"),
   window.matchMedia("(min-width: 850px)"),
