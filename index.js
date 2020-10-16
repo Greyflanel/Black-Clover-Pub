@@ -1,5 +1,5 @@
 let mqls = [
-  window.matchMedia("(min-width: 1000px)"),
+  window.matchMedia("(min-width: 1280px)"),
   window.matchMedia("(min-width: 850px)"),
   window.matchMedia("(min-width: 500px)"),
   window.matchMedia("(min-width: 400px)"),
@@ -110,7 +110,18 @@ function mediaqueryresponse(mql) {
   // Media Queries
 
   if (mqls[0].matches) {
-    
+    tlMediaQueryNav.set(".nav", {
+      fontSize: "2em"
+    })
+    tlMediaQueryText.to(
+      ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
+      {
+        x: -6,
+        y: 3,
+        width: "300%",
+        fontSize: "2.4em",
+      }
+    );
     
   } else if (mqls[1].matches) {
    
@@ -133,20 +144,59 @@ function mediaqueryresponse(mql) {
       backgroundColor: "yellow",
     });
     tlMediaQueryNav.set(".nav", {
-      fontSize: "2em"
+      fontSize: "1.7em"
     });
-    tlMediaQueryLogo.set(".logo", {
-      scale: 2.8,
-     x: 15
+    tlLogo.set(".logo", {
+      scale: 1.5,
+      x: "-15%",
+      y: "25%"
     });
     tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
-      scale: 1.4,
-      x: 15,
+      scale: 1.5,
+      x: "81%",
+      y: "-28%"
     });
+    tlMediaQueryClovers.to(".clover1, .clover2, .clover3, .clover4", {
+      delay: 2,
+      scale: 1.7,
+    });
+    tlMediaQueryClover1.to(".clover1", {
+      x: "50%",
+      y: "-195%",
+      rotation: 340,
+      delay: 2
+    });
+    tlMediaQueryClover2.to(".clover2", {
+      x: "-165%",
+      y: "-120%",
+      delay: 2
+    });
+    tlMediaQueryClover3.to(".clover3", {
+      x: "-15%",
+      y: "208%",
+      rotation: 360,
+      delay: 2
+    });
+    tlMediaQueryClover4.to(".clover4", {
+      x: "160%",
+      y: "120%",
+      rotation: 370,
+      delay: 2
+      
+    });
+    tlMediaQueryText.to(
+      ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
+      {
+        x: 26,
+        y: -2,
+        width: "200%",
+        fontSize: "1em"
+      }
+    );
     
   } else if (mqls[3].matches) {
     tlMediaQuery.set("#home", {
-      backgroundColor: "red",
+      
     });
     tlMediaQueryNav.set(".nav", {
         scale: 1.8,
@@ -189,9 +239,9 @@ function mediaqueryresponse(mql) {
       tlMediaQueryText.to(
         ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
         {
-          fontSize: "0.84em",
-          width: "200%",
-          x: 22,
+          fontSize: "0.835em",
+          width: "250%",
+          x: 8,
         }
       );
     
