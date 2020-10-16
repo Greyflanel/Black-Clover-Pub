@@ -170,6 +170,12 @@ span {
   margin-left: -25px;
 }
 
+@media screen and (min-width: 1280px) {
+  .clover1-text .weekly {
+    margin-left: -40px;
+  }
+}
+
 .clover1-text .specials {
   font-size: 200%;
   color: #eeff00;
@@ -178,7 +184,6 @@ span {
 
 .clover2-text {
   position: absolute;
-  top: 4%;
   left: -60%;
   z-index: 10;
 }
@@ -190,6 +195,12 @@ span {
 
 .clover2-text .and {
   margin-left: 28px;
+}
+
+@media screen and (min-width: 1280px) {
+  .clover2-text {
+    margin-top: 15px;
+  }
 }
 
 .clover3-text {
@@ -205,6 +216,12 @@ span {
   color: #eeff00;
 }
 
+@media screen and (min-width: 1280px) {
+  .clover3-text .tvs {
+    margin-left: -20px;
+  }
+}
+
 .play {
   margin-left: 9px;
 }
@@ -213,13 +230,24 @@ span {
   position: absolute;
   z-index: 10;
   left: -65%;
-  bottom: 6%;
+}
+
+@media screen and (min-width: 1280px) {
+  .clover4-text {
+    margin-top: 15px;
+  }
 }
 
 .clover4-text .music {
   margin-left: -6%;
   font-size: 200%;
   color: #eeff00;
+}
+
+@media screen and (min-width: 1280px) {
+  .clover4-text .music {
+    margin-left: -20px;
+  }
 }
 
 .clover4-text .evenings {
@@ -229,6 +257,12 @@ span {
 
 .clover4-text .friday, .clover4-text .saturday {
   margin-left: -15px;
+}
+
+@media screen and (min-width: 1280px) {
+  .clover4-text .friday, .clover4-text .saturday {
+    margin-left: -20px;
+  }
 }
 
 .happy-hour {

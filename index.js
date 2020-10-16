@@ -116,10 +116,10 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        x: -6,
-        y: 3,
+        x: "30%",
+        y: "70%",
         width: "300%",
-        fontSize: "2.4em",
+        scale: 1
       }
     );
     
