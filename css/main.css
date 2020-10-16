@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -22,8 +23,12 @@
 
 .header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: tranparent;
   width: 98%;
   z-index: 20;
@@ -32,9 +37,15 @@
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
+  -webkit-box-flex: 0.9;
+      -ms-flex-positive: 0.9;
+          flex-grow: 0.9;
 }
 
 .nav li {
@@ -244,4 +255,3 @@ span {
   margin-top: 4%;
   margin-left: 10%;
 }
-/*# sourceMappingURL=main.css.map */
