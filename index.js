@@ -113,6 +113,12 @@ function mediaqueryresponse(mql) {
     tlMediaQueryNav.set(".nav", {
       fontSize: "2em"
     })
+    tlMediaQueryClovers.set(
+      ".clover1, .clover2, .clover3, .clover4", {
+        x: "5%",
+       y: "-23%"
+      }
+    );
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
