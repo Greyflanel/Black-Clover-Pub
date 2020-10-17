@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -23,12 +22,8 @@
 
 .header {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: tranparent;
   width: 98%;
   z-index: 20;
@@ -37,15 +32,10 @@
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style-type: none;
-  -webkit-box-flex: 0.6;
-      -ms-flex-positive: 0.6;
-          flex-grow: 0.6;
+  flex-grow: 0.6;
 }
 
 .nav li {
@@ -267,12 +257,14 @@ span {
   font-size: 150%;
 }
 
-.clover4-text .friday, .clover4-text .saturday {
+.clover4-text .friday,
+.clover4-text .saturday {
   margin-left: -15px;
 }
 
 @media screen and (min-width: 1280px) {
-  .clover4-text .friday, .clover4-text .saturday {
+  .clover4-text .friday,
+  .clover4-text .saturday {
     margin-left: -20px;
   }
 }
@@ -301,3 +293,4 @@ span {
   margin-top: 4%;
   margin-left: 10%;
 }
+/*# sourceMappingURL=main.css.map */
