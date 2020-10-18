@@ -113,31 +113,64 @@ function mediaqueryresponse(mql) {
 
   if (mqls[0].matches) {
     tlMediaQueryNav.set(".nav", {
-      fontSize: "0.9em"
+      fontSize: "1.5em"
+    });
+    tlLogo.set(".logo", {
+      scale: 1,
+      x: "-28%",
+      y: "12%",
+      padding: "1%"
     })
     tlMediaQueryClovers.set(
       ".clover1, .clover2, .clover3, .clover4", {
-      x: "84%",
-      y: "-42%"
+      scale: 0.58,
+      x: "-4%",
+      y: "-15%"
     }
     );
+    tlMediaQueryClovers.to(".clover1, .clover2, .clover3, .clover4", {
+      delay: 2,
+      scale: 0.7
+    });
+    tlMediaQueryClover1.to(".clover1", {
+      delay: 2,
+      x: "-130%",
+      y: "-35%"
+    });
+    tlMediaQueryClover2.to(".clover2", {
+      delay: 2,
+      x: "100%",
+      y: "-35%",
+    });
+    tlMediaQueryClover3.to(".clover3", {
+      delay: 2,
+      x: "45%",
+      y: "48%",
+    });
+    tlMediaQueryClover4.to(".clover4", {
+      delay: 2,
+      x: "128%",
+      y: "46%",
+      rotation: 350
+    });
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        x: "-0.5%",
-        width: "280%",
-        scale: 0.385
+        x: "85%",
+        y: "235%",
+        scale: 2
+       
       }
     );
     
   } else if (mqls[1].matches) {
-    tlMediaQueryText.to(
-      ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
-      {
-        x: "10%",
-        scale: 3
-      }
-    );
+    // tlMediaQueryText.to(
+    //   ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
+    //   {
+    //     x: "10%",
+    //     scale: 3
+    //   }
+    // );
     tlMediaQueryClover2.to(".clover2", {
       x: "-15%",
       y: "-100%",

@@ -148,13 +148,13 @@ a:hover {
 
 #footer {
     height: 5%;
+    @media screen and (min-width: 300px) {
+        height: 15%;
+    
+}
 }
 
-@media screen and (min-width: 300px) {
-    #footer {
-        height: 15%;
-    }
-}
+
 
 span {
     font-size: 1.3em;
@@ -164,27 +164,27 @@ span {
 
 .clover1-text {
     position: absolute;
-    top: -2.5%;
+    top: -8%;
     left: -62%;
     z-index: 10;
-}
-
-.clover1-text .weekly {
-    font-size: 200%;
+    .weekly {
+    font-size: 180%;
     color: #eeff00;
     margin-left: -25px;
 }
-
-@media screen and (min-width: 1280px) {
-    .clover1-text .weekly {
-        margin-left: -40px;
-    }
-}
-
-.clover1-text .specials {
-    font-size: 200%;
+    .specials {
+    font-size: 180%;
     color: #eeff00;
     margin-left: -5px;
+}
+.happy-hour {
+    margin-left: 16px;
+}
+
+.happy-hour-everyday {
+    margin-left: 24px;
+}
+
 }
 
 .clover2-text {
@@ -192,43 +192,30 @@ span {
     top: 3%;
     left: -58%;
     z-index: 10;
-}
-
-.clover2-text .karaoke {
+.karaoke {
     font-size: 220%;
     color: #eeff00;
+    
+   
 }
-
-.clover2-text .and {
-    margin-left: 40px;
-}
-
-@media screen and (min-width: 1280px) {
-    .clover2-text {
-        margin-top: 15px;
-        margin-left: -5px;
+.karaoke-days  {
+        margin-left: 8px;
     }
+    .and {
+       margin-left: 38px;
+   }
 }
 
 .clover3-text {
     position: absolute;
     z-index: 100;
-    top: 2.5%;
-    left: -72%;
-}
-
-.clover3-text .tvs {
+    top: 5%;
+    left: -68%;
+    .tvs {
     margin-left: -12px;
     font-size: 190%;
     color: #eeff00;
 }
-
-@media screen and (min-width: 1280px) {
-    .clover3-text .tvs {
-        margin-left: -20px;
-    }
-}
-
 .play {
     margin-left: 20px;
 }
@@ -236,60 +223,32 @@ span {
 .sports {
     margin-left: 5px;
 }
+}
 
 .clover4-text {
     position: absolute;
     z-index: 10;
     top: 2%;
-    left: -65%;
-}
-
-@media screen and (min-width: 1280px) {
-    .clover4-text {
-        margin-top: 15px;
-    }
-}
-
-.clover4-text .music {
-    margin-left: -6%;
+    left: -63%;
+.music {
+    margin-left: -6px;
     font-size: 200%;
     color: #eeff00;
 }
-
-@media screen and (min-width: 1280px) {
-    .clover4-text .music {
-        margin-left: -20px;
-    }
-}
-
-.clover4-text .evenings {
-    margin: 12px;
+.evenings {
+    margin-left: 25px;
     font-size: 150%;
 }
+
+
+
+}
+
+
 
 .clover4-text .friday,
 .clover4-text .saturday {
     margin-left: -15px;
-}
-
-@media screen and (min-width: 1280px) {
-
-    .clover4-text .friday,
-    .clover4-text .saturday {
-        margin-left: -20px;
-    }
-}
-
-.happy-hour {
-    margin-left: 8px;
-}
-
-.happy-hour-everyday {
-    margin-left: 12px;
-}
-
-.karaoke-days {
-    margin-left: 2px;
 }
 
 .bottom-logo {
@@ -299,8 +258,8 @@ span {
 
 .calendar {
     width: 70vw;
-    height: 90vh;
+    height: 75vh;
     border-radius: 5px;
-    margin-top: 4%;
+    margin-top: 6%;
     margin-left: 10%;
 }
