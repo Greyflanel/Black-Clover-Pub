@@ -1,13 +1,11 @@
-// TODO: lazy loading images
-
 let mqls = [
-  window.matchMedia("(min-width: 1280px)"),
-  window.matchMedia("(min-width: 850px)"),
-  window.matchMedia("(min-width: 500px)"),
-  window.matchMedia("(min-width: 400px)"),
-  window.matchMedia("(min-width: 380px)"),
-  window.matchMedia("(min-width: 360px)"),
   window.matchMedia("(min-width: 300px)"),
+  window.matchMedia("(min-width: 360px)"),
+  window.matchMedia("(min-width: 380px)"),
+  window.matchMedia("(min-width: 400px)"),
+  window.matchMedia("(min-width: 500px)"),
+  window.matchMedia("(min-width: 850px)"),
+  window.matchMedia("(min-width: 1280px)"),
 ];
 
 function mediaqueryresponse(mql) {
