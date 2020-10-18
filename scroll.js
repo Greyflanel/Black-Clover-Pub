@@ -94,8 +94,5 @@ gsap.to("footer", {
 });
 
 
-ScrollTrigger.addEventListener("scrollEnd", () =>
-  console.log("scrolling ended!")
-);
 
 scrollAnimation();
