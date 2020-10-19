@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -22,8 +23,12 @@
 
 .header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: tranparent;
   width: 98%;
   z-index: 20;
@@ -32,10 +37,15 @@
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
-  flex-grow: 0.6;
+  -webkit-box-flex: 0.6;
+      -ms-flex-positive: 0.6;
+          flex-grow: 0.6;
 }
 
 .nav li {
@@ -154,93 +164,97 @@ span {
 
 .clover1-text {
   position: absolute;
-  top: -8%;
-  left: -62%;
+  top: -8.5px;
+  left: -55px;
   z-index: 10;
 }
 
 .clover1-text .weekly {
-  font-size: 180%;
+  font-size: 195%;
   color: #eeff00;
-  margin-left: -25px;
+  margin-left: -38px;
 }
 
 .clover1-text .specials {
-  font-size: 180%;
+  font-size: 195%;
   color: #eeff00;
   margin-left: -5px;
 }
 
 .clover1-text .happy-hour {
-  margin-left: 16px;
+  font-size: 150%;
+  margin-left: 6px;
 }
 
 .clover1-text .happy-hour-everyday {
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .clover2-text {
   position: absolute;
-  top: 3%;
-  left: -58%;
+  top: 4px;
+  left: -56px;
   z-index: 10;
 }
 
 .clover2-text .karaoke {
-  font-size: 220%;
+  font-size: 218%;
   color: #eeff00;
 }
 
 .clover2-text .karaoke-days {
-  margin-left: 8px;
+  margin-left: 2px;
+  font-size: 150%;
 }
 
 .clover2-text .and {
-  margin-left: 38px;
+  margin-left: 40px;
 }
 
 .clover3-text {
   position: absolute;
   z-index: 100;
-  top: 5%;
-  left: -68%;
+  top: 2.5px;
+  left: -58px;
 }
 
 .clover3-text .tvs {
-  margin-left: -12px;
-  font-size: 190%;
+  margin-left: -33px;
+  font-size: 193%;
   color: #eeff00;
 }
 
 .clover3-text .play {
-  margin-left: 20px;
+  margin-left: -5px;
+  font-size: 150%;
 }
 
 .clover3-text .sports {
-  margin-left: 5px;
+  margin-left: -25px;
+  font-size: 150%;
 }
 
 .clover4-text {
   position: absolute;
   z-index: 10;
-  top: 2%;
-  left: -63%;
+  top: 5px;
+  left: -62px;
 }
 
 .clover4-text .music {
-  margin-left: -6px;
+  margin-left: -12px;
   font-size: 200%;
   color: #eeff00;
 }
 
 .clover4-text .evenings {
-  margin-left: 25px;
+  margin: 22px;
   font-size: 150%;
 }
 
-.clover4-text .friday,
-.clover4-text .saturday {
-  margin-left: -15px;
+.clover4-text .friday, .clover4-text .saturday {
+  margin-left: -19px;
+  font-size: 140%;
 }
 
 .bottom-logo {
@@ -250,9 +264,7 @@ span {
 
 .calendar {
   width: 70vw;
-  height: 75vh;
+  height: 90vh;
   border-radius: 5px;
-  margin-top: 6%;
-  margin-left: 10%;
+  margin: 4%;
 }
-/*# sourceMappingURL=main.css.map */

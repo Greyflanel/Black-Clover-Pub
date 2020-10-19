@@ -163,40 +163,52 @@ span {
 
 .clover1-text {
   position: absolute;
-  top: -11%;
-  left: -59%;
+  top: -8.5px;
+  left: -55px;
   z-index: 10;
-}
-
-.clover1-text .weekly {
-  font-size: 200%;
+  .weekly {
+  font-size: 195%;
   color: #eeff00;
   margin-left: -38px;
   
 }
 
-.clover1-text .specials {
-  font-size: 200%;
+.specials {
+  font-size: 195%;
   color: #eeff00;
   margin-left: -5px;
   
 }
 
-.clover1-text .happy-hour {
-  font-size: 140%;
+.happy-hour {
+  font-size: 150%;
+  margin-left: 6px;
 }
+
+.happy-hour-everyday {
+    margin-left: 20px;
+    
+  }
+}
+
+
 
 .clover2-text {
   position: absolute;
-  top: 4%;
-  left: -58%;
+  top: 4px;
+  left: -56px;
   z-index: 10;
-  & .karaoke {
-  font-size: 220%;
+
+  .karaoke {
+  font-size: 218%;
   color: #eeff00;
-  
+  }
+  .karaoke-days {
+  margin-left: 2px;
+  font-size: 150%;
+
 }
-  & .and {
+  .and {
   margin-left: 40px;
 }
 }
@@ -205,71 +217,54 @@ span {
 .clover3-text {
   position: absolute;
   z-index: 100;
-  top: 2.5%;
-  left: -72%;
-
-}
-
-.clover3-text .tvs {
-  margin-left: -11px;
-  font-size: 195%;
+  top: 2.5px;
+  left: -58px;
+.tvs {
+  margin-left: -33px;
+  font-size: 193%;
   color: #eeff00;
-  @media screen and (min-width: 1280px) {
-    margin-left: -20px;
-  }
-  
 }
 
 .play {
-  margin-left: 25px;
+  margin-left: -5px;
   font-size: 150%;
 }
 
 .sports {
-  margin-left: 5px;
+  margin-left: -25px;
   font-size: 150%;
 }
+}
+
+
 
 .clover4-text {
   position: absolute;
   z-index: 10;
-  top: 2%;
-  left: -65%;
-  @media screen and (min-width: 1280px) {
-    margin-top: 15px;
-  }
-}
-
-.clover4-text .music {
-  margin-left: -4%;
+  top: 5px;
+  left: -62px;
+.music {
+  margin-left: -12px;
   font-size: 200%;
   color: #eeff00;
 }
 
-.clover4-text .evenings {
-  margin: 20px;
+.evenings {
+  margin: 22px;
   font-size: 150%;
 }
 
-.clover4-text .friday, .clover4-text .saturday {
-  margin-left: -15px;
-  font-size: 130%;
+.friday, .saturday {
+  margin-left: -19px;
+  font-size: 140%;
+}
 }
 
-.happy-hour {
-  margin-left: 8px;
 
-  }
 
-.happy-hour-everyday {
-    margin-left: 12px;
-    
-  }
 
-.karaoke-days {
-  margin-left: 2px;
-  font-size: 150%;
-}
+
+
 
 .bottom-logo {
   padding: 1%;
