@@ -201,7 +201,7 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        scale: 0.53,
+        scale: 0.5,
         y: "17px"
       }
     );
@@ -216,7 +216,7 @@ function mediaqueryresponse(mql) {
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
         scale: 0.49,
-        y: "10px"
+        y: "7px"
       }
     );
   } else if (mqls[5].matches) {
@@ -227,7 +227,7 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        scale: 0.48,
+        scale: .48,
         y: "8px"
       }
     );
