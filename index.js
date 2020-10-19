@@ -215,8 +215,8 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        scale: 0.49,
-        y: "7px"
+        scale: 0.493,
+        y: "8px"
       }
     );
   } else if (mqls[5].matches) {
