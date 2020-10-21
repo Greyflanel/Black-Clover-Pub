@@ -4,7 +4,7 @@ let mqls = [
   window.matchMedia("(min-width: 500px)"),
   window.matchMedia("(min-width: 410px)"),
   window.matchMedia("(min-width: 375px)"),
-  window.matchMedia("(min-width: 360px)"),
+  window.matchMedia("(min-width: 359px)"),
   window.matchMedia("(min-width: 300px)"),
 ];
 
@@ -276,8 +276,8 @@ function mediaqueryresponse(mql) {
     tlMediaQueryText.to(
       ".clover1-text, .clover2-text, .clover3-text, .clover4-text",
       {
-        scale: .48,
-        y: "8px"
+        scale: 0.48,
+        
       }
     );
    } else if (mqls[6].matches) {
