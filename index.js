@@ -32,7 +32,7 @@ function mediaqueryresponse(mql) {
 
   // Sets Initial Values
   tlContent.set("#clovers", { display: "inline" });
-  tlLogo.set(".logo", { display: "inline", padding: "1%", xPercent: -50, yPercent: -50, transform: "rotate(-28deg)", scale: 1.83 });
+  tlLogo.set(".logo", { display: "inline", padding: "1%", xPercent: -50, yPercent: -50, transform: "rotate(-28deg)", scale: 1.85 });
 
   // Clovers
 
@@ -85,7 +85,7 @@ function mediaqueryresponse(mql) {
     delay: 2,
     display: "inline",
     x: "-60%",
-    y: "185%",
+    y: "195%",
     scale: 1.3,
     rotation: 380,
     filter: "blur(0)",
@@ -95,7 +95,7 @@ function mediaqueryresponse(mql) {
     delay: 2,
     display: "inline",
     x: "85%",
-    y: "125%",
+    y: "145%",
     scale: 1.3,
     rotation: 365,
     filter: "blur(0)",
@@ -115,7 +115,56 @@ function mediaqueryresponse(mql) {
     tlMediaQueryNav.set(".nav", {
       fontSize: "1.5em"
     });
-    
+    tlLogo.set(".logo", {
+      scale: 1,
+      x: "-28%",
+      y: "12%",
+      padding: "0.5%",
+    });
+    tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
+      scale: 0.55,
+      x: "-3%",
+      y: "-15%",
+    });
+    tlMediaQueryClovers.to(".clover1, .clover2, .clover3, .clover4", {
+      delay: 2,
+      scale: 0.68,
+    });
+    tlMediaQueryClover1.to(".clover1", {
+      delay: 2,
+      x: "-130%",
+      y: "-30%",
+    });
+    tlMediaQueryClover2.to(".clover2", {
+      delay: 2,
+      x: "95%",
+      y: "-28%",
+    });
+    tlMediaQueryClover3.to(".clover3", {
+      delay: 2,
+      x: "45%",
+      y: "42%",
+    });
+    tlMediaQueryClover4.to(".clover4", {
+      delay: 2,
+      x: "128%",
+      y: "40%",
+      rotation: 350,
+    });
+    tlMediaQueryText.to(".clover2-text, .clover3-text, .clover4-text", {
+      x: "42%",
+      y: "160%",
+      scale: 1.54,
+    });
+    tlMediaQuery.to(".clover1-text", {
+      scale: 1.5,
+      x: "41%",
+      y: "130%",
+    });
+    tlMediaQuery.to(".clover2-text", {
+      x: "43.5%",
+      y: "160%",
+    });
   } else if (mqls[1].matches) {
     tlMediaQueryNav.set(".nav", {
       fontSize: "1.4em"
