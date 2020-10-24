@@ -109,7 +109,7 @@ a {
 
 .logo {
   position: absolute;
-  width: 50vw;
+  width: 90vw;
   top: 50%;
   left: 50%
 }
@@ -158,14 +158,14 @@ span {
   font-size: 1.3em;
   line-height: 0.5em;
   color: white;
- 
+  
 }
 
 .clover1-text {
   position: absolute;
-  top: -8.5px;
-  left: -55px;
   z-index: 10;
+  left: 101%;
+  bottom: -4.5%;
   .weekly {
   font-size: 195%;
   color: #eeff00;
@@ -191,21 +191,17 @@ span {
   }
 }
 
-
-
 .clover2-text {
   position: absolute;
-  top: 4px;
-  left: -56px;
   z-index: 10;
-
+  bottom: 2%;
   .karaoke {
   font-size: 218%;
   color: #eeff00;
   }
   .karaoke-days {
-  margin-left: 2px;
-  font-size: 150%;
+  margin-left: 8px;
+  font-size: 140%;
 
 }
   .and {
@@ -216,9 +212,8 @@ span {
 
 .clover3-text {
   position: absolute;
-  z-index: 100;
-  top: 2.5px;
-  left: -58px;
+  z-index: 10;
+  top: 5%;
 .tvs {
   margin-left: -33px;
   font-size: 193%;
@@ -241,8 +236,8 @@ span {
 .clover4-text {
   position: absolute;
   z-index: 10;
-  top: 5px;
-  left: -62px;
+  left: 95%;
+  top: 6%;
 .music {
   margin-left: -12px;
   font-size: 200%;
@@ -250,7 +245,7 @@ span {
 }
 
 .evenings {
-  margin: 22px;
+  margin: 28px;
   font-size: 150%;
 }
 
@@ -259,11 +254,6 @@ span {
   font-size: 140%;
 }
 }
-
-
-
-
-
 
 
 .bottom-logo {

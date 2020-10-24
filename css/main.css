@@ -109,7 +109,7 @@ a:hover {
 
 .logo {
   position: absolute;
-  width: 50vw;
+  width: 90vw;
   top: 50%;
   left: 50%;
 }
@@ -164,9 +164,9 @@ span {
 
 .clover1-text {
   position: absolute;
-  top: -8.5px;
-  left: -55px;
   z-index: 10;
+  left: 101%;
+  bottom: -4.5%;
 }
 
 .clover1-text .weekly {
@@ -192,9 +192,8 @@ span {
 
 .clover2-text {
   position: absolute;
-  top: 4px;
-  left: -56px;
   z-index: 10;
+  bottom: 2%;
 }
 
 .clover2-text .karaoke {
@@ -203,8 +202,8 @@ span {
 }
 
 .clover2-text .karaoke-days {
-  margin-left: 2px;
-  font-size: 150%;
+  margin-left: 8px;
+  font-size: 140%;
 }
 
 .clover2-text .and {
@@ -213,9 +212,8 @@ span {
 
 .clover3-text {
   position: absolute;
-  z-index: 100;
-  top: 2.5px;
-  left: -58px;
+  z-index: 10;
+  top: 5%;
 }
 
 .clover3-text .tvs {
@@ -237,8 +235,8 @@ span {
 .clover4-text {
   position: absolute;
   z-index: 10;
-  top: 5px;
-  left: -62px;
+  left: 95%;
+  top: 6%;
 }
 
 .clover4-text .music {
@@ -248,7 +246,7 @@ span {
 }
 
 .clover4-text .evenings {
-  margin: 22px;
+  margin: 28px;
   font-size: 150%;
 }
 
