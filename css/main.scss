@@ -5,11 +5,11 @@ html, body {
     font-size: 16px;
 
     @media screen and (min-width: 900px) {
-        font-size: 18px;
+        font-size: 26px;
     }
 
     @media screen and (min-width: 1200px) {
-        font-size: 20px;
+        font-size: 30px;
     }
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ html, body {
 .nav li {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.7rem;
+    font-size: clamp(1.2rem, 1.3rem, 1.4rem);
 }
 
 a {
@@ -146,7 +146,7 @@ a:hover {
 .clover1-text{
   position: absolute;
   z-index: 10; 
-  top: 28%;
+  top: 27%;
   left: 12%;
  } 
 
@@ -159,13 +159,13 @@ a:hover {
 .clover3-text {
   position: absolute;
   z-index: 10; 
-  top: 28%;
+  top: 30%;
   left: 10%;  
 }
 .clover4-text {
   position: absolute;
   z-index: 10; 
-  top: 33%;
+  top: 34%;
   left: 7%;
 }
 

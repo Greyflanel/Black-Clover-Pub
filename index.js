@@ -44,7 +44,7 @@ function mediaqueryresponse(mql) {
     xPercent: -50,
     yPercent: -50,
     x: "85%",
-    y: "-40%",
+    y: "-43%",
     transform: "rotate(-28deg)",
     filter: "blur(0.06em)",
   });
