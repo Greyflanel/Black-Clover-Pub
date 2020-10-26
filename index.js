@@ -77,7 +77,7 @@ function mediaqueryresponse(mql) {
 
   tl3.to(".clover3", {
     delay: 2,
-    x: "-40%",
+    x: "-50%",
     y: "150%",
     rotation: 735,
     filter: "blur(0)",
@@ -86,7 +86,7 @@ function mediaqueryresponse(mql) {
 
   tl4.to(".clover4", {
     delay: 2,
-    x: "75%",
+    x: "60%",
     y: "85%",
     rotation: 725,
     filter: "blur(0)",
