@@ -1,22 +1,74 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 900px) {
-  html, body {
-    font-size: 26px;
+@media screen and (min-width: 300px) {
+  html,
+  body {
+    font-size: 15px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  html, body {
+@media screen and (min-width: 400px) {
+  html,
+  body {
+    font-size: 15.5px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  html,
+  body {
+    font-size: 16.5px;
+  }
+}
+
+@media screen and (min-width: 715px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 815px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html,
+  body {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  html,
+  body {
     font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  html,
+  body {
+    font-size: 45px;
   }
 }
 
@@ -62,7 +114,7 @@ html, body {
 .nav li {
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(1.2rem, 1.3rem, 1.4rem);
+  font-size: clamp(1rem, 1.2rem, 1.4rem);
 }
 
 a {
@@ -130,7 +182,10 @@ a:hover {
   display: none;
 }
 
-.clover1, .clover2, .clover3, .clover4 {
+.clover1,
+.clover2,
+.clover3,
+.clover4 {
   position: absolute;
   z-index: 10;
   width: 5.5rem;
@@ -160,7 +215,7 @@ a:hover {
 .clover2-text {
   position: absolute;
   z-index: 10;
-  top: 34%;
+  top: 33%;
   left: 25%;
 }
 
