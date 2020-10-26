@@ -61,7 +61,7 @@ function mediaqueryresponse(mql) {
     delay: 2,
     x: "-65%",
     y: "-88%",
-    rotation: 720,
+    rotation: 730,
     filter: "blur(0)",
     width: "8rem",
   });
@@ -78,17 +78,17 @@ function mediaqueryresponse(mql) {
   tl3.to(".clover3", {
     delay: 2,
     x: "-50%",
-    y: "150%",
-    rotation: 735,
+    y: "140%",
+    rotation: 720,
     filter: "blur(0)",
     width: "8rem",
   });
 
   tl4.to(".clover4", {
     delay: 2,
-    x: "68%",
+    x: "67%",
     y: "85%",
-    rotation: 725,
+    rotation: 730,
     filter: "blur(0)",
     width: "8rem",
   });
