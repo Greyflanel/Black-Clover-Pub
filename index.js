@@ -86,7 +86,7 @@ function mediaqueryresponse(mql) {
 
   tl4.to(".clover4", {
     delay: 2,
-    x: "60%",
+    x: "68%",
     y: "85%",
     rotation: 725,
     filter: "blur(0)",
