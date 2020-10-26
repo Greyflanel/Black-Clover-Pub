@@ -12,63 +12,63 @@ body {
 @media screen and (min-width: 300px) {
   html,
   body {
-    font-size: 15.5px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 345px) {
   html,
   body {
-    font-size: 19px;
+    font-size: 21px;
   }
 }
 
 @media screen and (min-width: 550px) {
   html,
   body {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 620px) {
   html,
   body {
-    font-size: 21px;
+    font-size: 23px;
   }
 }
 
 @media screen and (min-width: 715px) {
   html,
   body {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 815px) {
   html,
   body {
-    font-size: 23px;
+    font-size: 24.5px;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   html,
   body {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1000px) {
   html,
   body {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 1281px) {
   html,
   body {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -94,7 +94,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: tranparent;
+  background-color: transparent;
   width: 95%;
   z-index: 20;
   padding-top: 1%;
@@ -114,7 +114,7 @@ body {
 .nav li {
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(1rem, 1.2rem, 1.4rem);
+  font-size: clamp(1rem, 1.1rem, 1.2rem);
 }
 
 a {

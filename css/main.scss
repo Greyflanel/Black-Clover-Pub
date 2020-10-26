@@ -32,7 +32,7 @@ body {
         font-size: 45px;
     }
 
-    -webkit-box-sizing: border-box;
+    
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -51,46 +51,7 @@ body {
     background-attachment: fixed;
 }
 
-.header {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: tranparent;
-    width: 95%;
-    z-index: 20;
-    padding-top: 1%;
-}
-
-.nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style-type: none;
-    -webkit-box-flex: 0.6;
-    -ms-flex-positive: 0.6;
-    flex-grow: 1;
-}
-
-.nav li {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: clamp(1rem, 1.2rem, 1.4rem);
-}
-
-a {
-    color: #44ff00;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    border-radius: 2px;
-}
+// 
 
 .container .section:nth-child(1) {
     background: center no-repeat url(/assets/brickwall.svg);
