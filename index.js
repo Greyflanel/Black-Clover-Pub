@@ -61,7 +61,7 @@ function mediaqueryresponse(mql) {
     delay: 2,
     x: "-65%",
     y: "-88%",
-    rotation: 730,
+    rotation: 705,
     filter: "blur(0)",
     width: "8rem",
   });
