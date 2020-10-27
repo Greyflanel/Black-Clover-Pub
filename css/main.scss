@@ -91,7 +91,12 @@ a:hover {
     color: white;
     border-radius: 2px;
 }
-
+.cool {
+    position: absolute;
+    width: 80%;
+    top: 3rem;
+    left: 10rem;
+}
 .container .section:nth-child(1) {
     background: center no-repeat url(/assets/brickwall.svg);
     color: #44ff00;
@@ -119,14 +124,7 @@ a:hover {
     background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
     color: #44ff00;
     width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container .section:nth-child(5) {
-    padding-top: 0.5em;
-    background: white center no-repeat;
-    color: #44ff00;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -158,14 +156,6 @@ a:hover {
     left: 50%;
     font-size: clamp(0.5rem, 0.8rem, 1rem);
     line-height: clamp(0.5rem, 0.6rem, 8rem);
-}
-
-#footer {
-    height: 5%;
-
-    @media screen and (min-width: 300px) {
-        height: 15%;
-    }
 }
 
 .clover1-text {
@@ -211,7 +201,4 @@ span.h1 {
     color: yellow;
 }
 
-.bottom-logo {
-    padding: 1%;
-    padding-top: 5%;
-}
+
