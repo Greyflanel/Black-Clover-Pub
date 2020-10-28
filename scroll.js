@@ -48,7 +48,20 @@ function scrollAnimation() {
       toggleActions: "restart complete reverse reset",
     },
   });
-  
+  gsap.set(".three-d-clover", {
+    rotation: 45,
+  });
+  gsap.to(".three-d-clover", {
+    y: "4rem",
+    scrollTrigger: {
+      trigger: "#contact",
+      scroller: ".container",
+      scrub: 3,
+      start: "top 50%",
+      end: "bottom bottom",
+      toggleActions: "restart complete reverse reset",
+    },
+  });  
 }
 
 scrollAnimation();
