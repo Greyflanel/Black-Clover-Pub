@@ -184,3 +184,10 @@ for (let i = 0; i < mqls.length; i++) {
   mediaqueryresponse(mqls[i]);
   mqls[i].addEventListener(mediaqueryresponse, {});
 }
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+})
