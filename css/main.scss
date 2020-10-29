@@ -56,7 +56,7 @@ body {
 
 header {
     position: fixed;
-    width: 90%;
+    width: 98%;
     z-index: 100;   
 }
 .navbar {
@@ -64,13 +64,14 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    
 }
 
 
 
 .brand-title img {
     width: 40%;
+    margin-left: -35%;
 }
 
 .navbar-links {
@@ -85,6 +86,7 @@ header {
 
 .navbar-links li {
     list-style: none;
+    border-radius: 10px;
 }
 
 .navbar-links li a {
@@ -92,10 +94,19 @@ header {
     text-decoration: none;
     color: #44ff00;
     padding: 1rem;
+    line-height: 0.4rem;
+    
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    
+    background-color: #44ff00;
+    transition: 0.5s;
+}
+
+.navbar-links li a:hover {
+color: black;
+
 }
 
 .toggle-button {
@@ -129,6 +140,7 @@ header {
     .navbar-links {
         display: none;
         width: 100%;
+        
     }
 
     .navbar-links ul {
