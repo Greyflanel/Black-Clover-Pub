@@ -114,8 +114,8 @@ function mediaqueryresponse(mql) {
     });
     tlMediaQueryClover1.to(".clover1", {
       delay: 2,
-      x: "-200%",
-      y: "-35%",
+      x: "-180%",
+      y: "-55%",
       rotation: 730,
     });
     tlMediaQueryClover2.to(".clover2", {

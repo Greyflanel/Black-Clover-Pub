@@ -6,58 +6,57 @@ let timeline = gsap.timeline({
 
 function scrollAnimation() {
   
-  gsap.to(".nav", {
-    color: "blue",
-    filter: "brightness(500%)",
+  gsap.to("nav", {
+    
     scrollTrigger: {
       trigger: "#live-music",
       scroller: ".container",
       scrub: true,
       ease: "power1-in",
-      start: "top center", //when top  passes the bottom viewport height
-      end: "bottom 75%", //when bottom of herman passes the bottom viewport height
+      start: "top 25%", //when top  passes the bottom viewport height
+      end: "bottom 5%", //when bottom of herman passes the bottom viewport height
 
       //events: onEnter onLeave onEnterBack onLeaveBack
       toggleActions: "restart complete reverse reset",
       //options: play, pause, resume, reset, restart, complete, reverse,none
     },
   });
-  gsap.to(".nav", {
-    color: "blue",
-    filter: "brightness(500%)",
-    ease: "power1-in",
+  gsap.to("nav", {
+   
+    // ease: "power1-in",
     scrollTrigger: {
       trigger: "#gallery",
       scroller: ".container",
       scrub: true,
-      start: "top center",
-      end: "bottom 75%",
+      start: "top 25%",
+      end: "bottom 5%",
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.to(".nav", {
-    color: "blue",
-    filter: "brightness(500%)",
-    ease: "power1-in",
+  gsap.to("nav", {
+    
+    backgroundColor: "rgb(18, 22, 0.5)",
+    // ease: "power1-out",
     scrollTrigger: {
       trigger: "#contact",
       scroller: ".container",
       scrub: true,
       start: "top center",
-      end: "bottom 75%",
+      end: "bottom 5%",
       toggleActions: "restart complete reverse reset",
     },
   });
   gsap.set(".three-d-clover", {
     rotation: 45,
+    y: "3rem"
   });
   gsap.to(".three-d-clover", {
-    y: "4rem",
+    y: "-0.5rem",
     scrollTrigger: {
       trigger: "#contact",
       scroller: ".container",
       scrub: 3,
-      start: "top 50%",
+      start: "top 10%",
       end: "bottom bottom",
       toggleActions: "restart complete reverse reset",
     },

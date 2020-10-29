@@ -11,28 +11,34 @@ body {
          font-size: 15.5px;
      }
      @media screen and (min-width: 345px) {
-         font-size: 19px;
+         font-size: 19.5px;
+     }
+     @media screen and (min-width: 450px) {
+         font-size: 22px;
      }
      @media screen and (min-width: 550px) {
-         font-size: 20px;
+         font-size: 23px;
      }
      @media screen and (min-width: 650px) {
-         font-size: 22px;
+         font-size: 24px;
      }
      @media screen and (min-width: 760px) {
          font-size: 25px;
      }
     @media screen and (min-width: 815px) {
-            font-size: 23px;
+            font-size: 26px;
         }
     @media screen and (min-width: 900px) {
-        font-size: 24px;
+        font-size: 27px;
     }
     @media screen and (min-width: 1050px) {
-        font-size: 30px;
+        font-size: 28px;
+    }
+    @media screen and (min-width: 1150px) {
+        font-size: 32px;
     }
     @media screen and (min-width: 1281px) {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     
@@ -56,7 +62,7 @@ body {
 
 header {
     position: fixed;
-    width: 98%;
+    width: 100%;
     z-index: 100;   
 }
 .navbar {
@@ -125,6 +131,7 @@ color: white;
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        top: 0.5rem;
     }
 
     .toggle-button {
@@ -179,12 +186,13 @@ color: white;
 }
 
 .container .section:nth-child(4) {
-    background: #44ff00 center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
-    color: #44ff00;
+    background: rgb(68, 255, 1) center no-repeat url(/assets/bar-full-of-liquor-bottles.jpg);
+    color: yellow;
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+   
 }
 
 #clovers.content {
@@ -260,6 +268,8 @@ span.h1 {
 }
 
 .three-d-clover-container {
+    position: absolute;
+    bottom: 5rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
