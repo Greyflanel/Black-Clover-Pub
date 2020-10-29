@@ -132,17 +132,10 @@ header {
   text-decoration: none;
   color: #44ff00;
   padding: 1rem;
-  line-height: 0.4rem;
-}
-
-.navbar-links li:hover {
-  background-color: #44ff00;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .navbar-links li a:hover {
-  color: black;
+  color: white;
 }
 
 .toggle-button {
