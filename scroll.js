@@ -36,7 +36,7 @@ function scrollAnimation() {
   gsap.to("nav", {
     
     backgroundColor: "rgb(18, 22, 0.5)",
-    // ease: "power1-out",
+    ease: "power1-out",
     scrollTrigger: {
       trigger: "#contact",
       scroller: ".container",
@@ -48,19 +48,20 @@ function scrollAnimation() {
   });
   gsap.set(".three-d-clover", {
     rotation: 45,
-    y: "3rem"
+    
   });
   gsap.to(".three-d-clover", {
-    y: "-0.5rem",
+    y: "2rem",
     scrollTrigger: {
       trigger: "#contact",
       scroller: ".container",
-      scrub: 3,
-      start: "top 10%",
+      scrub: 4,
+      start: "top top",
       end: "bottom bottom",
       toggleActions: "restart complete reverse reset",
     },
-  });  
+  });
+    
 }
 
 scrollAnimation();
