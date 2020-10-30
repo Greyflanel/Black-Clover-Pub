@@ -312,36 +312,38 @@ img.three-d-clover {
   display: -ms-flexbox;
   display: flex;
   width: 15rem;
+  top: 20%;
   right: 10%;
   border-radius: 50%;
 }
 
 @media screen and (min-width: 300px) {
   img.three-d-clover {
-    top: 50%;
-    right: 10%;
-    width: 14rem;
+    top: 55%;
+    right: 16%;
+    width: 13rem;
   }
 }
 
 @media screen and (min-width: 345px) {
   img.three-d-clover {
-    width: 12rem;
-    top: 50%;
-    right: 15%;
+    width: 10rem;
+    top: 65%;
+    right: 22%;
   }
 }
 
 @media screen and (min-width: 450px) {
   img.three-d-clover {
-    top: 40%;
-    right: 20%;
+    width: 10rem;
+    top: 63%;
+    right: 30%;
   }
 }
 
 @media screen and (min-width: 550px) {
   img.three-d-clover {
-    top: 50%;
+    top: 62%;
     right: 30%;
   }
 }
@@ -356,7 +358,7 @@ img.three-d-clover {
 
 @media screen and (min-width: 900px) {
   img.three-d-clover {
-    top: 10%;
+    top: 25%;
     right: 1%;
     width: 14rem;
   }

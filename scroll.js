@@ -50,17 +50,17 @@ function scrollAnimation() {
     rotation: 45,
     
   });
-  gsap.to(".three-d-clover", {
-    y: "2rem",
-    scrollTrigger: {
-      trigger: "#contact",
-      scroller: ".container",
-      scrub: 4,
-      start: "top top",
-      end: "bottom bottom",
-      toggleActions: "restart complete reverse reset",
-    },
-  });
+  // gsap.to(".three-d-clover", {
+  //   y: "2rem",
+  //   scrollTrigger: {
+  //     trigger: "#contact",
+  //     scroller: ".container",
+  //     scrub: 4,
+  //     start: "top top",
+  //     end: "bottom bottom",
+  //     toggleActions: "restart complete reverse reset",
+  //   },
+  // });
     
 }
 
