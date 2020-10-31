@@ -49,7 +49,7 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
-  
+  scroll-snap-type: y mandatory;
 }
 
 .home-container .section {
@@ -168,6 +168,8 @@ a.live {
 .home-container .section:nth-child(1) {
   background: center no-repeat url(/assets/brickwall.svg);
   color: #44ff00;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -178,16 +180,23 @@ a.live {
   background: #cfcfea center no-repeat
     url(/assets/black-clover-pub-live-band.jpg);
   color: #cfcfea;
+  height: 100%;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .home-container .section:nth-child(3) {
   background: #9792e3 center no-repeat
     url(/assets/black-clover-pub-bigbang-drummer.jpg);
   color: #00c3ff;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .home-container .section:nth-child(4) {
@@ -196,8 +205,11 @@ a.live {
   color: yellow;
   width: 100%;
   height: 100vh;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 #clovers.home-content {

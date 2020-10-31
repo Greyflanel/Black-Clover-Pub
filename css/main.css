@@ -4,8 +4,7 @@ body {
   padding: 0;
   font-family: "Inconsolata", monospace;
   font-size: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -90,6 +89,7 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 .home-container .section {
@@ -114,16 +114,10 @@ header {
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand-title img {
@@ -136,8 +130,6 @@ header {
 }
 
 .navbar-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -170,13 +162,8 @@ header {
   right: 1.3rem;
   top: 1.3rem;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30px;
   height: 21px;
 }
@@ -190,19 +177,12 @@ header {
 
 @media (max-width: 600px) {
   .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     top: 0.5rem;
     font-size: 1.2rem;
   }
   .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar-links {
@@ -211,10 +191,7 @@ header {
   }
   .navbar-links ul {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: rgba(18, 22, 0, 0.459);
   }
   .navbar-links ul li {
@@ -224,8 +201,6 @@ header {
     padding: 0.5rem 1rem;
   }
   .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -233,6 +208,8 @@ header {
 .home-container .section:nth-child(1) {
   background: center no-repeat url(/assets/brickwall.svg);
   color: #44ff00;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -242,6 +219,9 @@ header {
   padding-top: 0.5em;
   background: #cfcfea center no-repeat url(/assets/black-clover-pub-live-band.jpg);
   color: #cfcfea;
+  height: 100%;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -249,6 +229,8 @@ header {
 .home-container .section:nth-child(3) {
   background: #9792e3 center no-repeat url(/assets/black-clover-pub-bigbang-drummer.jpg);
   color: #00c3ff;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -258,6 +240,8 @@ header {
   color: yellow;
   width: 100%;
   height: 100vh;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -280,8 +264,6 @@ header {
 
 #contact {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -306,22 +288,14 @@ header {
 }
 
 .contact-text p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0 1%;
 }
 
 img.three-d-clover {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 15rem;
   top: 20%;
@@ -433,10 +407,8 @@ span.h1 {
 
 .container {
   height: 80vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5fr 1fr;
-      grid-template-rows: 5fr 1fr;
+  grid-template-rows: 5fr 1fr;
   background: transparent;
 }
 
@@ -444,11 +416,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
 }
 
@@ -460,18 +428,12 @@ div .tab {
   width: calc(25vh + 8px);
   height: calc(10vh + 8px);
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   top: 164%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
-          clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  justify-content: center;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
   shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
   z-index: 0;
-  -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
@@ -480,10 +442,8 @@ div .tab {
   height: 12vh;
   z-index: 10;
   cursor: pointer;
-  -webkit-clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
-          clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
+  clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
   shape-outside: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 1% 100%);
-  -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
@@ -492,13 +452,11 @@ div .tab {
 }
 
 .preview-list {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), to(white));
   background: linear-gradient(white, white var(--line-offset), white var(--line-offset));
 }
 
 .tab {
   width: 6vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), to(white));
   background: linear-gradient(white, white var(--line-offset), white var(--line-offset));
 }
 
@@ -540,12 +498,8 @@ div .tab {
   width: 70vw;
   height: 68vh;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 3px solid  white;
 }
 
@@ -560,3 +514,4 @@ div .tab {
   height: auto;
   width: 100vw;
 }
+/*# sourceMappingURL=main.css.map */
