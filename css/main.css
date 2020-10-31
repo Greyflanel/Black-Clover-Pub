@@ -520,10 +520,10 @@ div .tab {
 .content {
   position: absolute;
   background: #021919;
-  top: 11%;
-  left: 10%;
-  width: 80vw;
-  height: 76vh;
+  top: 15%;
+  left: 15%;
+  width: 70vw;
+  height: 72vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,11 +531,10 @@ div .tab {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 3px  white;
-          box-shadow: 0 0 3px  white;
+  border: 3px solid  white;
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
   .content {
     height: 50vh;
     top: 30%;

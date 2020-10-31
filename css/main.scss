@@ -421,15 +421,15 @@ div .tab {
 .content {
     position: absolute;
     background: #021919;
-    top: 11%;
-    left: 10%;
-    width: 80vw;
-    height: 76vh;
+    top: 15%;
+    left: 15%;
+    width: 70vw;
+    height: 72vh;
     overflow: hidden;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 3px  white;
-     @media screen and (max-width: 385px) {
+    border: 3px solid  white;
+     @media screen and (max-width: 500px) {
        height: 50vh;
        top: 30%;
      }
