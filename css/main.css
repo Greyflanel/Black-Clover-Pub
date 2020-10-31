@@ -511,6 +511,13 @@ div .tab {
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
   .tab {
+    width: 4rem;
+    top: 170%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tab {
     width: 3rem;
     top: 170%;
   }
