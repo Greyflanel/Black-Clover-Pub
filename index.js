@@ -2,8 +2,8 @@ let mqls = [
   window.matchMedia("(min-width: 1281px)"),
   window.matchMedia("(min-width: 950px)"),
   window.matchMedia("(min-width: 760px)"),
-  window.matchMedia("(min-width: 650px)"),
-  window.matchMedia("(min-width: 585px)"),
+  window.matchMedia("(min-width: 600px)"),
+  window.matchMedia("(min-width: 500px)"),
   window.matchMedia("(min-width: 375px)"),
   window.matchMedia("(min-width: 359px)"),
   window.matchMedia("(min-width: 300px)"),
@@ -171,7 +171,35 @@ function mediaqueryresponse(mql) {
   }
     
   else if (mqls[3].matches) {
-    
+   tlMediaQueryLogo.set(".logo", {
+     x: "-6rem",
+     y: "2rem",
+   });
+   tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
+     x: "-1.4rem",
+     y: "-0.4rem",
+   });
+   tlMediaQueryClover1.to(".clover1", {
+     delay: 2,
+     x: "-160%",
+     y: "-75%",
+     rotation: 730,
+   });
+   tlMediaQueryClover2.to(".clover2", {
+     delay: 2,
+     x: "110%",
+     y: "-70%",
+   });
+   tlMediaQueryClover3.to(".clover3", {
+     delay: 2,
+     x: "160%",
+     y: "70%",
+   });
+   tlMediaQueryClover4.to(".clover4", {
+     delay: 2,
+     x: "30%",
+     y: "105%",
+   }); 
   }
   else if (mqls[4].matches) {
     

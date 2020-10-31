@@ -13,17 +13,17 @@ body {
   @media screen and (min-width: 345px) {
     font-size: 19.5px;
   }
-  @media screen and (min-width: 450px) {
-    font-size: 22px;
+  @media screen and (min-width: 500px) {
+    font-size: 19px;
   }
   @media screen and (min-width: 550px) {
     font-size: 22.5px;
   }
-  @media screen and (min-width: 650px) {
-    font-size: 23px;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
   }
   @media screen and (min-width: 760px) {
-    font-size: 25px;
+    font-size: 20px;
   }
   @media screen and (min-width: 815px) {
     font-size: 26px;
@@ -45,13 +45,14 @@ body {
   scroll-behavior: smooth;
 }
 
-.container {
+.home-container {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
+  
 }
 
-.container .section {
+.home-container .section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -101,7 +102,11 @@ header {
   color: #44ff00;
   padding: 1rem;
 }
-
+a.live {
+  @media screen and (min-width: 600px) and (max-width: 710px) {
+    margin-top: -10%;
+  }
+}
 .navbar-links li a:hover {
   color: white;
 }
@@ -160,7 +165,7 @@ header {
   }
 }
 
-.container .section:nth-child(1) {
+.home-container .section:nth-child(1) {
   background: center no-repeat url(/assets/brickwall.svg);
   color: #44ff00;
   background-size: cover;
@@ -168,7 +173,7 @@ header {
   text-align: center;
 }
 
-.container .section:nth-child(2) {
+.home-container .section:nth-child(2) {
   padding-top: 0.5em;
   background: #cfcfea center no-repeat
     url(/assets/black-clover-pub-live-band.jpg);
@@ -177,7 +182,7 @@ header {
   background-attachment: fixed;
 }
 
-.container .section:nth-child(3) {
+.home-container .section:nth-child(3) {
   background: #9792e3 center no-repeat
     url(/assets/black-clover-pub-bigbang-drummer.jpg);
   color: #00c3ff;
@@ -185,7 +190,7 @@ header {
   background-attachment: fixed;
 }
 
-.container .section:nth-child(4) {
+.home-container .section:nth-child(4) {
   background: rgb(68, 255, 1) center no-repeat
     url(/assets/bar-full-of-liquor-bottles.jpg);
   color: yellow;
@@ -195,7 +200,7 @@ header {
   background-attachment: fixed;
 }
 
-#clovers.content {
+#clovers.home-content {
   width: 100%;
   height: 100vh;
 }
@@ -332,111 +337,106 @@ span.h1 {
   color: yellow;
 }
 
+.container {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background: transparent;
+    
+}
 
-// .three-d-clover-container {
-//     position: absolute;
-//     top: 3rem;
-//     width: 50%;
-//     display: flex;
-//     justify-content: flex-end;
-//     background-color: green;
-// }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    display: flex;
+}
+
+div .tab {
+  background-color:white;
+}
+
+.tab {
+    width: calc(25vh + 8px);
+    height: calc(10vh + 8px);
+    position: relative;
+    display: flex;
+    top: 194%;
+    justify-content: center;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    z-index: 0;
+    transition: width 0.5s;
+
+}
+
+.tab img {
+    width: 10vh;
+    height: 12vh;
+    z-index: 10;
+    cursor: pointer;
+    clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
+    shape-outside: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 1% 100%);
+    transition: width 0.2s;
+}
+
+[type=radio] {
+    display: none;   
+}
+
+.preview-list {
+  
+    background: linear-gradient(
+         white,
+        white var(--line-offset),
+        white var(--line-offset)
+    );
+}
+
+.tab {
+  width: 6vw;
+  @media screen and (max-width: 800px) {
+      width: 3rem;
+    }
+    background: linear-gradient(
+         white,
+         white var(--line-offset),
+         white var(--line-offset)
+    );
+    
+}
+
+[type=radio]:checked ~ label ~ .content{
+    text-align: center;
+    z-index: 8;
+}
 
 
-// #gallery {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-height: 100vh;
-//     background-color: black;
-//  }
+[type=radio]:checked ~ label .tab{
+    width: 0;
+}
 
-// a {
-//     position: relative;
-//     width: 160px;
-//     height: 50px;
-//     line-height: 48px;
-//     background-color: #000;
-//     text-transform: uppercase;
-//     font-size: 20px;
-//     letter-spacing: 4px;
-//     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-// }
-// a::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-//     background-size: 400%;
-//     opacity: 1;
-//     transition: 0.5s;
-//     animation: animate 20s linear infinite;
-//     filter: blur(20px);
-// }
+.content {
+    position: absolute;
+    background: #021919;
+    top: 11%;
+    left: 10%;
+    width: 80vw;
+    height: 76vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px  white;
+     @media screen and (max-width: 385px) {
+       height: 50vh;
+       top: 30%;
+     }
+}
 
-// a::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-//     background-size: 400%;
-//     opacity: 0;
-//     filter: blur(20px);
-//     transition: 0.5s;
-//     animation: animate 20s linear infinite;
-// }
+.content img {
+    height: auto;
+    width: 100vw;  
+}
 
-// a:hover::before,
-// a:hover::after {
-//     opacity: 1;
-// }
-
-// @keyframes animate {
-
-// 0% {
-// background-position: 0 0;
-// }
-// 50% {
-// background-position: 300% 0;
-// }
-// 100% {
-//     background-position: 0 0;
-// }
-// }
-
-// a span {
-//     position: absolute;
-//     display: inline;
-//     top: 1px;
-//     left: 1px;
-//     right:1px;
-//     bottom: 1px;
-//     text-align: center;
-//     background-color: #0c0c0c;
-//     color: rgba(255, 255, 255, 0.2);
-//     z-index: 1;
-// }
-
-// a:hover span {
-//     color: rgba(255, 255, 255, 1);
-// }
-
-// a span::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-//     background-size: 400%;
-//     opacity: 0;
-//     transition: 0.5s;
-//     filter: blur(20px);
-// }
