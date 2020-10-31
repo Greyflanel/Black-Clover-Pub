@@ -483,8 +483,8 @@ div .tab {
   -webkit-clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
           clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
   shape-outside: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 1% 100%);
-  -webkit-transition: width 0.2s;
-  transition: width 0.2s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 [type=radio] {
