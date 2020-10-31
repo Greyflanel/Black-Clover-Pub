@@ -1,3 +1,5 @@
+
+
 gsap.registerPlugin(ScrollTrigger);
 let timeline = gsap.timeline({
   scrollTrigger: ".content",
@@ -6,8 +8,8 @@ let timeline = gsap.timeline({
 
 function scrollAnimation() {
   
-  gsap.to("nav", {
-    
+  gsap.to(".nav", {
+    color: "red",
     scrollTrigger: {
       trigger: "#live-music",
       scroller: ".container",
@@ -33,7 +35,7 @@ function scrollAnimation() {
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.to("nav", {
+  gsap.to(".nav", {
     
     backgroundColor: "rgb(18, 22, 0.5)",
     ease: "power1-out",

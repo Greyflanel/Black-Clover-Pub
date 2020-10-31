@@ -463,7 +463,7 @@ div .tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 194%;
+  top: 164%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -505,6 +505,14 @@ div .tab {
 @media screen and (max-width: 800px) {
   .tab {
     width: 3rem;
+    top: 85%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .tab {
+    width: 3rem;
+    top: 170%;
   }
 }
 
@@ -520,10 +528,10 @@ div .tab {
 .content {
   position: absolute;
   background: #021919;
-  top: 15%;
+  top: 12%;
   left: 15%;
   width: 70vw;
-  height: 72vh;
+  height: 68vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,7 +545,7 @@ div .tab {
 @media screen and (max-width: 500px) {
   .content {
     height: 50vh;
-    top: 30%;
+    top: 20%;
   }
 }
 
