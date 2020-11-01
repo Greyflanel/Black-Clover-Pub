@@ -49,7 +49,7 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
-  
+  scroll-snap-type: y proximity;    
 }
 
 .home-container .section {
@@ -171,6 +171,7 @@ a.live {
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
+  scroll-snap-align: center;
 }
 
 .home-container .section:nth-child(2) {
@@ -180,6 +181,7 @@ a.live {
   color: #cfcfea;
   background-size: cover;
   background-attachment: fixed;
+  scroll-snap-align: center;
 }
 
 .home-container .section:nth-child(3) {
@@ -188,6 +190,7 @@ a.live {
   color: #00c3ff;
   background-size: cover;
   background-attachment: fixed;
+  scroll-snap-align: center;
 }
 
 .home-container .section:nth-child(4) {
@@ -198,6 +201,7 @@ a.live {
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
+  scroll-snap-align: center;
 }
 
 #clovers.home-content {
@@ -385,7 +389,7 @@ ul {
 }
 
 .preview-list {
-  background-color: #25addfa8;
+  background-color: #bae6f7a8;
   border-radius: 5px;
    height: 16vh;
    width: 65%;
@@ -398,6 +402,7 @@ ul {
 
 .tab {
   width: 6.5vw;
+  
  @media screen and (max-width: 900px) {
    width: 5vw;
  }
@@ -425,10 +430,14 @@ ul {
     display: flex;
     align-items: center;
     border: 3px solid  white;
+    @media screen and (max-width: 600px) {
+      height: 50vh;
+      top: 20%;
+    }
     @media screen and (max-width: 900px) {
-      width: 96%;
-      left: 1.5%;
-      rigth: 0.5%;
+      width: 90%;
+      left: 5%;
+      
     } 
 }
 
