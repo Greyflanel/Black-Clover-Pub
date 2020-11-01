@@ -159,7 +159,7 @@ header {
 
 @media screen and (min-width: 600px) and (max-width: 710px) {
   a.live {
-    margin-top: -10%;
+    margin-top: -8%;
   }
 }
 
@@ -217,7 +217,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(18, 22, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.815);
+    font-size: 1.3rem;
   }
   .navbar-links ul li {
     text-align: center;
@@ -500,9 +501,11 @@ ul {
   margin-right: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .preview-list {
-    width: 98%;
+    width: 110%;
+    margin-left: -5%;
+    margin-top: -20%;
   }
 }
 
