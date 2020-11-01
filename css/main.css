@@ -46,7 +46,7 @@ body {
 @media screen and (min-width: 760px) {
   html,
   body {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
@@ -412,11 +412,10 @@ span.h1 {
   background: transparent;
 }
 
-ul {
+.gallery-ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   justify-content: center;
+  margin-bottom: auto;
   display: flex;
 }
 
@@ -429,7 +428,6 @@ div .tab {
   height: calc(10vh + 8px);
   position: relative;
   display: flex;
-  top: 164%;
   justify-content: center;
   clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
   shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
@@ -442,8 +440,6 @@ div .tab {
   height: 12vh;
   z-index: 10;
   cursor: pointer;
-  clip-path: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 10% 100%);
-  shape-outside: polygon(0% 50%, 10% 0%, 85% 0%, 100% 50%, 85% 100%, 1% 100%);
   transition: width 0.5s;
 }
 
@@ -452,32 +448,34 @@ div .tab {
 }
 
 .preview-list {
-  background: linear-gradient(white, white var(--line-offset), white var(--line-offset));
+  margin-top: 81.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 55vw;
+  height: 17%;
+  background-color: #9792e370;
+}
+
+@media screen and (min-width: 300px) {
+  .preview-list {
+    width: 98vw;
+  }
 }
 
 .tab {
-  width: 6vw;
+  width: 6.5vw;
+  margin-top: -18%;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
   background: linear-gradient(white, white var(--line-offset), white var(--line-offset));
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 300px) {
   .tab {
-    width: 3rem;
-    top: 85%;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 800px) {
-  .tab {
-    width: 4rem;
-    top: 170%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .tab {
-    width: 3rem;
-    top: 170%;
+    width: 16vw;
+    margin-top: 18%;
+    margin-left: -40%;
   }
 }
 
@@ -494,7 +492,7 @@ div .tab {
   position: absolute;
   background: #021919;
   top: 12%;
-  left: 15%;
+  left: 16%;
   width: 70vw;
   height: 68vh;
   overflow: hidden;
@@ -507,6 +505,13 @@ div .tab {
   .content {
     height: 50vh;
     top: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 90vw;
+    left: 5%;
   }
 }
 
