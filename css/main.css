@@ -475,7 +475,7 @@ ul.gallery-ul {
   }
 }
 
-.tab {
+ul.gallery-ul .tab {
   width: calc(3rem + 10px);
   height: calc(3rem + 10px);
   z-index: 0;
@@ -483,7 +483,7 @@ ul.gallery-ul {
   transition: width 0.5s;
 }
 
-.tab img {
+ul.gallery-ul .tab img {
   width: 12vh;
   height: 12vh;
   z-index: 10;
@@ -494,26 +494,26 @@ ul.gallery-ul {
 }
 
 @media screen and (min-width: 300px) and (max-width: 550px) {
-  .tab img {
+  ul.gallery-ul .tab img {
     width: 10vh;
     height: 10vh;
   }
 }
 
-[type=radio] {
+ul.gallery-ul [type=radio] {
   display: none;
 }
 
-[type=radio]:checked ~ label ~ .content {
+ul.gallery-ul [type=radio]:checked ~ label ~ .content {
   text-align: center;
   z-index: 8;
 }
 
-[type=radio]:checked ~ label .tab {
+ul.gallery-ul [type=radio]:checked ~ label .tab {
   width: 0;
 }
 
-.content {
+ul.gallery-ul .content {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.363);
   margin-left: auto;
@@ -530,24 +530,24 @@ ul.gallery-ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 4px solid  white;
+  border: 3px solid  white;
 }
 
 @media screen and (min-width: 300px) and (max-width: 550px) {
-  .content {
+  ul.gallery-ul .content {
     height: 55vh;
     top: 22%;
     width: 96vw;
   }
 }
 
-.content img {
+ul.gallery-ul .content img {
   height: auto;
   width: 100vw;
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
-  .content img {
+  ul.gallery-ul .content img {
     width: 100vw;
     height: 46vh;
   }
