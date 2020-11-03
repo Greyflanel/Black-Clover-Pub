@@ -150,7 +150,7 @@ a.live {
     width: 100%;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .navbar-links ul li {
@@ -247,6 +247,7 @@ a.live {
  justify-content: center;
  align-items: center;
  padding: 0 1%;
+ 
 }
 img.three-d-clover  {
   position: absolute;
@@ -274,6 +275,7 @@ img.three-d-clover  {
   }
   @media screen and (min-width: 550px) {
      top: 40%;
+     right: 25%;
      width: 18rem;
   }
   @media screen and (min-width: 700px) {
@@ -282,8 +284,8 @@ img.three-d-clover  {
       width: 17rem;
   }
   @media screen and (min-width: 900px) {
-      top: 25%;
-      
+      top: 20%;
+      right: 5%;
       width: 14rem;
   }
 }
@@ -423,16 +425,16 @@ ul.gallery-ul {
     top: 12%;
     left: 0;
     right: 0;
-    width: 70vw;
+    width: 70%;
     height: 68vh;
     overflow: hidden;
     display: flex;
     align-items: center;
     border: 3px solid  white;
     @media screen and (min-width: 300px) and (max-width: 550px) {
-      height: 55vh;
-      top: 22%;
-      width: 98vw;
+      height: 56vh;
+      top: 18%;
+      width: 98%;
     }
 }
 
