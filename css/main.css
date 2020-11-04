@@ -330,8 +330,8 @@ img.three-d-clover {
   top: 20%;
   right: 10%;
   border-radius: 50%;
-  -webkit-filter: contrast(200%) brightness(140%) saturate(2.5);
-          filter: contrast(200%) brightness(140%) saturate(2.5);
+  -webkit-filter: contrast(200%) brightness(160%) saturate(2);
+          filter: contrast(200%) brightness(160%) saturate(2);
 }
 
 @media screen and (min-width: 300px) {
