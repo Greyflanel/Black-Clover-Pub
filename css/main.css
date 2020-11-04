@@ -329,7 +329,6 @@ img.three-d-clover {
   width: 15rem;
   top: 20%;
   right: 10%;
-  border-radius: 50%;
   -webkit-filter: contrast(200%) brightness(160%) saturate(2);
           filter: contrast(200%) brightness(160%) saturate(2);
 }
@@ -373,7 +372,7 @@ img.three-d-clover {
 
 @media screen and (min-width: 900px) {
   img.three-d-clover {
-    top: 20%;
+    top: 22%;
     right: 5%;
     width: 14rem;
   }
@@ -438,12 +437,24 @@ span.h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.calendar {
+  margin-left: 10%;
+  margin-top: 13%;
+  width: 220%;
+}
+
+@media screen and (max-width: 710px) {
+  .calendar {
+    width: 140%;
+  }
 }
 
 .container {

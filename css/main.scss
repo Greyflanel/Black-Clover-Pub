@@ -226,6 +226,9 @@ a.live {
     display: flex;
     
 }
+
+
+
 #contact .contact-text {
     position: absolute;
     color: white;
@@ -256,7 +259,6 @@ img.three-d-clover  {
   width: 15rem;
   top: 20%;
   right: 10%;
-  border-radius: 50%;
   filter: contrast(200%) brightness(160%) saturate(2);
   @media screen and (min-width: 300px) {
       top: 50%;
@@ -286,7 +288,7 @@ img.three-d-clover  {
       width: 17rem;
   }
   @media screen and (min-width: 900px) {
-      top: 20%;
+      top: 22%;
       right: 5%;
       width: 14rem;
   }
@@ -348,11 +350,19 @@ span.h1 {
 
 #live-music {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-
+.calendar {
+  margin-left: 10%;
+  margin-top: 13%;
+  width: 220%;
+ 
+  @media screen and (max-width: 710px) {
+    width: 140%;
+  }
+}
 .container {
     height: 100vh;
     width: 100%;
