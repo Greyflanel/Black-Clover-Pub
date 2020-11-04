@@ -43,15 +43,25 @@ function scrollAnimation() {
       scroller: ".home-container",
       scrub: true,
       start: "top 25%",
-      end: "bottom 5%",
+      end: "bottom 50%",
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.set(".three-d-clover", {
-    rotation: 45,
-    
-  });
-  
+  // gsap.set("img.three-d-clover", {
+  //   rotation: 45,
+  //   filter: "contrast(0%)",
+  // });
+  // gsap.to("img.three-d-clover", {
+  //   filter: "contrast(300%)",
+  //   scrollTrigger: {
+  //     trigger: "#contact",
+  //     scroller: ".home-container",
+  //     scrub: true,
+  //     start: "top 25%",
+  //     end: "bottom 5%",
+  //     toggleActions: "restart complete reverse reset",
+  //   }
+  // });
 }
 
 scrollAnimation();

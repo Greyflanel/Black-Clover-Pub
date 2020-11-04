@@ -249,6 +249,7 @@ a.live {
  padding: 0 1%;
  
 }
+
 img.three-d-clover  {
   position: absolute;
   display: flex;
@@ -256,6 +257,7 @@ img.three-d-clover  {
   top: 20%;
   right: 10%;
   border-radius: 50%;
+  filter: contrast(200%) brightness(140%) saturate(2.5);
   @media screen and (min-width: 300px) {
       top: 50%;
       
