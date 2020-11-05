@@ -87,7 +87,7 @@ window.onload = function () {
     tl4.to(".clover4", {
       delay: 2,
       x: "67%",
-      y: "85%",
+      y: "82%",
       rotation: 730,
       filter: "blur(0)",
       width: "8rem",
@@ -150,13 +150,14 @@ window.onload = function () {
       });
       tlMediaQueryClover2.to(".clover2", {
         delay: 2,
-        x: "125%",
+        x: "105%",
         y: "-40%",
       });
       tlMediaQueryClover3.to(".clover3", {
         delay: 2,
-        x: "190%",
-        y: "65%",
+        x: "198%",
+        y: "32%",
+        rotation: -700
       });
       tlMediaQueryClover4.to(".clover4", {
         delay: 2,
@@ -164,6 +165,36 @@ window.onload = function () {
         y: "72%",
       });
     } else if (mqls[2].matches) {
+      tlMediaQueryLogo.set(".logo", {
+        x: "-6rem",
+        y: "2rem",
+      });
+      tlMediaQueryClovers.set(".clover1, .clover2, .clover3, .clover4", {
+        x: "-1.4rem",
+        y: "-0.4rem",
+      });
+      tlMediaQueryClover1.to(".clover1", {
+        delay: 2,
+        x: "-200%",
+        y: "-35%",
+        rotation: 730,
+      });
+      tlMediaQueryClover2.to(".clover2", {
+        delay: 2,
+        x: "105%",
+        y: "-40%",
+      });
+      tlMediaQueryClover3.to(".clover3", {
+        delay: 2,
+        x: "198%",
+        y: "32%",
+        rotation: -700,
+      });
+      tlMediaQueryClover4.to(".clover4", {
+        delay: 2,
+        x: "60%",
+        y: "72%",
+      });
     } else if (mqls[3].matches) {
       tlMediaQueryLogo.set(".logo", {
         x: "-6rem",
@@ -195,6 +226,7 @@ window.onload = function () {
         y: "105%",
       });
     } else if (mqls[4].matches) {
+      
     } else if (mqls[5].matches) {
     } else if (mqls[6].matches) {
     }
