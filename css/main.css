@@ -4,8 +4,7 @@ body {
   padding: 0;
   font-family: "Inconsolata", monospace;
   font-size: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -76,8 +75,7 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
 }
 
 .home-container .section {
@@ -102,16 +100,10 @@ header {
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand-title img {
@@ -124,8 +116,6 @@ header {
 }
 
 .navbar-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -158,13 +148,8 @@ header {
   right: 1.3rem;
   top: 1.3rem;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30px;
   height: 21px;
 }
@@ -178,19 +163,12 @@ header {
 
 @media (max-width: 600px) {
   .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     top: 0.5rem;
     font-size: 1.2rem;
   }
   .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar-links {
@@ -199,10 +177,7 @@ header {
   }
   .navbar-links ul {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.788);
     font-size: 1.5rem;
   }
@@ -213,8 +188,6 @@ header {
     padding: 0.5rem 1rem;
   }
   .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -253,7 +226,7 @@ header {
 
 #clovers.home-content {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo {
@@ -282,23 +255,17 @@ header {
 
 #contact {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 img.three-d-clover {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 15rem;
   top: 20%;
   right: 10%;
-  -webkit-filter: contrast(200%) brightness(160%) saturate(2);
-          filter: contrast(200%) brightness(160%) saturate(2);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  filter: contrast(200%) brightness(160%) saturate(2);
+  transform: rotate(45deg);
 }
 
 @media screen and (min-width: 280px) {
@@ -404,21 +371,15 @@ span.h1 {
 }
 
 #live-music {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .calendar {
   margin-left: 10%;
   margin-top: 13%;
-  width: 220%;
+  width: 50rem;
 }
 
 @media screen and (min-width: 710px) {
@@ -431,12 +392,8 @@ span.h1 {
 .container {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: transparent;
   position: relative;
 }
@@ -446,12 +403,8 @@ ul.gallery-ul {
   margin-top: 83vh;
   width: 100%;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -465,7 +418,6 @@ ul.gallery-ul .tab {
   width: calc(3rem + 10px);
   height: calc(3rem + 10px);
   z-index: 0;
-  -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
@@ -474,7 +426,6 @@ ul.gallery-ul .tab img {
   height: 12vh;
   z-index: 10;
   cursor: pointer;
-  -webkit-transition: width 0.5s;
   transition: width 0.5s;
   border: 3px solid white;
 }
@@ -486,16 +437,16 @@ ul.gallery-ul .tab img {
   }
 }
 
-ul.gallery-ul [type=radio] {
+ul.gallery-ul [type="radio"] {
   display: none;
 }
 
-ul.gallery-ul [type=radio]:checked ~ label ~ .content {
+ul.gallery-ul [type="radio"]:checked ~ label ~ .content {
   text-align: center;
   z-index: 8;
 }
 
-ul.gallery-ul [type=radio]:checked ~ label .tab {
+ul.gallery-ul [type="radio"]:checked ~ label .tab {
   width: 0;
 }
 
@@ -510,13 +461,9 @@ ul.gallery-ul .content {
   width: 70%;
   height: 68vh;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px solid  white;
+  align-items: center;
+  border: 3px solid white;
 }
 
 @media screen and (min-width: 300px) and (max-width: 550px) {
@@ -540,29 +487,21 @@ ul.gallery-ul .content img {
 }
 
 .blackboard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border: white solid 6px;
   border-top: white solid 6px;
   border-left: white solid 6px;
   border-bottom: white solid 6px;
-  -webkit-box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
-          box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
+  box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
   background-color: rgba(0, 0, 0, 0.788);
 }
 
 .blackboard:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
-  background-image: linear-gradient(175deg, transparent, transparent 40px, rgba(0, 0, 0, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient(200deg, transparent 80%, rgba(0, 0, 0, 0.3)), radial-gradient(ellipse at right bottom, transparent, transparent 200px, rgba(0, 0, 0, 0.1) 260px, rgba(0, 0, 0, 0.1) 320px, transparent 400px, transparent);
-  border: #2c2c2c solid 2px;
   content: "Contact Us";
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 1em;
   color: white;
   text-align: center;
@@ -585,7 +524,7 @@ p {
 
 label {
   vertical-align: middle;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 0.8rem;
   color: white;
 }
@@ -600,7 +539,7 @@ textarea {
   padding-left: 10px;
   background: none;
   border: none;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 0.8rem;
   color: white;
   cursor: pointer;
@@ -626,12 +565,6 @@ input[type="submit"]:focus {
   outline-color: 0;
 }
 
-::-moz-selection {
-  background: rgba(0, 133, 44, 0.4);
-  color: rgba(238, 238, 238, 0.3);
-  text-shadow: none;
-}
-
 ::selection {
   background: rgba(0, 133, 44, 0.4);
   color: rgba(238, 238, 238, 0.3);
@@ -639,10 +572,17 @@ input[type="submit"]:focus {
 }
 
 .wipeout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
+
+.address {
+  color: white;
+  border-top: 2px solid white;
+  background-color: #061801;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-family: "Permanent Marker", cursive;
+}
+/*# sourceMappingURL=main.css.map */
