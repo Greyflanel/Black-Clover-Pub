@@ -35,17 +35,17 @@ function scrollAnimation() {
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.to(".navbar", {
-    backgroundColor: "rgba(0, 0, 0, 1)",
-    ease: "power1-out",
-    scrollTrigger: {
-      trigger: "#contact",
-      scroller: ".home-container",
-      scrub: true,
-      start: "top 25%",
-      end: "bottom 50%",
-      toggleActions: "restart complete reverse reset",
-    },
+  // gsap.to(".navbar", {
+  //   backgroundColor: "rgba(0, 0, 0, 1)",
+  //   ease: "power1-out",
+  //   scrollTrigger: {
+  //     trigger: "#contact",
+  //     scroller: ".home-container",
+  //     scrub: true,
+  //     start: "top 25%",
+  //     end: "bottom 50%",
+  //     toggleActions: "restart complete reverse reset",
+  //   },
   });
   // gsap.set("img.three-d-clover", {
   //   rotation: 45,
