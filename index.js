@@ -114,24 +114,24 @@ window.onload = function () {
       });
       tlMediaQueryClover1.to(".clover1", {
         delay: 2,
-        x: "-180%",
+        x: "-220%",
         y: "-55%",
         rotation: 730,
       });
       tlMediaQueryClover2.to(".clover2", {
         delay: 2,
         x: "140%",
-        y: "-40%",
+        y: "-50%",
       });
       tlMediaQueryClover3.to(".clover3", {
         delay: 2,
-        x: "190%",
+        x: "200%",
         y: "70%",
       });
       tlMediaQueryClover4.to(".clover4", {
         delay: 2,
-        x: "60%",
-        y: "75%",
+        x: "35%",
+        y: "90%",
       });
     } else if (mqls[1].matches) {
       tlMediaQueryLogo.set(".logo", {
