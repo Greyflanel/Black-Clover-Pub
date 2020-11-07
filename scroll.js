@@ -35,8 +35,8 @@ function scrollAnimation() {
       toggleActions: "restart complete reverse reset",
     },
   });
-  gsap.to(".navbar", {
-    backgroundColor: "rgba(0, 0, 0, 1)",
+  gsap.to(".navbar-links a", {
+    
     ease: "power1-out",
     scrollTrigger: {
       trigger: "#contact",

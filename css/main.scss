@@ -72,8 +72,8 @@ header {
 }
 
 .brand-title img {
-  width: 40%;
-  margin-left: -50%;
+  width: 48%;
+  margin-left: -48%;
 }
 
 .navbar-links {
@@ -139,6 +139,7 @@ a.live {
   .navbar-links {
     display: none;
     width: 100%;
+    
   }
 
   .navbar-links ul {
@@ -228,44 +229,22 @@ a.live {
 #contact {
   position: relative;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }
 
 img.three-d-clover {
-  position: absolute;
-  display: flex;
+  border-radius: 40%;
   width: 15rem;
-  top: 20%;
-  right: 10%;
   filter: contrast(200%) brightness(160%) saturate(2);
   transform: rotate(45deg);
-  @media screen and (min-width: 280px) {
-    top: 75%;
-    right: 20%;
-    width: 10rem;
-  }
-  @media screen and (min-width: 345px) {
-    width: 17rem;
-    top: 50%;
-    right: 5%;
-  }
-  @media screen and (min-width: 450px) {
-    width: 18rem;
-    top: 50%;
-  }
-  @media screen and (min-width: 550px) {
-    top: 40%;
-    right: 25%;
-    width: 18rem;
-  }
-  @media screen and (min-width: 700px) {
-    top: 20%;
-    right: -2%;
-    width: 17rem;
-  }
-  @media screen and (min-width: 900px) {
-    top: 22%;
-    right: 5%;
-    width: 14rem;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    width: 15rem;
   }
 }
 .clover1,
@@ -427,6 +406,8 @@ ul.gallery-ul {
 .blackboard {
   display: flex;
   justify-content: center;
+  font-size: 0.1rem;
+  margin: 0 1rem;
   border: white solid 6px;
   border-top: white solid 6px;
   border-left: white solid 6px;
@@ -436,29 +417,25 @@ ul.gallery-ul {
   background-color: rgba(0, 0, 0, 0.788);
 }
 
-.blackboard:before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "Contact Us";
-  font-family: "Permanent Marker", cursive;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-}
 .shade {
   width: 20rem;
-  position: absolute;
-  bottom: 2rem;
-  left: 2.5rem;
+  margin-top: 2rem;
+  
 }
 
 .form {
-  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  h2 {
+    color: white;
+    font-size: 0.8rem;
+    align-self: center;
+    font-family: "Permanent Marker", cursive;
+    margin: 0.3px;
+  }
 }
 
-p {
-  margin: 0.5rem;
-}
 
 label {
   vertical-align: middle;
@@ -468,8 +445,9 @@ label {
 }
 
 p:nth-of-type(5) > label {
-  vertical-align: middle;
+  vertical-align: top;
 }
+
 
 input,
 textarea {
@@ -478,29 +456,31 @@ textarea {
   background: none;
   border: none;
   font-family: "Permanent Marker", cursive;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: white;
   cursor: pointer;
-  line-height: 1.2rem;
+  line-height: 0.8rem;
   resize: none;
 }
 
 textarea {
   height: 60px;
-  font-size: 0.8rem;
-  line-height: 1.4rem;
+  font-size: 0.7rem;
+  
 }
+
 
 input[type="submit"] {
   cursor: pointer;
   color: white;
   padding: 0;
+  
 }
 
 input[type="submit"]:focus {
   background: rgba(4, 73, 25, 0.2);
   color: white;
-  outline-color: green($color: #000000);
+  
 }
 
 ::selection {
@@ -512,6 +492,7 @@ input[type="submit"]:focus {
 .wipeout {
   display: flex;
   justify-content: center;
+  
 }
 
 .address {
@@ -519,8 +500,33 @@ input[type="submit"]:focus {
   border-top: 2px solid white;
   background-color: rgb(6, 24, 1);
   display: flex;
-  justify-content: center;
-  
-  font-size: 0.8rem;
+  text-align: center;
+  flex-direction: column;
+  font-size: 0.7rem;
   font-family: "Permanent Marker", cursive;
+  
+}
+
+p.address {
+  margin: 0.2px;
+  padding-top: 0.2px;
+}
+
+.contact-submit-btn {
+  width: 40%;
+  margin-bottom: 12px;
+  line-height: 1rem;
+  align-self: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 0.7rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.contact-info {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
 }
