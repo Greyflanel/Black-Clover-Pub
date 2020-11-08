@@ -300,9 +300,9 @@ header {
 @media screen and (min-width: 280px) and (max-width: 600px) {
   #contact {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -319,8 +319,7 @@ img.three-d-clover {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   img.three-d-clover {
-    width: 14rem;
-    margin-top: -10%;
+    display: none;
   }
 }
 
@@ -522,7 +521,7 @@ ul.gallery-ul .content img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   margin: 0 1rem;
   border: white solid 6px;
   border-top: white solid 6px;
@@ -550,7 +549,7 @@ ul.gallery-ul .content img {
 
 .form h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -562,11 +561,29 @@ p {
   margin: 0;
 }
 
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  p {
+    padding-left: 3px;
+  }
+}
+
+.subject-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 label {
   vertical-align: middle;
   font-family: 'Kalam', cursive;
   font-size: 0.8rem;
   color: white;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  label {
+    font-size: 1.1rem;
+  }
 }
 
 p:nth-of-type(5) > label {
@@ -584,6 +601,13 @@ textarea {
   color: white;
   cursor: pointer;
   resize: none;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  input,
+  textarea {
+    font-size: 1rem;
+  }
 }
 
 input[type="submit"] {
@@ -614,7 +638,7 @@ input[type="submit"]:focus {
 }
 
 p.address {
-  margin: 0.2px;
+  margin: 0.1px;
   padding-top: 0.2px;
 }
 
@@ -632,8 +656,14 @@ p.address {
   border: 1px solid white;
 }
 
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .contact-submit-btn {
+    font-size: 1rem;
+  }
+}
+
 .contact-info {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8%;
+  margin-top: 4%;
 }
