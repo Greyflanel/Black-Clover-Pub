@@ -420,7 +420,9 @@ ul.gallery-ul {
 .shade {
   width: 20rem;
   margin-top: 2rem;
-  
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    width: 24rem;
+  }
 }
 
 .form {
@@ -441,7 +443,7 @@ p {
   
   margin: 0;
   @media screen and (min-width: 280px) and (max-width: 600px) {
-    padding-left: 3px;
+    padding-left: 1.2%;
   }
 }
 

@@ -536,6 +536,12 @@ ul.gallery-ul .content img {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .shade {
+    width: 24rem;
+  }
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,7 +569,7 @@ p {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   p {
-    padding-left: 3px;
+    padding-left: 1.2%;
   }
 }
 
