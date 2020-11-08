@@ -700,7 +700,7 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
