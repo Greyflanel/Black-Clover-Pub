@@ -420,7 +420,7 @@ ul.gallery-ul {
 
 .shade {
   width: 20rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   @media screen and (min-width: 280px) and (max-width: 600px) {
     width: 24rem;
   }
@@ -544,15 +544,18 @@ p.address {
 
 .social-media-icons {
   margin-bottom: -5%;
-
+  
   @media screen and (min-width: 280px) and (max-width: 600px) {
-   margin-top: 10%;
+   margin-bottom: 10%;
    width: 80%;
    display: flex;
    justify-content: space-evenly;
   }
   img {
-    
+    display: flex;
+    flex-direction: column;
+    width: 3.5rem;
+    margin-bottom: 20%;
   @media screen and (min-width: 280px) and (max-width: 600px) {
    width: 5rem;
     margin: 0;

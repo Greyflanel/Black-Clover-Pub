@@ -537,7 +537,7 @@ ul.gallery-ul .content img {
 
 .shade {
   width: 20rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
@@ -700,7 +700,7 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
-    margin-top: 10%;
+    margin-bottom: 10%;
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,6 +709,18 @@ p.address {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+}
+
+.social-media-icons img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 3.5rem;
+  margin-bottom: 20%;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
