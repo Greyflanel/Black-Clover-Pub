@@ -515,8 +515,12 @@ input[type="submit"]:focus {
 }
 
 p.address {
-  margin: 0.1px;
-  padding-top: 0.2px;
+  
+  padding-top: 0.4px;
+  line-height: 0.85rem;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    line-height: 1.2rem;
+  }
 }
 
 .contact-submit-btn {
@@ -561,4 +565,12 @@ p.address {
     margin: 0;
   }
   }
+}
+
+p#pub-address {
+  padding-top: 1.5%;
+}
+
+p#phone {
+  padding-top: 1.5%;
 }
