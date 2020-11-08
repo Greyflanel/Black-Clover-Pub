@@ -233,7 +233,8 @@ a.live {
   flex-direction: row-reverse;
   align-items: center;
   @media screen and (min-width: 280px) and (max-width: 600px) {
-    
+    justify-content: center;
+    align-content: center;
   }
 }
 
@@ -428,7 +429,7 @@ ul.gallery-ul {
   
   h2 {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: normal;
     align-self: center;
     font-family: 'Kalam', cursive;
@@ -454,7 +455,7 @@ label {
   font-size: 0.8rem;
   color: white;
   @media screen and (min-width: 280px) and (max-width: 600px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -504,7 +505,7 @@ input[type="submit"]:focus {
   @media screen and (min-width: 280px) and (max-width: 600px) {
     width: 70%;
     align-self: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -532,4 +533,7 @@ p.address {
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    margin: 0;
+  }
 }

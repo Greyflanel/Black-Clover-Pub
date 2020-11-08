@@ -297,6 +297,16 @@ header {
           align-items: center;
 }
 
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  #contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
 img.three-d-clover {
   border-radius: 40%;
   width: 15rem;
@@ -538,7 +548,7 @@ ul.gallery-ul .content img {
 
 .form h2 {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: normal;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -572,7 +582,7 @@ label {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   label {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -633,7 +643,7 @@ input[type="submit"]:focus {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -666,4 +676,10 @@ p.address {
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .contact-info {
+    margin: 0;
+  }
 }
