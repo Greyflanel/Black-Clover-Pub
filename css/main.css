@@ -549,7 +549,8 @@ ul.gallery-ul .content img {
 
 .form h2 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: normal;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -635,6 +636,16 @@ input[type="submit"]:focus {
           flex-direction: column;
   font-size: 0.7rem;
   font-family: 'Kalam', cursive;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .address {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 0.9rem;
+  }
 }
 
 p.address {
