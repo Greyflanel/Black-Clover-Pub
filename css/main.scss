@@ -449,7 +449,12 @@ p {
 }
 
 .subject-input {
+  margin-left: 8px;
+}
+
+.subject-label {
   display: flex;
+ 
 }
 
 label {
@@ -474,7 +479,7 @@ textarea {
   padding-left: 10px;
   background: none;
   border: none;
-  font-family: 'Kalam', cursive;
+  font-family: 'permanent marker';
   font-size: 0.7rem;
   color: white;
   cursor: pointer;
@@ -533,6 +538,7 @@ p.address {
   color: white;
   border-radius: 5px;
   border: 1px solid white;
+  cursor: pointer;
   @media screen and (min-width: 280px) and (max-width: 600px) {
     font-size: 1rem;
   }
