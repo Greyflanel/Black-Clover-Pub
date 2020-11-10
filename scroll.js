@@ -8,22 +8,22 @@ let timeline = gsap.timeline({
 
 function scrollAnimation() {
   
-  gsap.to(".navbar-links a", {
-    color: "yellow",
-    filter: "brightness(300%)",
-    scrollTrigger: {
-      trigger: "#home",
-      scroller: ".home-container",
-      scrub: true,
-      ease: "power1-in",
-      start: "bottom 25%", //when top  passes the bottom viewport height
-      end: "center 100%", //when bottom of herman passes the bottom viewport height
+  // gsap.to(".navbar-links a", {
+  //   color: "#000000",
+    
+  //   scrollTrigger: {
+  //     trigger: "#home",
+  //     scroller: ".home-container",
+  //     scrub: true,
+  //     ease: "power1-in",
+  //     start: "bottom 25%", //when top  passes the bottom viewport height
+  //     end: "center 100%", //when bottom of herman passes the bottom viewport height
 
-      //events: onEnter onLeave onEnterBack onLeaveBack
-      toggleActions: "restart complete reverse reset",
-      //options: play, pause, resume, reset, restart, complete, reverse,none
-    },
-  });
+  //     //events: onEnter onLeave onEnterBack onLeaveBack
+  //     toggleActions: "restart complete reverse reset",
+  //     //options: play, pause, resume, reset, restart, complete, reverse,none
+  //   },
+  // });
   gsap.to(".navbar-links a", {
     color: "white",
     scrollTrigger: {

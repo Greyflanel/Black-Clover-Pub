@@ -314,11 +314,12 @@ span.h1 {
 
 #calendar {
    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+   color: white;
   height: 80vh;
   width: 60vw;
   margin-top: 3%;
   margin-left: 2%;
-  background-color: rgba(255, 255, 0, 0.219);
+  background-color: rgba(255, 255, 0, 0.1);
   @media screen and (min-width: 280px) and (max-width: 600px) {
     margin-top: 5.5rem;
     width: 80vw;
@@ -326,7 +327,7 @@ span.h1 {
 }
 
 .fc .fc-button {
-  background-color: yellow !important;
+  background-color:white !important;
   color: black !important;
 }
 
@@ -336,7 +337,7 @@ div.fc-toolbar-chunk {
 
 .fc-header-toolbar .fc-toolbar-title {
   
-  color:yellow;
+  color: white;
   padding-left: 5px;
   padding-right: 5px;
   
@@ -344,7 +345,7 @@ div.fc-toolbar-chunk {
 
 
 span.fc-icon {
-  color: black;
+  color: #000000;
 }
 
 div.fc-button-group {
