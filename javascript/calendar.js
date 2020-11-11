@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: "dayGridMonth",
+    initialView: "listMonth",
     googleCalendarApiKey: "",
     events: {
       googleCalendarId: "richardlovelace811@gmail.com",
