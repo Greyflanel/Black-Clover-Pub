@@ -44,7 +44,7 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
-  scroll-snap-type: y proximity;
+  
 }
 
 .home-container .section {
@@ -244,8 +244,10 @@ img.three-d-clover {
   width: 15rem;
   filter: contrast(200%) brightness(160%) saturate(2);
   transform: rotate(45deg);
-  @media screen and (min-width: 280px) and (max-width: 600px) {
-    display: none;
+  @media screen and (min-width: 280px) and (max-width: 700px) {
+    display: inline;
+    width: 14rem;
+    margin-bottom: -10%;
   }
 }
 .clover1,
@@ -597,10 +599,10 @@ p.address {
   margin-bottom: -5%;
   
   @media screen and (min-width: 280px) and (max-width: 600px) {
-   margin-bottom: 10%;
+   
    width: 80%;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
   }
   img {
     display: flex;

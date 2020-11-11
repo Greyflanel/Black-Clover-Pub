@@ -75,7 +75,6 @@ body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
-  scroll-snap-type: y proximity;
 }
 
 .home-container .section {
@@ -276,9 +275,11 @@ img.three-d-clover {
   transform: rotate(45deg);
 }
 
-@media screen and (min-width: 280px) and (max-width: 600px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   img.three-d-clover {
-    display: none;
+    display: inline;
+    width: 14rem;
+    margin-bottom: -10%;
   }
 }
 
@@ -657,10 +658,9 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
-    margin-bottom: 10%;
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 
