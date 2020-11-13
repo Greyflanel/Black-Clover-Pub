@@ -607,15 +607,24 @@ p.address {
 }
 
 .contact-info {
-   
+   text-align: center;
   margin-top: 4%;
   @media screen and (min-width: 280px) and (max-width: 600px) {
     margin: 0;
   }
 }
 
+.social-media-text {
+  color: white;
+  font-weight: 1000;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+
 .social-media-icons {
   margin-bottom: -5%;
+  
   
   @media screen and (min-width: 280px) and (max-width: 600px) {
    
@@ -638,6 +647,14 @@ p.address {
 
 .fb-icon {
   margin-right: 3.5%;
+}
+
+.insta-icon img {
+  margin-top: 30%;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+  margin-top: 0;
+    
+  }
 }
 
 p#pub-address {
