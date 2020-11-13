@@ -523,6 +523,10 @@ ul.gallery-ul .content img {
   margin-top: 2.5rem;
 }
 
+.shade #status {
+  text-align: center;
+}
+
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .shade {
     width: 24rem;

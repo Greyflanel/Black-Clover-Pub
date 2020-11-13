@@ -114,13 +114,13 @@ window.onload = function () {
       });
       tlMediaQueryClover1.to(".clover1", {
         delay: 2,
-        x: "-220%",
-        y: "-55%",
+        x: "-190%",
+        y: "-65%",
         rotation: 730,
       });
       tlMediaQueryClover2.to(".clover2", {
         delay: 2,
-        x: "140%",
+        x: "130%",
         y: "-50%",
       });
       tlMediaQueryClover3.to(".clover3", {

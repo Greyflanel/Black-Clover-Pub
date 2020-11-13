@@ -480,6 +480,9 @@ ul.gallery-ul {
 .shade {
   width: 20rem;
   margin-top: 2.5rem;
+  #status {
+    text-align: center;
+  }
   @media screen and (min-width: 280px) and (max-width: 600px) {
     width: 24rem;
   }
@@ -604,7 +607,7 @@ p.address {
 }
 
 .contact-info {
-  
+   
   margin-top: 4%;
   @media screen and (min-width: 280px) and (max-width: 600px) {
     margin: 0;
