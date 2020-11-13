@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     initialView: "listMonth",
     googleCalendarApiKey: "",
     events: {
-      googleCalendarId: "richardlovelace811@gmail.com",
+      googleCalendarId: "",
     },
   });
-  console.log(calendar)
+  
   calendar.render();
 });

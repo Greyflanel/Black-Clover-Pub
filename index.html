@@ -12,9 +12,6 @@
     Bar: Black Clover Pub, Location: San Antonio TX, entertainment: Live Music"
     />
     <title>Black Clover Pub</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
-    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -90,6 +87,7 @@
       </div>
       <div class="section" id="live-music">
         <div class="home-content">
+          <h3>Live Music Schedule</h3>
           <div id='calendar'></div>
         </div>
       </div>
@@ -247,22 +245,20 @@
           />
         </div>
         <div class="social-media-icons">
-          <a href="#" class="fb-icon"><img src="/assets/fb-icon.svg" alt=""></a>
-          <a href="#" class="insta-icon"><img src="/assets/square-instagram.svg" alt=""></a>
+          <a href="#" class="fb-icon"><img src="/assets/fb-icon.svg" alt="facebook icon"></a>
+          <a href="#" class="insta-icon"><img src="/assets/square-instagram.svg" alt="instagram icon"></a>
         </div>
         <form action="">
         <div class="shade">
           <div class="blackboard">
-            
             <div class="form">
               <h2>Contact Us</h2>
-              <p><label>Name: </label> <input type="text" /></p>
-              <p><label>Email: </label> <input type="text" /></p>
-              <p><label>Phone: </label> <input type="text" /></p>
-              <p class="subject-label"><label>Subject: </label> <input class="subject-input" type="text" /></p>
-              <p><label class="message-text">Message: </label> <textarea></textarea></p>
-              <!-- <p class="wipeout"><input type="submit" value="Send" /></p> -->
-              <button class="contact-submit-btn">Send Message</button>
+              <p><label>Name: <input type="text" id="name" name="name"/></label> </p>
+              <p><label>Email: <input type="text" id="email" name="email"/></label> </p>
+              <p><label>Phone: <input type="text" id="phone" name="phone"/></label> </p>
+              <p class="subject-label"><label>Subject: <input class="subject-input" type="text" id="subject" name="subject"/></label> </p>
+              <p><label class="message-text">Message: <textarea type="text"id="message" name="message"></textarea></label> </p>
+              <button type="submit" class="contact-submit-btn">Send Message</button>
               <p id="pub-address" class="address">Black Clover Pub <br>3030 Thousand Oaks Dr <br> San Antonio, TX 78247 <br></p>
               <p id="phone" class="address">(210) 368-2551</p>
             </div>
