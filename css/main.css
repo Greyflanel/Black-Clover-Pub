@@ -321,7 +321,7 @@ img.three-d-clover {
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
   img.three-d-clover {
-    display: inline;
+    display: none;
     width: 14rem;
     margin-bottom: -10%;
   }
@@ -588,16 +588,12 @@ ul.gallery-ul .content img {
 
 .shade {
   width: 20rem;
-  margin-top: 2.5rem;
-}
-
-.shade #status {
-  text-align: center;
+  margin-top: 10%;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .shade {
-    width: 24rem;
+    width: 22rem;
   }
 }
 
@@ -766,13 +762,13 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
-    width: 80%;
+    width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -790,9 +786,13 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons img {
-    width: 5rem;
-    margin: 0;
+    width: 3rem;
+    margin-bottom: -20%;
   }
+}
+
+.fb-icon {
+  margin-right: 3.5%;
 }
 
 p#pub-address {
