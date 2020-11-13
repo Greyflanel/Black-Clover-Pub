@@ -594,6 +594,7 @@ ul.gallery-ul .content img {
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .shade {
     width: 22rem;
+    margin-top: 20%;
   }
 }
 
@@ -786,8 +787,7 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons img {
-    width: 3rem;
-    margin-bottom: -20%;
+    margin-bottom: -35%;
   }
 }
 
