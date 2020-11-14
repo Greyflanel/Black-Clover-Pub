@@ -252,16 +252,17 @@
         </div> -->
           <a href="#" class="insta-icon"><img src="/assets/square-instagram.svg" alt="instagram icon"></a>
         </div>
-        <form class="form-element" action="https://formspree.io/f/xdopdevg" method="POST">
+        <form class="form-element" method="POST">
         <div class="shade">
           <div class="blackboard">
             <div class="form">
               <h2>Contact Us</h2>
-              <p><label>Name: <input type="text" id="name" name="name" required /></label> </p>
-              <p><label>Email: <input type="text" id="email" name="email" required/></label> </p>
-              <p><label>Phone: <input type="text" id="phone" name="phone" /></label> </p>
-              <p class="subject-label"><label>Subject: <input class="subject-input" type="text" id="subject" name="subject"/></label> </p>
-              <p><label class="message-text">Message: <textarea type="text"id="message" name="message" required ></textarea></label> </p>
+              <p><label for="">Name: <input class="name" type="text" id="name" name="name" required /></label> </p>
+              <p><label for="">Email: <input
+                class="email" type="email" id="email" name="email" required/></label> </p>
+              <p><label for="">Phone: <input class="phone" type="tel" id="phone" name="phone" /></label> </p>
+              <p class="subject"><label for="">Subject: <input type="text" id="subject" name="subject"/></label> </p>
+              <p><label for="" class="message-text">Message: <textarea class="message" type="text"id="message" name="message" required ></textarea></label> </p>
               <button type="submit" class="contact-submit-btn">Send Message</button>
               <p id="pub-address" class="address">Black Clover Pub <br>3030 Thousand Oaks Dr <br> San Antonio, TX 78247 <br></p>
               <p id="phone" class="address">(210) 368-2551</p>
@@ -272,10 +273,11 @@
         </form>
       </div>
     </div>
-    
+    <!-- vqlxbamylhlydslf -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="javascript/email.js"></script>
     <script defer src="/javascript/index.js"></script>
     <script defer src="/javascript/scroll.js"></script>
     <script defer src="javascript/calendar.js"></script>
