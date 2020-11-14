@@ -554,7 +554,7 @@ ul.gallery-ul .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid white;
+  border: 5px solid white;
 }
 
 @media screen and (min-width: 300px) and (max-width: 550px) {
@@ -603,9 +603,9 @@ ul.gallery-ul .content img {
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
   .shade {
-    width: 21rem;
+    width: 22.5rem;
     margin-top: 16%;
-    margin-left: 1%;
+    margin-left: 0.5%;
   }
 }
 
