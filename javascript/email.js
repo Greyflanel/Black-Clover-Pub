@@ -25,5 +25,6 @@ function sendEmail(name, email, phone, subject, message) {
         From: "",
         Subject: `${name} sent you a message`,
         Body: `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Subject: ${subject} <br/> Message: ${message}`
-    }).then((message) => alert("Mail has been successfully sent!"))
+    }).then((message) => alert("Success! Your message has been sent!"))
+    .catch((error) => alert("Sorry, your message was not sent. Please make sure all required fields are filled out."))
 }

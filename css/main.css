@@ -143,10 +143,6 @@ header {
   padding: 1rem;
 }
 
-.navbar-links li a:hover {
-  background-color: #00000083;
-}
-
 .toggle-button {
   position: fixed;
   right: 1.3rem;
@@ -223,7 +219,7 @@ header {
 
 .home-container .section:nth-child(2) {
   padding-top: 0.5em;
-  background: #ff0101c0 center no-repeat url(/assets/black-clover-pub-live-band.webp);
+  background: #ff0101b2 center no-repeat url(/assets/black-clover-pub-live-band.webp);
   color: #cfcfea;
   background-size: cover;
   background-attachment: fixed;
@@ -427,7 +423,9 @@ span.h1 {
 }
 
 .fc-list-day-cushion {
-  background: rgba(0, 0, 0, 0.918) !important;
+  -webkit-filter: brightness(350%);
+          filter: brightness(350%);
+  background: #0e0303 !important;
 }
 
 .fc-list-empty {
@@ -629,7 +627,7 @@ ul.gallery-ul .content img {
 
 .form h2 {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: normal;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
