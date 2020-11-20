@@ -316,15 +316,19 @@ span.h1 {
 
 
 .slide-container {
-  max-width: 700px;
+  max-width: 1000px;
   position: relative;
   margin-top: 8%;
-  margin-left: 42%;
-   @media screen and (min-width: 280px) and (max-width: 700px) {
+  margin-left: auto;
+   @media screen and (min-width: 280px) and (max-width: 900px) {
      min-width: 280px;
-     max-width: 500px;
+     max-width: 850px;
     margin-left: auto;
     margin-top: 22%;
+   }
+
+   @media screen and (min-width: 1281) {
+     max-width: 1900px;
    }
 }
 
@@ -367,13 +371,13 @@ span.h1 {
 }
 
 .dots-container {
-  max-width: 700px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
-  margin-left: 40%;
-  @media screen and (min-width: 280px) and (max-width: 700px) {
+  margin-left: auto;
+  @media screen and (min-width: 280px) and (max-width: 900px) {
      min-width: 280px;
-     max-width: 500px;
+     max-width: 850px;
     margin-left: auto;
    }
 }
