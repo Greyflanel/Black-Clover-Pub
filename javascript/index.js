@@ -156,8 +156,8 @@ window.onload = function () {
       tlMediaQueryClover3.to(".clover3", {
         delay: 2,
         x: "198%",
-        y: "32%",
-        rotation: -700
+        y: "50%",
+        rotation: -710
       });
       tlMediaQueryClover4.to(".clover4", {
         delay: 2,
