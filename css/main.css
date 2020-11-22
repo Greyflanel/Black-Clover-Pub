@@ -539,7 +539,7 @@ span.h1 {
 
 #live-music h3 {
   text-shadow: 0 0 4px black;
-  margin-bottom: -2%;
+  margin-bottom: -0.4rem;
   color: white;
 }
 
@@ -556,9 +556,9 @@ span.h1 {
   color: white;
   font-size: 0.8rem;
   background-color: #00000083;
-  height: 75vh;
-  width: 58vw;
-  margin-top: 1rem;
+  width: 25rem;
+  height: 15rem;
+  margin-top: 0.5rem;
   margin-left: 1rem;
 }
 
@@ -642,7 +642,7 @@ span.fc-icon {
 }
 
 .shade {
-  width: 18.5rem;
+  width: 19rem;
   margin-top: 11%;
   margin-left: 2%;
 }
