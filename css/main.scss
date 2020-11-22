@@ -22,10 +22,10 @@ body {
     font-size: 20px;
   }
   @media screen and (min-width: 815px) {
-    font-size: 21px;
+    font-size: 22px;
   }
   @media screen and (min-width: 900px) {
-    font-size: 24px;
+    font-size: 23px;
   }
   @media screen and (min-width: 1050px) {
     font-size: 28px;
@@ -321,15 +321,16 @@ span.h1 {
 
 .slide-container {
   position: relative;
-  max-width: 30rem;
-  margin-top: 15rem;
+  max-width: 23rem;
+  margin-top: 6rem;
+
   @media screen and (min-width: 620px) {
      right: 1.5rem;
-     max-width: 23rem;
+     max-width: 22rem;
      margin-top: 4rem; 
    } 
 
-   @media screen and (min-width: 1280px) {
+   @media screen and (min-width: 1281px) {
      right: 1.5rem;
      max-width: 20rem;
      margin-top: 4rem; 
@@ -378,15 +379,20 @@ span.h1 {
 }
 
 .dots-container {
-  max-width: 20rem;
+  max-width: 23rem;
   display: flex;
   position: relative;
-  justify-content: center;
-  @media screen and (min-width: 620px) and (max-width: 1100px) {
-     max-width: 30rem;
-    
+  
+  @media screen and (min-width: 620px) {
+     right: 1rem;
      
-   } 
+   }
+   
+   @media screen and (min-width: 1281px) {
+     right: 1.5rem;
+     max-width: 20rem;
+     margin-top: 4rem; 
+   }
 }
 
 .dots-container .dot {
