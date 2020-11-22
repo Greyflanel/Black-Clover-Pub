@@ -403,13 +403,13 @@ span.h1 {
 
 .slide-container {
   position: relative;
-  max-width: 26rem;
+  max-width: 28rem;
   margin-top: 15rem;
 }
 
 @media screen and (min-width: 620px) {
   .slide-container {
-    right: 1.5rem;
+    right: 1rem;
     max-width: 24rem;
     margin-top: 5rem;
   }
@@ -423,7 +423,7 @@ span.h1 {
 
 @media screen and (min-width: 900px) {
   .slide-container {
-    max-width: 24rem;
+    max-width: 26rem;
     margin-top: 4rem;
   }
 }
@@ -558,8 +558,8 @@ span.h1 {
   background-color: #00000083;
   height: 75vh;
   width: 58vw;
-  margin-top: 2.8%;
-  margin-left: 2%;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
