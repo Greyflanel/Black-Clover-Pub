@@ -449,13 +449,15 @@ span.h1 {
    font-size: 0.8rem;
    background-color:  #00000083;
   width: 25rem;
-   height: 15rem;
+   height: 16rem;
   margin-top: 0.5rem;
   margin-left: 1rem;
   
-  @media screen and (min-width: 280px) and (max-width: 600px) {
-    margin-top: 10%;
-    width: 80vw;
+  @media screen and (min-width: 280px) and (max-width: 900px) {
+    margin-top: 2.2rem;
+    width: 20rem;
+    height: 28rem;
+    margin-left: 0.4rem;
   }
 }
 
