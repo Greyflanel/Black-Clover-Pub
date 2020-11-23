@@ -5,7 +5,8 @@ body {
   padding: 0;
   font-family: "Inconsolata", monospace;
   font-size: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -100,15 +101,21 @@ header {
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brand-title img {
   width: 48%;
-  margin-left: -48%;
+  margin-left: -46%;
 }
 
 .navbar-links {
@@ -116,6 +123,8 @@ header {
 }
 
 .navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -139,8 +148,13 @@ header {
   right: 1.3rem;
   top: 1.3rem;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 30px;
   height: 21px;
 }
@@ -154,12 +168,19 @@ header {
 
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     top: 0.5rem;
     font-size: 1.2rem;
   }
   .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .navbar-links {
@@ -168,7 +189,10 @@ header {
   }
   .navbar-links ul {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: rgba(0, 0, 0, 0.788);
     font-size: 1.5rem;
   }
@@ -179,6 +203,8 @@ header {
     padding: 0.5rem 1rem;
   }
   .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -246,25 +272,42 @@ header {
 
 #contact {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   #contact {
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 img.three-d-clover {
   border-radius: 40%;
   width: 15rem;
-  filter: contrast(200%) brightness(160%) saturate(2);
-  transform: rotate(45deg);
+  -webkit-filter: contrast(200%) brightness(160%) saturate(2);
+          filter: contrast(200%) brightness(160%) saturate(2);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -330,6 +373,15 @@ span.h1 {
   color: yellow;
 }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -340,45 +392,45 @@ span.h1 {
 }
 
 #gallery .home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .slide-container {
   position: relative;
   max-width: 28rem;
-  margin-top: 15rem;
+  margin-top: 8rem;
 }
 
 @media screen and (min-width: 620px) {
   .slide-container {
-    right: 1rem;
-    max-width: 24rem;
-    margin-top: 5rem;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .slide-container {
-    margin-top: 4rem;
+    right: 0.5rem;
+    max-width: 26rem;
+    margin-top: 6rem;
   }
 }
 
 @media screen and (min-width: 900px) {
   .slide-container {
-    max-width: 26rem;
+    max-width: 27rem;
     margin-top: 4rem;
   }
 }
 
 @media screen and (min-width: 1281px) {
   .slide-container {
-    max-width: 26rem;
+    max-width: 23rem;
   }
 }
 
 .slide-container .slide.fade {
-  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   border: 4px solid white;
 }
 
@@ -397,9 +449,13 @@ span.h1 {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .slide-container .prev:hover,
@@ -418,9 +474,13 @@ span.h1 {
 
 .dots-container {
   max-width: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (min-width: 620px) {
@@ -431,7 +491,6 @@ span.h1 {
 
 @media screen and (min-width: 900px) {
   .dots-container {
-    max-width: 24rem;
     right: 4rem;
   }
 }
@@ -439,7 +498,7 @@ span.h1 {
 @media screen and (min-width: 1281px) {
   .dots-container {
     max-width: 20rem;
-    right: 1rem;
+    margin-top: 4rem;
   }
 }
 
@@ -454,29 +513,53 @@ span.h1 {
   border: 1px solid white;
 }
 
+@media screen and (max-width: 340px) {
+  .dots-container .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 .dots-container .dot.active {
   background-color: white;
   border: 1px solid blue;
 }
 
 #live-music {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   text-align: center;
 }
 
-#live-music h3 {
-  text-shadow: 0 0 4px black;
-  margin-bottom: -0.4rem;
-  color: white;
+#live-music .home-content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.3rem;
 }
 
-@media screen and (min-width: 280px) and (max-width: 600px) {
-  #live-music h3 {
-    margin-top: 12%;
-    margin-bottom: -10%;
-    text-shadow: 0 0 3px black;
+#live-music .music-h3 {
+  text-shadow: 0 0 4px black;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: -0.1rem;
+}
+
+@media screen and (min-width: 360px) {
+  #live-music .music-h3 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #live-music .music-h3 {
+    margin-top: 1rem;
   }
 }
 
@@ -485,18 +568,29 @@ span.h1 {
   color: white;
   font-size: 0.8rem;
   background-color: #00000083;
-  width: 25rem;
-  height: 16rem;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  width: 20rem;
+  height: 24rem;
 }
 
-@media screen and (min-width: 280px) and (max-width: 900px) {
+@media screen and (min-width: 360px) {
   #calendar {
-    margin-top: 2.2rem;
-    width: 20rem;
-    height: 28rem;
-    margin-left: 0.4rem;
+    min-width: 22rem;
+    height: 22rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #calendar {
+    min-width: 27rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #calendar {
+    width: 26rem;
+    height: 16rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -505,7 +599,8 @@ span.h1 {
 }
 
 .fc-list-day-cushion {
-  filter: brightness(350%);
+  -webkit-filter: brightness(350%);
+          filter: brightness(350%);
   background: #0e0303 !important;
 }
 
@@ -554,22 +649,27 @@ span.fc-icon {
 }
 
 .blackboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0.7rem;
   margin: 0 0.7rem;
   border: white solid 6px;
   border-top: white solid 6px;
   border-left: white solid 6px;
   border-bottom: white solid 6px;
-  box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
+  -webkit-box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
+          box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px white;
   background-color: rgba(0, 0, 0, 0.788);
 }
 
 .shade {
-  width: 19rem;
+  width: 18rem;
   margin-top: 11%;
-  margin-left: 2%;
+  margin-left: -0.08%;
 }
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -581,16 +681,23 @@ span.fc-icon {
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form h2 {
   color: white;
   font-size: 1.8rem;
   font-weight: normal;
-  align-self: center;
-  font-family: "Kalam", cursive;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Kalam', cursive;
   margin: 0.1px;
 }
 
@@ -614,7 +721,7 @@ p {
 
 label {
   vertical-align: middle;
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
   font-size: 0.85rem;
   color: white;
 }
@@ -636,7 +743,7 @@ textarea {
   padding-left: 10px;
   background: none;
   border: none;
-  font-family: "permanent marker";
+  font-family: 'permanent marker';
   font-size: 0.7rem;
   color: white;
   cursor: pointer;
@@ -665,17 +772,24 @@ input[type="submit"]:focus {
   color: white;
   border-top: 2px solid white;
   background-color: #030a01;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 0.9rem;
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .address {
     width: 70%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 1rem;
     margin: 0;
   }
@@ -694,10 +808,14 @@ p.address {
 
 .contact-submit-btn {
   width: 50%;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 20px 0;
-  align-self: center;
-  font-family: "Kalam", cursive;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Kalam', cursive;
   font-size: 0.7rem;
   background-color: transparent;
   color: white;
@@ -729,7 +847,9 @@ p.address {
   font-weight: 1000;
   height: 100%;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-media-icons {
@@ -739,14 +859,23 @@ p.address {
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
     width: 66%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 .social-media-icons img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 3.3rem;
   margin-bottom: 20%;
 }
@@ -779,4 +908,3 @@ p#pub-address {
 p#phone {
   padding-top: 1.5%;
 }
-/*# sourceMappingURL=main.css.map */
