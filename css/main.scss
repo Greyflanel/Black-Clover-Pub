@@ -179,7 +179,7 @@ header {
 }
 
 .home-container .section:nth-child(3) {
-  background: #9792e3 center no-repeat
+  background: #6f65ff center no-repeat
     url(/assets/black-clover-pub-bigbang-drummer.webp);
   color: #00c3ff;
   background-size: cover;
@@ -240,7 +240,7 @@ header {
 
 img.three-d-clover {
   border-radius: 40%;
-  width: 15rem;
+  width: 14rem;
   filter: contrast(200%) brightness(160%) saturate(2);
   transform: rotate(45deg);
   @media screen and (min-width: 280px) and (max-width: 700px) {
@@ -321,25 +321,25 @@ span.h1 {
 
 .slide-container {
   position: relative;
-  max-width: 28rem;
-  margin-top: 8rem;
+  max-width: 30rem;
+  margin-top: 25vh;
 
   @media screen and (min-width: 620px) {
-     right: 0.5rem;
-     max-width: 26rem;
-     margin-top: 6rem; 
+     right: 0.4rem;
+    
+      
    } 
 
 
 
-@media screen and (min-width: 900px) {
-     max-width: 27rem;
-     margin-top: 4rem; 
+@media screen and (min-width: 1050px) {
+     max-width: 29rem;
+     margin-top: 17vh;
    }
 
    @media screen and (min-width: 1281px) {
-     max-width: 23rem;
-    margin-top: 7rem;
+     max-width: 26rem;
+     margin-top: 14vh;
    }
 }
 
@@ -389,19 +389,20 @@ span.h1 {
   position: relative;
   justify-content: flex-end;
   @media screen and (min-width: 620px) {
-     right: 2rem;
+     right: 1rem;
      
      
    } 
 
 
 @media screen and (min-width: 900px) {
-     right: 4rem; 
+     
    }
 
    
    @media screen and (min-width: 1281px) {
-     max-width: 20rem;
+     max-width: 25rem;
+     right: 6rem;
    }
 }
 
@@ -433,18 +434,19 @@ span.h1 {
   .home-content {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
   }
   .music-h3 {
     text-shadow: 0 0 4px black;
     color: white;
     margin-top: 4rem;
-    margin-bottom: -0.1rem;
+    margin-bottom: 0.2rem;
     @media screen and (min-width: 360px) {
       margin-top: 2rem;
     }
     @media screen and (min-width: 800px) {
       margin-top: 1rem;
+      font-size: 1rem;
     }
   }
 }
@@ -455,20 +457,20 @@ span.h1 {
    font-size: 0.8rem;
    background-color:  #00000083;
    width: 20rem;
-   height: 24rem;
+   height: 32rem;
    @media screen and (min-width: 360px) {
     min-width: 22rem;
-    height: 22rem;
+    height: 32rem;
    }
 
    @media screen and (min-width: 800px) {
     min-width: 27rem;
-    height: 18rem;
+    height: 20rem;
    }
    @media screen and (min-width: 1200px) {
-    width: 26rem;
-    height: 16rem;
-    font-size: 0.7rem;
+    width: 22rem;
+    height: 17rem;
+    font-size: 0.6rem;
    }
 }
 
@@ -540,7 +542,7 @@ span.fc-icon {
   display: flex;
   justify-content: center;
   font-size: 0.7rem;
-  margin: 0 0.7rem;
+  margin: 0 0.8rem;
   border: white solid 6px;
   border-top: white solid 6px;
   border-left: white solid 6px;
@@ -554,15 +556,21 @@ span.fc-icon {
 }
 
 .shade {
-  width: 18rem;
-  margin-top: 11%;
-  margin-left: -0.08%;
+  width: 16rem;
+  margin-top: 2rem;
+  margin-left: 0.01rem;
   @media screen and (min-width: 280px) and (max-width: 700px) {
     width: 23rem;
     margin-top: 16%;
-    margin-left: 0.5%;
+    margin-left: 0.5rem;
   }
   
+  @media screen and (min-width: 1400px) {
+    width: 19rem;
+    margin-top: 2rem;
+    margin-left: 0.4rem;
+  }
+
 }
 
 
@@ -575,7 +583,7 @@ span.fc-icon {
     font-weight: normal;
     align-self: center;
     font-family: 'Kalam', cursive;
-    margin: 0.1px;
+    margin: 0.1rem;
   }
 }
 
@@ -706,7 +714,7 @@ p.address {
   
   @media screen and (min-width: 280px) and (max-width: 600px) {
    
-   width: 66%;
+   width: 6rem;
    display: flex;
    justify-content: flex-end;
    
@@ -736,9 +744,9 @@ p.address {
 }
 
 p#pub-address {
-  padding-top: 1.5%;
+  padding-top: 2%;
 }
 
 p#phone {
-  padding-top: 1.5%;
+  padding-top: 2%;
 }
