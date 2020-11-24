@@ -143,10 +143,6 @@ header {
   padding: 1rem;
 }
 
-a:hover {
-  color: blue;
-}
-
 #anchor-tags:hover {
   background-color: #00000083;
 }
@@ -675,7 +671,7 @@ span.fc-icon {
 }
 
 .shade {
-  width: 17rem;
+  width: 19rem;
   margin-top: 2rem;
   margin-left: 0.01rem;
 }
