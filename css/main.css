@@ -140,7 +140,8 @@ header {
   text-decoration: none;
   color: #44ff00;
   text-shadow: 0 0 2px black;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
+  margin-top: 0.15rem;
 }
 
 #anchor-tags:hover {
