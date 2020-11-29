@@ -891,7 +891,7 @@ p.address {
   width: 7rem;
   height: 4.5rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
@@ -902,7 +902,7 @@ p.address {
 
 .social-media-text p {
   position: absolute;
-  top: 0.5rem;
+  top: 0.6rem;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
