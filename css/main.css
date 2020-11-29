@@ -708,7 +708,7 @@ span.fc-icon {
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
   .shade {
-    width: 22rem;
+    width: 23rem;
     margin-left: 0.1rem;
   }
 }
@@ -796,6 +796,16 @@ textarea {
   textarea {
     font-size: 1rem;
   }
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+}
+
+textarea:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
 }
 
 input[type="submit"] {
@@ -889,7 +899,7 @@ p.address {
   font-weight: 200;
   background-color: rgba(0, 0, 0, 0.788);
   width: 7rem;
-  height: 4.5rem;
+  height: 4.2rem;
   text-align: center;
   border-radius: 5px;
 }
@@ -960,6 +970,12 @@ p.address {
   .social-media-icons img {
     width: 4rem;
   }
+}
+
+.social-media-icons img:hover {
+  background-color: #45ff01be;
+  -webkit-filter: brightness(250%);
+          filter: brightness(250%);
 }
 
 .fb-icon {

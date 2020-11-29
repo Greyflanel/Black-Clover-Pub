@@ -556,7 +556,7 @@ span.fc-icon {
   margin-top: 2rem;
   margin-left: 0.001rem;
   @media screen and (min-width: 280px) and (max-width: 700px) {
-    width: 22rem;
+    width: 23rem;
     margin-left: 0.1rem;
   }
 
@@ -610,6 +610,7 @@ p:nth-of-type(5) > label {
   vertical-align: top;
 }
 
+
 input,
 textarea {
   vertical-align: middle;
@@ -624,6 +625,16 @@ textarea {
   @media screen and (min-width: 280px) and (max-width: 600px) {
     font-size: 1rem;
   }
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 3px;
+}
+
+textarea:hover {
+   background-color: rgba(255, 255, 255, 0.37);
+   border-radius: 3px;
 }
 
 input[type="submit"] {
@@ -695,7 +706,7 @@ p.address {
   font-weight: 200;
   background-color:  rgba(0, 0, 0, 0.788);
   width: 7rem;
-  height: 4.5rem;
+  height: 4.2rem;
   
   text-align: center;
   border-radius: 5px;
@@ -737,6 +748,12 @@ p.address {
       
     }
   }
+  
+}
+
+.social-media-icons img:hover {
+  background-color:  #45ff01be;
+  filter: brightness(250%);
 }
 
 .fb-icon {
