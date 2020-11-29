@@ -162,7 +162,7 @@ window.onload = function () {
       tlMediaQueryClover4.to(".clover4", {
         delay: 2,
         x: "60%",
-        y: "72%",
+        y: "70%",
       });
     } else if (mqls[2].matches) {
       tlMediaQueryLogo.set(".logo", {

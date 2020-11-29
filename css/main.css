@@ -216,7 +216,7 @@ header {
 
 .home-container .section:nth-child(1) {
   background: center no-repeat url(/assets/brickwall.svg);
-  color: #44ff00;
+  color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -232,7 +232,7 @@ header {
 
 .home-container .section:nth-child(3) {
   background: #6f65ff center no-repeat url(/assets/black-clover-pub-bigbang-drummer.webp);
-  color: #00c3ff;
+  color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -297,12 +297,13 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -693,17 +694,22 @@ span.fc-icon {
   background-color: rgba(0, 0, 0, 0.788);
 }
 
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .blackboard {
+    margin-bottom: -2rem;
+  }
+}
+
 .shade {
   width: 19rem;
   margin-top: 2rem;
-  margin-left: 0.01rem;
+  margin-left: 0.001rem;
 }
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
   .shade {
-    width: 23rem;
-    margin-top: 16%;
-    margin-left: 0.5rem;
+    width: 20rem;
+    margin-left: 0.1rem;
   }
 }
 
@@ -742,7 +748,7 @@ p {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   p {
-    padding-left: 1.2%;
+    padding-left: 1.1%;
   }
 }
 
@@ -873,33 +879,69 @@ p.address {
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .contact-info {
-    margin: 0;
+    margin-top: -6rem;
   }
 }
 
 .social-media-text {
+  position: relative;
   color: white;
-  font-weight: 1000;
-  height: 100%;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.788);
+  width: 7rem;
+  height: 4.5rem;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .social-media-text {
+    height: 4rem;
+  }
+}
+
+.social-media-text p {
+  position: absolute;
+  top: 0.5rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .social-media-text p {
+    top: 0.3rem;
+  }
 }
 
 .social-media-icons {
-  margin-bottom: -7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 14rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons {
-    width: 6rem;
+    width: 16rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: -2rem;
   }
 }
 
@@ -912,13 +954,11 @@ p.address {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 3.3rem;
-  margin-bottom: 20%;
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .social-media-icons img {
     width: 4rem;
-    margin-bottom: -35%;
   }
 }
 
@@ -926,13 +966,15 @@ p.address {
   margin-right: 3.5%;
 }
 
-.insta-icon img {
-  margin-top: 30%;
+@media screen and (min-width: 280px) and (max-width: 600px) {
+  .fb-icon {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
   .insta-icon img {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
