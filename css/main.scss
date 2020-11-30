@@ -262,6 +262,11 @@ img.three-d-clover {
     width: 14rem;
     margin-bottom: -10%;
   }
+  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+    
+    width: 13rem;
+    margin-bottom: -10%;
+  }
 }
 .clover1,
 .clover2,
@@ -431,6 +436,18 @@ span.h1 {
   border: 1px solid blue;
 }
 
+.food-truck-container {
+  position: relative;
+  top: 11rem;
+  right: 7.5rem;
+  
+  p {
+    font-size: 0.7rem;
+    margin-left: 1.2rem;
+    margin-top: -1rem;
+  }
+}
+
 #live-music {
   display: flex;
   justify-content: start;
@@ -546,8 +563,10 @@ span.fc-icon {
     0px 0px 0px 4px white;
   background-color: rgba(0, 0, 0, 0.788);
   @media screen and (min-width: 280px) and (max-width: 600px) {
-    
     margin-bottom: -2rem;
+  }
+  @media screen and (min-width: 600px) and (max-width: 700px) {
+    width: 17rem;
   }
 }
 
@@ -560,8 +579,8 @@ span.fc-icon {
     margin-left: 0.1rem;
   }
 
-  @media screen and (min-width: 1400px) {
-    width: 22rem;
+  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+    width: 17rem;
     margin-top: 2rem;
     margin-left: 0.4rem;
   }
@@ -628,7 +647,7 @@ textarea {
 }
 
 input:hover {
-  background-color: rgba(255, 255, 255, 0.37);
+  background-color: rgba(255, 255, 255, 0.67);
   border-radius: 3px;
 }
 
@@ -718,7 +737,7 @@ p.address {
 
 .social-media-text p {
   position: absolute;
-  top: 0.6rem;
+  top: 0.5rem;
   @media screen and (min-width: 280px) and (max-width: 600px) {
     top: 0.3rem;
   }
@@ -752,7 +771,7 @@ p.address {
 }
 
 .social-media-icons img:hover {
-  background-color:  #45ff01be;
+  background-color:  #45ff01;
   filter: brightness(250%);
 }
 
