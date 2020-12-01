@@ -169,7 +169,7 @@ header {
 
 .home-container .section:nth-child(2) {
   padding-top: 0.5em;
-  background: #ff0101b2 center no-repeat
+  background: #c80e0ed2 center no-repeat
     url(/assets/black-clover-pub-live-band.webp);
   color: #cfcfea;
   background-size: cover;
@@ -340,21 +340,16 @@ span.h1 {
 
 .slide-container {
   position: relative;
-  max-width: 30rem;
+  max-width: 32rem;
   margin-top: 25vh;
-
-  @media screen and (min-width: 620px) {
-    right: 0.4rem;
+  @media screen and (min-width: 600px) {
+    max-width: 30rem;
+    right: 0.5rem;
   }
-
-  @media screen and (min-width: 1050px) {
-    max-width: 24rem;
-    margin-top: 16vh;
-  }
-
   @media screen and (min-width: 1281px) {
-    max-width: 26rem;
     margin-top: 20vh;
+    width: 25rem;
+   
   }
 }
 
@@ -398,22 +393,11 @@ span.h1 {
 }
 
 .dots-container {
-  max-width: 24rem;
+  
   display: flex;
   position: relative;
-  justify-content: flex-end;
-  @media screen and (min-width: 620px) {
-    right: 1rem;
-  }
-
-  @media screen and (min-width: 900px) {
-    right: 3rem;
-  }
-
-  @media screen and (min-width: 1281px) {
-    max-width: 25rem;
-    right: 6rem;
-  }
+  justify-content: center;
+ 
 }
 
 .dots-container .dot {
@@ -439,12 +423,60 @@ span.h1 {
 .food-truck-container {
   position: relative;
   top: 11rem;
-  right: 7.5rem;
+  right: 2rem;
   
   p {
     font-size: 0.7rem;
-    margin-left: 1.2rem;
+    
     margin-top: -1rem;
+  }
+}
+
+.microphone-container {
+  position: relative;
+  bottom: -12rem;
+  right: 5rem;
+  img {
+    filter: brightness(240%) contrast(3);
+  }
+}
+
+.ray {
+  clip-path:polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
+  transition: 4s;
+transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%); 
+  position: absolute;
+  top: 5rem;
+  left: 40%;
+  width: 500px;
+  height: 100px;
+  background: linear-gradient(0.25turn,rgb(133, 133, 255), rgba(255,255,100,0));
+}
+
+
+.light1 {
+  animation-duration: 10s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+}
+
+.light2 {
+  animation-duration: 7s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes wave {
+  0% {
+    --angle: 90deg;
+  }
+  
+  50% {
+    --angle: 110deg;
+  }
+  100% {
+    --angle: 60deg;
   }
 }
 
@@ -492,7 +524,7 @@ span.h1 {
   }
   @media screen and (min-width: 1281px) {
     width: 26rem;
-    height: 17rem;
+    height: 16rem;
     font-size: 0.6rem;
   }
 }
@@ -529,7 +561,7 @@ span.h1 {
 }
 
 div.fc-toolbar-chunk {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 .fc-header-toolbar .fc-toolbar-title {
