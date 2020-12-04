@@ -336,19 +336,26 @@ span.h1 {
 #gallery .home-content {
   display: flex;
   flex-direction: row-reverse;
+  
 }
 
 .slide-container {
   position: relative;
   max-width: 32rem;
   margin-top: 25vh;
-  @media screen and (min-width: 600px) {
-    max-width: 30rem;
+  @media screen and (min-width: 550px) {
+    max-width: 29rem;
+    right: 0.5rem;
+    margin-top: 17vh;
+  }
+  @media screen and (min-width: 800px) {
+    margin-top: 16vh;
+    max-width: 24rem;
     right: 0.5rem;
   }
   @media screen and (min-width: 1281px) {
     margin-top: 20vh;
-    width: 25rem;
+    max-width: 25rem;
    
   }
 }
@@ -403,8 +410,8 @@ span.h1 {
 .dots-container .dot {
   cursor: pointer;
   margin: 1%;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   color: #333;
   border-radius: 50%;
   background-color: blue;
@@ -420,37 +427,49 @@ span.h1 {
   border: 1px solid blue;
 }
 
-.food-truck-container {
-  position: relative;
-  top: 11rem;
-  right: 2rem;
-  
-  p {
-    font-size: 0.7rem;
-    
-    margin-top: -1rem;
-  }
-}
 
 .microphone-container {
-  position: relative;
-  bottom: -12rem;
-  right: 5rem;
-  img {
-    filter: brightness(240%) contrast(3);
+  white-space: pre-wrap;
+  margin-right: 4.5rem;
+  span {
+    opacity: 0.5;
+    filter: brightness(120%) contrast(2);
+    img {
+      width: 1.8rem;
+      opacity: 0.7;
+      
+  color: rgb(192, 255, 184);
+  padding: 0.6rem;
+  border: 0.4rem solid rgb(172, 207, 253);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 9.5s infinite running;     
+    }
   }
+  h1 {
+    font-size: 2rem;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+   
+  }
+  
 }
+
 
 .ray {
   clip-path:polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
   transition: 4s;
 transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%); 
   position: absolute;
-  top: 5rem;
-  left: 40%;
-  width: 500px;
-  height: 100px;
-  background: linear-gradient(0.25turn,rgb(133, 133, 255), rgba(255,255,100,0));
+  top: -2rem;
+  left: 50%;
+  width: 800px;
+  height: 150px;
+  background: linear-gradient(0.25turn,rgb(186, 231, 252), rgba(38, 255, 67, 0));
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 
@@ -827,4 +846,57 @@ p#pub-address {
 
 p#phone {
   padding-top: 2%;
+}
+
+
+
+:root { 
+  
+  /* Set neon color */
+  --neon-text-color: #44ff00;
+  --neon-border-color: #08f;
+}
+
+
+
+h1 {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(192, 255, 184);
+  padding: 0.6rem;
+  border: 0.4rem solid rgb(172, 207, 253);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 9.5s infinite running;     
+}
+
+
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem rgb(95, 255, 95),
+            0.2rem 0.2rem 1rem #fff,
+            0 0 1rem var(--neon-text-color),
+            0 0 0.5rem var(--neon-text-color),
+            
+            
+            0 0 1.5rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 1rem var(--neon-border-color),
+            inset 0 0 1.5rem var(--neon-border-color),
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 1rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 0 0 black;
+        box-shadow: 0 0 black;
+    }    
 }
