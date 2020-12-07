@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+:root {
+  --neon-text-color: #44ff00;
+  --neon-border-color: #08f;
+}
+
 html,
 body {
   margin: 0;
@@ -86,6 +91,14 @@ body {
   overflow: hidden;
   background-blend-mode: multiply;
   background-attachment: fixed;
+}
+
+#gallery.section {
+  overflow-y: scroll;
+}
+
+#gallery.section .scrollbar-hidden {
+  display: none;
 }
 
 header {
@@ -408,235 +421,57 @@ span.h1 {
   color: yellow;
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #gallery .home-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.slide-container {
-  position: relative;
-  max-width: 32rem;
-  margin-top: 25vh;
-}
-
-@media screen and (min-width: 550px) {
-  .slide-container {
-    max-width: 29rem;
-    right: 0.5rem;
-    margin-top: 17vh;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .slide-container {
-    margin-top: 16vh;
-    max-width: 24rem;
-    right: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 1281px) {
-  .slide-container {
-    margin-top: 20vh;
-    max-width: 25rem;
-  }
-}
-
-.slide-container .slide.fade {
-  -webkit-animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-          animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  border: 4px solid white;
-}
-
-.slide-container .slide img {
-  max-width: 100%;
-  margin-bottom: -1%;
-}
-
-.slide-container .prev,
-.slide-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.slide-container .prev:hover,
-.slide-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.slide-container .prev {
-  left: 2px;
-}
-
-.slide-container .next {
-  right: 2px;
-}
-
-.dots-container {
+#gallery .home-content .container > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
 }
 
-.dots-container .dot {
-  cursor: pointer;
-  margin: 1%;
-  width: 14px;
-  height: 14px;
-  color: #333;
-  border-radius: 50%;
-  background-color: blue;
-  border: 1px solid white;
+#gallery .home-content .container > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 2px 16px var(--shadow);
+          box-shadow: 0 2px 16px var(--shadow);
 }
 
-@media screen and (max-width: 340px) {
-  .dots-container .dot {
-    width: 10px;
-    height: 10px;
-  }
+#gallery .home-content .container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
 }
 
-.dots-container .dot.active {
-  background-color: white;
-  border: 1px solid blue;
+#gallery .home-content .horizontal {
+  grid-column: span 2;
 }
 
-.microphone-container {
-  white-space: pre-wrap;
-  margin-right: 4.5rem;
+#gallery .home-content .vertical {
+  grid-row: span 2;
 }
 
-.microphone-container span {
-  opacity: 0.5;
-  -webkit-filter: brightness(120%) contrast(2);
-          filter: brightness(120%) contrast(2);
-}
-
-.microphone-container span img {
-  width: 1.8rem;
-  opacity: 0.7;
-  color: #c0ffb8;
-  padding: 0.6rem;
-  border: 0.4rem solid #accffd;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  -webkit-animation: flicker 9.5s infinite running;
-          animation: flicker 9.5s infinite running;
-}
-
-.microphone-container h1 {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 800px) {
-  .microphone-container h1 {
-    display: none;
-  }
-}
-
-.ray {
-  -webkit-clip-path: polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
-          clip-path: polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
-  -webkit-transition: 4s;
-  transition: 4s;
-  -webkit-transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%);
-          transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%);
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  width: 800px;
-  height: 150px;
-  background: -webkit-gradient(linear, left top, right top, from(#bae7fc), to(rgba(38, 255, 67, 0)));
-  background: linear-gradient(0.25turn, #bae7fc, rgba(38, 255, 67, 0));
-}
-
-@media screen and (max-width: 800px) {
-  .ray {
-    display: none;
-  }
-}
-
-.light1 {
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-name: wave;
-          animation-name: wave;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.light2 {
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-name: wave;
-          animation-name: wave;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    --angle: 90deg;
-  }
-  50% {
-    --angle: 110deg;
-  }
-  100% {
-    --angle: 60deg;
-  }
-}
-
-@keyframes wave {
-  0% {
-    --angle: 90deg;
-  }
-  50% {
-    --angle: 110deg;
-  }
-  100% {
-    --angle: 60deg;
-  }
+#gallery .home-content .big {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 #live-music {
@@ -646,9 +481,6 @@ span.h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   text-align: center;
 }
 
@@ -1093,48 +925,4 @@ p#pub-address {
 
 p#phone {
   padding-top: 2%;
-}
-
-:root {
-  /* Set neon color */
-  --neon-text-color: #44ff00;
-  --neon-border-color: #08f;
-}
-
-h1 {
-  font-size: 16px;
-  font-weight: 100;
-  color: #c0ffb8;
-  padding: 0.6rem;
-  border: 0.4rem solid #accffd;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  -webkit-animation: flicker 9.5s infinite running;
-          animation: flicker 9.5s infinite running;
-}
-
-/* Animate neon flicker */
-@-webkit-keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: -0.2rem -0.2rem 1rem #5fff5f, 0.2rem 0.2rem 1rem #fff, 0 0 1rem var(--neon-text-color), 0 0 0.5rem var(--neon-text-color), 0 0 1.5rem var(--neon-text-color);
-    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color), 0 0 2rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
-            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color), 0 0 2rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
-  }
-  20%, 24%, 55% {
-    text-shadow: 0 0 black;
-    -webkit-box-shadow: 0 0 black;
-            box-shadow: 0 0 black;
-  }
-}
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: -0.2rem -0.2rem 1rem #5fff5f, 0.2rem 0.2rem 1rem #fff, 0 0 1rem var(--neon-text-color), 0 0 0.5rem var(--neon-text-color), 0 0 1.5rem var(--neon-text-color);
-    -webkit-box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color), 0 0 2rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
-            box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color), 0 0 2rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
-  }
-  20%, 24%, 55% {
-    text-shadow: 0 0 black;
-    -webkit-box-shadow: 0 0 black;
-            box-shadow: 0 0 black;
-  }
 }
