@@ -22,7 +22,9 @@ function scrollAnimation() {
       //options: play, pause, resume, reset, restart, complete, reverse,none
     },
   });
-  
+  gsap.to(".gallery-filler img", {
+    
+  }) 
  
 }
 
