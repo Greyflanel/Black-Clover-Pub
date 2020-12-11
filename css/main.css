@@ -4,7 +4,9 @@
   --neon-text-color: #ffffff;
   --neon-border-color: rgb(58, 78, 255);
 }
-
+/* * {
+  border: 1px solid red !important;
+} */
 html,
 body {
   margin: 0;
@@ -375,7 +377,7 @@ span.h1 {
 
 @media screen and (min-width: 200px) {
   #live-music .music-h1 {
-    margin-top: 4rem;
+    margin-top: 5rem;
     font-size: 1rem;
   }
 }
@@ -415,9 +417,18 @@ span.h1 {
   animation: flicker 6.5s infinite alternate;
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 400px) {
   .neon-music {
-    display: none;
+    top: 0.01rem;
+    left: 5rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .neon-music {
+    left: 0.1rem;
+   width: 3.5rem;
   }
 }
 
@@ -481,9 +492,18 @@ span.h1 {
 
 
 
-@media screen and (min-width: 200px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 400px) {
   .live-music-text {
     display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .live-music-text {
+    top: 11rem;
+    left: 0.1rem;
+    width: 3.5rem;
+    height: 6rem;
   }
 }
 
@@ -519,6 +539,15 @@ span.h1 {
   position: absolute;
   top: 15rem;
   height: 3.2rem;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .second-text {
+    top: 18rem;
+    left: 0.1rem;
+    width: 3.5rem;
+    height: 6rem;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 670px) {
@@ -718,9 +747,22 @@ span.fc-icon {
   grid-row: span 2;
 }
 
+
 .gallery-filler img {
   position: absolute;
-  right: 0.8rem;
+  z-index: 10;
+  right: 0.2rem;
+}
+
+.gallery-container {
+  position: absolute;
+  z-index: 100;
+  right: 0.001rem;
+  top: 4rem;
+  width: 6rem;
+  background-color: rgba(0, 0, 0, 0.589);
+  padding-left: 0.5rem;
+  opacity: 0;
 }
 
 #contact {

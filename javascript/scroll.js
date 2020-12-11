@@ -22,8 +22,9 @@ function scrollAnimation() {
       //options: play, pause, resume, reset, restart, complete, reverse,none
     },
   });
+  
   gsap.to(".gallery-filler img", {
-    y: "-200%",
+    y: "-550%",
     scrollTrigger: {
       trigger: "#gallery",
       scroller: ".home-container",
@@ -45,6 +46,17 @@ function scrollAnimation() {
      toggleActions: "restart complete reverse reset",
    },
  });
+  gsap.to(".gallery-container", {
+    opacity: "1",
+    y: "400%",
+    scrollTrigger: {
+      trigger: "#live-music",
+      scroller: ".home-container",
+      scrub: 4,
+      start: "bottom 40%",
+      toggleActions: "restart complete",
+    },
+  }); 
 }
 
 scrollAnimation();
