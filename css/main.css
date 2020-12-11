@@ -119,6 +119,12 @@ header {
   margin-left: 0.2rem;
 }
 
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .brand-title img {
+    width: 5rem;
+}
+}
+
 .navbar-links {
   height: 100%;
 }
