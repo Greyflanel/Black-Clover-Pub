@@ -417,7 +417,7 @@ span.h1 {
   animation: flicker 6.5s infinite alternate;
 }
 
-@media screen and (min-width: 200px) and (max-width: 400px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
   .neon-music {
     top: 0.01rem;
     left: 5rem;
