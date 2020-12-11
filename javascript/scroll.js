@@ -22,8 +22,29 @@ function scrollAnimation() {
       //options: play, pause, resume, reset, restart, complete, reverse,none
     },
   });
-  
- 
+  gsap.to(".gallery-filler img", {
+    y: "-200%",
+    scrollTrigger: {
+      trigger: "#gallery",
+      scroller: ".home-container",
+      scrub: true,
+      
+      start: "top 10%",
+      toggleActions: "restart complete reverse reset"
+    }
+  }) 
+ gsap.to(".gallery-filler img", {
+   y: "220%",
+   
+   scrollTrigger: {
+     trigger: "#gallery",
+     scroller: ".home-container",
+     scrub: true,
+     ease: "elastic-inOut",
+     start: "top 30%",
+     toggleActions: "restart complete reverse reset",
+   },
+ });
 }
 
 scrollAnimation();
