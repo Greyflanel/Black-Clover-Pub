@@ -499,9 +499,9 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 401px) and (max-width: 500px) {
   .live-music-text {
-    top: 15.5rem;
+    top: 12.5rem;
     left: 0.1rem;
     width: 3.5rem;
     height: 6rem;
@@ -544,7 +544,7 @@ span.h1 {
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .second-text {
-    top: 22rem;
+    top: 19rem;
     left: 0.1rem;
     width: 3.5rem;
     height: 6rem;
