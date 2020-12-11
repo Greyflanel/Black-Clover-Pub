@@ -140,7 +140,7 @@ header {
   padding: 0.7rem 1rem;
   margin-top: 0.15rem;
   font-size: 0.9rem;
-  text-shadow: 4px 4px 4px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 #anchor-tags:hover {
@@ -395,7 +395,7 @@ span.h1 {
 }
 
 #live-music h1 {
-  text-shadow: 4px 4px 4px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 .neon-music {
@@ -407,7 +407,7 @@ span.h1 {
   font-size: 0.8rem;
   font-weight: 100;
   line-height: 1rem;
-  color: #42ff4c;
+  color: #a2ffa7;
   padding: 0.3rem 0.3rem 0.3rem;
   border: 0.2rem solid #dbdbff;
   border-radius: 1rem;
@@ -452,7 +452,7 @@ span.h1 {
 /* Animate neon flicker */
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: -0.2rem -0.2rem 1rem rgb(0, 255, 21), 0.2rem 0.2rem 0.5rem #fff, 0 0 0.4rem var(--neon-text-color), 0 0 0.5rem var(--neon-text-color);
+    text-shadow: -0.1rem -0.1rem 0.4rem rgb(0, 255, 21), 0.2rem 0.2rem 0.5rem rgb(0, 255, 21), 0 0 0.4rem var(--neon-text-color), 0 0 0.5rem var(--neon-text-color);
     box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 0.8rem var(--neon-border-color), inset 0 0 0.8rem var(--neon-border-color);
   }
   20%, 24%, 55% {
@@ -465,7 +465,7 @@ span.h1 {
   position: absolute;
   color: white;
   font-weight: 200;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgba(0, 0, 0, 0.65) ;
   width: 6.5rem;
   height: 4.1rem;
   font-size: 0.85rem;
