@@ -441,13 +441,16 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
   .live-music-text {
     display: none;
   }
 }
 
-
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .live-music-text {
+    top: 0.3rem;
+  }
   
 }
 
