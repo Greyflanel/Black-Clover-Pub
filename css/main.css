@@ -745,7 +745,7 @@ font-size: 1.5rem;
 @media screen and (min-width: 1101px) and (max-width: 1281px) {
   .second-text {
     font-size: 0.85rem;
-    height: 3.5rem;
+    height: 3rem;
     padding-top: 0.3rem;
     top: 13rem;
     left: 13.5rem;
