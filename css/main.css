@@ -460,14 +460,15 @@ span.h1 {
 
 @media screen and (min-width: 280px) and (max-width: 428px) {
   .neon-music {
-    top: 0.5rem;
+    display: none;
+    /* top: 0.5rem;
     left: 6rem;
     width: 8.5rem;
     height: 3rem;
     font-size: 1rem;
     padding: 0.6rem;
     padding-bottom: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.2rem; */
   }
 }
 
@@ -532,6 +533,18 @@ span.h1 {
     height: 4.9rem;
     font-size: 1.2rem;
     padding: 0.6rem;
+    padding-bottom: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .neon-music {
+    top: 2rem;
+    width: 8.5rem;
+    height: 3.6rem;
+    font-size: 1rem;
+    padding: 0.4rem;
     padding-bottom: 1rem;
     line-height: 1.4rem;
   }
@@ -825,8 +838,15 @@ span.fc-icon {
 #gallery .home-content {
   display: flex;
   width: 65%;
-  margin: 8% auto;
   height: 75%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  #gallery .home-content {
+    margin-top: 8rem;
+  }
 }
 
 #gallery .home-content .container > a {
@@ -879,7 +899,25 @@ span.fc-icon {
 .gallery-filler img {
   position: absolute;
   z-index: 10;
-  right: 0.2rem;
+  right: 0.1rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .gallery-filler img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery-filler img {
+    right: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .gallery-filler img {
+    right: 1rem;
+  }
 }
 
 .gallery-container {
