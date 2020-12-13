@@ -931,7 +931,9 @@ span.fc-icon {
 .gallery-filler img {
   position: absolute;
   z-index: 10;
-  right: 0.1rem;
+  filter: brightness(180%) contrast(2);
+  width: 11rem;
+  transform-origin: left -40px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 1000px) {
