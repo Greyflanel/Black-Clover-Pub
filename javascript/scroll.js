@@ -32,7 +32,6 @@ function scrollAnimation() {
       trigger: "#gallery",
       scroller: ".container",
       scrub: 2,
-      
       start: "top 1%",
       toggleActions: "restart complete reverse reset"
     }
@@ -49,17 +48,6 @@ function scrollAnimation() {
      toggleActions: "restart complete reverse reset",
    },
  });
-  gsap.to(".gallery-container", {
-    opacity: "1",
-    y: "400%",
-    scrollTrigger: {
-      trigger: "#live-music",
-      scroller: ".home-container",
-      scrub: 4,
-      start: "bottom 40%",
-      toggleActions: "restart complete",
-    },
-  }); 
 }
 
 scrollAnimation();
