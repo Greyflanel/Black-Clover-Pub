@@ -370,7 +370,7 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 671px) and (max-width: 760px) {
+@media screen and (min-width: 670px) and (max-width: 760px) {
   #live-music img.drums {
     top: 23rem;
     left: 0.2rem;
@@ -378,7 +378,7 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 761px) and (max-width: 815px) {
+@media screen and (min-width: 760px) and (max-width: 816px) {
   #live-music img.drums {
     top: 20rem;
     left: -0.2rem;
@@ -386,7 +386,7 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 816px) and (max-width: 899px) {
+@media screen and (min-width: 816px) and (max-width: 900px) {
   #live-music img.drums {
     top: 20rem;
     left: -0.2rem;
@@ -394,7 +394,7 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 985px) {
+@media screen and (min-width: 900px) and (max-width: 986px) {
   #live-music img.drums {
     width: 18rem;
     top: 17.5rem;
@@ -410,18 +410,26 @@ span.h1 {
   }
 }
 
-@media screen and (min-width: 1050px) and (max-width: 1150px) {
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
   #live-music img.drums {
     width: 17rem;
-    top: 17rem;
+    top: 16rem;
     left: 0.3rem;
   }
 }
 
-@media screen and (min-width: 1151px) and (max-width: 1280px) {
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
   #live-music img.drums {
     width: 14rem;
     top: 8rem;
+    left: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1845px) {
+  #live-music img.drums {
+    width: 11rem;
+    top: 12rem;
     left: 0.1rem;
   }
 }
@@ -573,6 +581,18 @@ span.h1 {
 @media screen and (min-width: 1281px) {
   .neon-music {
     top: 2rem;
+    width: 6rem;
+    height: 2.7rem;
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    padding-bottom: 1rem;
+    line-height: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1845px) {
+  .neon-music {
+    top: 2rem;
     width: 8.5rem;
     height: 3.6rem;
     font-size: 1rem;
@@ -678,7 +698,7 @@ font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 986px) and (max-width: 1101px) {
+@media screen and (min-width: 986px) and (max-width: 1200px) {
   .live-music-text {
     font-size: 1.1rem;
     height: 7rem;
@@ -688,13 +708,23 @@ font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1280px) {
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
   .live-music-text {
     font-size: 0.85rem;
     height: 3.5rem;
     padding-top: 0.3rem;
     top: 8rem;
     left: 13.5rem;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1845px) {
+  .live-music-text {
+    font-size: 0.6rem;
+    height: 2rem;
+    padding-top: 0.3rem;
+    top: 8rem;
+    left: 1.5rem;
   }
 }
 
@@ -751,7 +781,7 @@ font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 986px) and (max-width: 1100px) {
+@media screen and (min-width: 986px) and (max-width: 1200px) {
   .second-text {
     font-size: 1.1rem;
     height: 7rem;
@@ -761,13 +791,23 @@ font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1281px) {
+@media screen and (min-width: 1200px) and (max-width: 1281px) {
   .second-text {
     font-size: 0.85rem;
     height: 3rem;
     padding-top: 0.3rem;
     top: 13rem;
     left: 13.5rem;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1845px) {
+  .second-text {
+    font-size: 0.6rem;
+    height: 1.5rem;
+    padding-top: 0.35rem;
+    top: 11rem;
+    left: 1.5rem;
   }
 }
 
@@ -805,7 +845,7 @@ font-size: 1.5rem;
 @media screen and (min-width: 860px) and (max-width: 1150px){
   #calendar {
     min-width: 17rem;
-    height: 27rem;
+    height: 24rem;
     font-size: 0.6rem;
     margin-bottom: -0.5rem;
     margin-right: 0.4rem;
@@ -821,7 +861,16 @@ font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1281px) and (max-width: 1845px) {
+  #calendar {
+    min-width: 15rem;
+    height: 16.5rem;
+    font-size: 0.6rem;
+    margin-right: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 1846px) {
   #calendar {
     top: 4rem;
     width: 20rem;
@@ -894,7 +943,31 @@ span.fc-icon {
   margin-top: 9%;
 }
 
-@media screen and (min-width: 200px) and (max-width: 900px) {
+#gallery .home-content h3 {
+  position: absolute;
+  top: 1rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  #gallery .home-content h3 {
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  #gallery .home-content h3 {
+    top: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1800px) {
+  #gallery .home-content h3 {
+    font-size: 1rem;
+    top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
   #gallery .home-content {
     margin-top: 8rem;
   }
