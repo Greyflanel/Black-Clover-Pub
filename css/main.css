@@ -469,20 +469,20 @@ span.h1 {
 }
 
 .neon-music {
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 3.2rem;
-  left: 3rem;
-  width: 8rem;
-  font-size: 0.6rem;
-  font-weight: 100;
-  line-height: 0.7rem;
-  color: #cafdcd;
-  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
-  border: 0.2rem solid #dbdbff;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  animation: flicker 6.5s infinite alternate;
+  margin-top: 2rem;
+  color: rgb(204, 255, 21);
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.65) ;
+  width: 10.5rem;
+  height: 4rem;
+  font-size: 0.88rem;
+  text-align: center;
+  border-radius: 5px;
+  
+  
 }
 
 @media screen and (min-width: 280px) and (max-width: 428px) {
@@ -1066,14 +1066,6 @@ span.fc-icon {
   }
   }
 
-  
-  
-.music-notes {
-  width: 5.8rem;
-  height: 4rem;
-  margin: 0 0.2rem 0.2rem;
-  margin-left: -0.5rem;
-}
 
 .drinks {
   width: 4.8rem;
