@@ -470,6 +470,7 @@ span.h1 {
 
 .neon-music {
   display: flex;
+  left: 1.5rem;
   align-items: center;
   position: absolute;
   margin-top: 2rem;
@@ -485,25 +486,11 @@ span.h1 {
   
 }
 
-@media screen and (min-width: 280px) and (max-width: 428px) {
-  .neon-music {
-    display: none;
-    /* top: 0.5rem;
-    left: 6rem;
-    width: 8.5rem;
-    height: 3rem;
-    font-size: 1rem;
-    padding: 0.6rem;
-    padding-bottom: 1rem;
-    line-height: 1.2rem; */
-  }
-}
 
-
-@media screen and (min-width: 429px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .neon-music {
     top: 0.8rem;
-    left: 8.5rem;
+    
     width: 8.5rem;
     height: 3rem;
     font-size: 1rem;
@@ -531,7 +518,7 @@ span.h1 {
 @media screen and (min-width: 601px) and (max-width: 760px) {
   .neon-music {
    top: 4.5rem;
-   left: 2.5rem;
+   left: 1rem;
    width: 8.5rem;
    height: 4.9rem;
    font-size: 1.2rem;
@@ -544,6 +531,7 @@ span.h1 {
 @media screen and (min-width: 761px) and (max-width: 899px) {
   .neon-music {
     top: 4rem;
+    left: 1rem;
     width: 8.5rem;
     height: 4.9rem;
     font-size: 1.2rem;
@@ -555,7 +543,8 @@ span.h1 {
 
 @media screen and (min-width: 900px) {
   .neon-music {
-    top: 2rem;
+    top: 1rem;
+    left: 1rem;
     width: 8.5rem;
     height: 4.9rem;
     font-size: 1.2rem;
@@ -580,7 +569,7 @@ span.h1 {
 
 @media screen and (min-width: 1281px) {
   .neon-music {
-    top: 2rem;
+    top: 1rem;
     width: 6rem;
     height: 2.7rem;
     font-size: 0.7rem;
