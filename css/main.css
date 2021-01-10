@@ -338,6 +338,9 @@ span.h1 {
  }
 }
 
+.located {
+  padding: 0 0.5rem;
+}
 
 #live-music {
   display: flex;
