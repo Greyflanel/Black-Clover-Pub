@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200i");
 :root {
-  --neon-text-color: #ffffff;
-  --neon-border-color: rgb(58, 78, 255);
+  
 }
 /* * {
   border: 1px solid red !important;
@@ -246,6 +245,7 @@ header {
   width: 17rem;
   top: 50%;
   left: 50%;
+  display: none;
 }
 
 #clovers {
@@ -361,10 +361,10 @@ span.h1 {
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 280px) and (max-width: 600px) {
   .neon-music {
-    top: 0.8rem;
-    
+    top: 1rem;
+    left: 5rem;
     width: 8.5rem;
     height: 3rem;
     font-size: 1rem;
@@ -491,6 +491,13 @@ span.h1 {
   flex-direction: row-reverse;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 450px) {
+  #live-music {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 #live-music img.drums {
