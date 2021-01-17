@@ -33,15 +33,16 @@ window.onload = function () {
     // Sets Initial Values
     tlContent.set("#clovers", { display: "flex" });
     tlLogo.set(".logo", {
-      autoaplha: 0,
-      display: "none",
+      autoAplha: 0,
+      
+      visibility: "hidden",
       xPercent: -50,
       yPercent: -50,
       transform: "rotate(-28deg)",
     })
     tlLogo.to(".logo", {
-      autoalpha: 1,
-      delay: 0.145,
+      autoAlpha: 1,
+      delay: 0.09,
       display: "block",
       
     });
