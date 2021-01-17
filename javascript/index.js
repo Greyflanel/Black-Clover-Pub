@@ -34,17 +34,17 @@ window.onload = function () {
     tlContent.set("#clovers", { display: "flex" });
     tlLogo.set(".logo", {
       autoAplha: 0,
-      
+      display: "none",
       visibility: "hidden",
       xPercent: -50,
       yPercent: -50,
       transform: "rotate(-28deg)",
     })
     tlLogo.to(".logo", {
-      autoAlpha: 1,
-      delay: 0.09,
-      display: "block",
       
+      delay: 0.1,
+      display: "block",
+      autoAlpha: 1,
     });
 
     // Clovers
