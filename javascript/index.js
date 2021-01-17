@@ -42,7 +42,7 @@ window.onload = function () {
     })
     tlLogo.to(".logo", {
       
-      delay: 0.1,
+      delay: 0.145,
       display: "block",
       autoAlpha: 1,
     });
