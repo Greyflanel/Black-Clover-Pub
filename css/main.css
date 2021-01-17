@@ -342,148 +342,34 @@ span.h1 {
   padding: 0 0.5rem;
 }
 
-.neon-music {
-  display: flex;
-  left: 1.5rem;
-  align-items: center;
+.welcome {
   position: absolute;
-  margin-top: 2rem;
-  color: rgb(204, 255, 21);
-  font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.65) ;
-  width: 10.5rem;
+  top: 3rem;
+  left: 4rem;
+  color: yellow;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  width: 9rem;
   height: 4rem;
-  font-size: 0.88rem;
+  font-size: 1.2rem;
   text-align: center;
   border-radius: 5px;
-  
-  
+  padding: 0.5rem 1rem;
 }
 
-
-@media screen and (min-width: 280px) and (max-width: 600px) {
-  .neon-music {
-    top: 1rem;
-    left: 5rem;
-    width: 8.5rem;
-    height: 3rem;
-    font-size: 1rem;
-    padding: 0.6rem;
-    padding-bottom: 1rem;
-    line-height: 1.2rem;
-  }
-}
-
-
-
-@media screen and (min-width: 500px) and (max-width: 600px) {
-  .neon-music {
-  top: 0.8rem;
-  left: 13.5rem;
-  width: 8.5rem;
-  height: 3rem;
-  font-size: 1rem;
-  padding: 0.6rem;
-  padding-bottom: 1rem;
-  line-height: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 760px) {
-  .neon-music {
-   top: 4.5rem;
-   left: 1rem;
-   width: 8.5rem;
-   height: 4.9rem;
-   font-size: 1.2rem;
-   padding: 0.6rem;
-   padding-bottom: 1rem;
-   line-height: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 761px) and (max-width: 899px) {
-  .neon-music {
-    top: 4rem;
-    left: 1rem;
-    width: 8.5rem;
-    height: 4.9rem;
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    padding-bottom: 1rem;
-    line-height: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .neon-music {
-    top: 1rem;
-    left: 1rem;
-    width: 8.5rem;
-    height: 4.9rem;
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    padding-bottom: 1rem;
-    line-height: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .neon-music {
+@media screen and (min-width: 1281px) and (max-width: 1845px) {
+  .welcome {
+    
+    
+    padding-top: 0.3rem;
     top: 2rem;
-    left: 1.5rem;
-    width: 8.2rem;
-    height: 3.4rem;
-    font-size: 0.85rem;
-    padding: 0.6rem;
-    padding-bottom: 0.8rem;
-    line-height: 1.2rem;
+    left: 0.5rem;
   }
 }
 
-@media screen and (min-width: 1281px) {
-  .neon-music {
-    top: 1rem;
-    width: 6rem;
-    height: 2.7rem;
-    font-size: 0.7rem;
-    padding: 0.4rem;
-    padding-bottom: 1rem;
-    line-height: 1.1rem;
-  }
-}
 
-@media screen and (min-width: 1845px) {
-  .neon-music {
-    top: 2rem;
-    width: 8.5rem;
-    height: 3.6rem;
-    font-size: 1rem;
-    padding: 0.4rem;
-    padding-bottom: 1rem;
-    line-height: 1.4rem;
-  }
-}
-
-.neon-music::selection {
-  background-color: var(--neon-border-color);
-  color: var(--neon-text-color);
-}
-
-/* Animate neon flicker */
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: -0.1rem -0.1rem 0.3rem rgb(89, 255, 103),
-    0.2rem 0.1rem 0.4rem rgb(89, 255, 103),
-    0 0 0.5rem var(--neon-text-color),
-    0 0 0.6rem var(--neon-text-color);
-    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.4rem #fff, 0 0 0.7rem var(--neon-border-color), inset 0 0 0.7rem var(--neon-border-color);
-  }
-  20%, 24%, 55% {
-    text-shadow: none;
-    box-shadow: none;
-  }
-}
 
 #live-music {
   display: flex;
@@ -855,7 +741,7 @@ font-size: 1.5rem;
 @media screen and (min-width: 1100px) and (max-width: 1280px){
   #calendar {
     min-width: 17rem;
-    height: 16rem;
+    height: 20rem;
     font-size: 0.6rem;
     margin-right: 0.4rem;
   }
