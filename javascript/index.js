@@ -31,7 +31,7 @@ window.onload = function () {
     let tlMediaQueryClover4 = gsap.timeline({ repeat: 0 });
 
     // Sets Initial Values
-    tlContent.set("#clovers", { display: "flex" });
+    tlContent.set("#clovers", { autoAlpha: 1 });
 
     tl1.set(".clover1, .clover2, .clover3, .clover4", {
       xPercent: -50,
@@ -49,7 +49,7 @@ window.onload = function () {
     })
     tlLogo.to(".logo", {
       delay: 0.2,
-      autoAlpha: 1
+      
     })
 
     // Clovers
