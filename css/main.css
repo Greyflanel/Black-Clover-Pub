@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200i");
-:root {
-  
-}
+
 /* * {
   border: 1px solid red !important;
 } */
@@ -380,13 +378,20 @@ span.h1 {
 @media screen and (min-width: 450px) and (max-width: 600px) {
   .welcome {
     top: 5rem;
-   
     width: 4rem;
     height: 6rem;
     padding: 0.5rem;
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 680px) {
+  .welcome {
+    top: 5rem;
+    width: 4rem;
+    height: 6rem;
+    padding: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 1281px) and (max-width: 1845px) {
   .welcome {
