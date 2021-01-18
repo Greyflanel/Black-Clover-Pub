@@ -32,8 +32,17 @@ window.onload = function () {
 
     // Sets Initial Values
     tlContent.set("#clovers", { display: "flex" });
+
+    tl1.set(".clover1, .clover2, .clover3, .clover4", {
+      xPercent: -50,
+      yPercent: -50,
+      x: "85%",
+      y: "-43%",
+      transform: "rotate(-28deg)",
+      filter: "blur(0.06em)",
+    });
+
     tlLogo.set(".logo", {
-     autoAlpha: 0,
       xPercent: -50,
       yPercent: -50,
       transform: "rotate(-28deg)",
@@ -45,14 +54,7 @@ window.onload = function () {
 
     // Clovers
 
-    tl1.set(".clover1, .clover2, .clover3, .clover4", {
-      xPercent: -50,
-      yPercent: -50,
-      x: "85%",
-      y: "-43%",
-      transform: "rotate(-28deg)",
-      filter: "blur(0.06em)",
-    });
+    
 
     // Setting Clover-Text
 
