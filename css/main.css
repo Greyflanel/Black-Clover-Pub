@@ -526,7 +526,8 @@ span.h1 {
 @media screen and (min-width: 200px) {
   #live-music .music-h1 {
     margin-top: 5rem;
-    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -994,7 +995,7 @@ span.fc-icon {
   }
   }
 
-  .music-notes {
+  .beer-mugs {
     width: 5rem;
   }
 
