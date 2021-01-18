@@ -39,7 +39,7 @@ window.onload = function () {
       transform: "rotate(-28deg)",
     })
     tlLogo.to(".logo", {
-      delay: 0.16,
+      delay: 0.2,
       autoAlpha: 1
     })
 
