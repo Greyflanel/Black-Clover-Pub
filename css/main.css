@@ -353,16 +353,43 @@ span.h1 {
   align-items: center;
   width: 9rem;
   height: 4rem;
+  margin: 0;
   font-size: 1.2rem;
   text-align: center;
   border-radius: 5px;
   padding: 0.5rem 1rem;
 }
 
+@media screen and (max-width: 450px) {
+  .welcome {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 421px) and (max-width: 530px) {
+  .welcome {
+    top: 14.5rem;
+    left: 0.3rem;
+    width: 4rem;
+    height: 5rem;
+    padding: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .welcome {
+    top: 5rem;
+   
+    width: 4rem;
+    height: 6rem;
+    padding: 0.5rem;
+  }
+}
+
+
 @media screen and (min-width: 1281px) and (max-width: 1845px) {
   .welcome {
-    
-    
     padding-top: 0.3rem;
     top: 2rem;
     left: 0.5rem;
@@ -713,7 +740,8 @@ font-size: 1.5rem;
 @media screen and (min-width: 270px) and (max-width: 400px) {
   #calendar {
     margin-right: 0;
-    
+    height: 25rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -741,7 +769,7 @@ font-size: 1.5rem;
 @media screen and (min-width: 1100px) and (max-width: 1280px){
   #calendar {
     min-width: 17rem;
-    height: 20rem;
+    height: 16rem;
     font-size: 0.6rem;
     margin-right: 0.4rem;
   }
