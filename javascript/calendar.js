@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: "listMonth",
-    googleCalendarApiKey: "AIzaSyDKWIW9XrOIv2jfjA1Ok0fUo8JOdrXD5v4",
+    googleCalendarApiKey: "AIzaSyCdPcedSFOEqBmQe-4lTQEvMkn7Is9a5Ig",
     events: {
-      googleCalendarId: "blackcloverbar@gmail.com",
+      googleCalendarId: "richardlovelace811@gmail.com",
     },
   });
   
