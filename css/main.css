@@ -38,39 +38,48 @@ body {
 @media screen and (min-width: 760px) {
   html,
   body {
-    font-size: 20px;
+    font-size: 18.5px;
   }
 }
 
-@media screen and (min-width: 815px) {
+@media screen and (min-width: 860px) {
+  html,
+  body {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 940px) {
   html,
   body {
     font-size: 22px;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   html,
   body {
-    font-size: 23px;
+    font-size: 29.8px;
   }
 }
 
-@media screen and (min-width: 1050px) {
+
+
+@media screen and (min-width: 1265px) {
   html,
   body {
-    font-size: 28px;
+    font-size: 31px;
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1360px) {
   html,
   body {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1640px) {
   html,
   body {
     font-size: 40px;
